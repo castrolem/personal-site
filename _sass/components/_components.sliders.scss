@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------------
+// #SLIDERS
+// -----------------------------------------------------------------------------
+
+.slider-wrapper { padding: 0; }
+
+.flickity-prev-next-button {
+  display: none;
+
+  @media (min-width: $venti) {
+    display: block;
+  }
+}
+
+.slider-cell {
+  margin: 0;
+  padding: $pad;
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: $venti) {
+    margin: 0 10%;
+  }
+
+  h3,
+  h4 {
+    padding: $pad-quarter 0;
+  }
+
+  h4,
+  p {
+    margin: 0 auto;
+  }
+
+  h4 { max-width: ($tall + 10em); }
+
+  p {
+    line-height: 1.75;
+    max-width: $tall;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// #SLIDERS-PAGINATION
+// -----------------------------------------------------------------------------
+
+.flickity-page-dots {
+
+  .dot {
+    background-color: $white;
+    opacity: .4;
+  }
+}

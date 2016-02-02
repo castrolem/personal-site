@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// #BUTTON
+// -----------------------------------------------------------------------------
+
+$button-cta-colour: $base;
+$button-contact-info: $utah-crimson;
+
+.button {
+  @include single-transition($property: background);
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0 2px 2px rgba($black, .2);
+  color: $tuatara;
+  display: block;
+  font-size: 110%;
+  margin: $space-half auto;
+  max-width: ($short * .75);
+  padding: $pad-half $pad;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  &.call-to-action {
+    background-color: $button-cta-colour;
+    border-radius: 25px;
+    border: 2px solid darken($button-cta-colour, 5%);
+    color: $white;
+
+    &:hover {
+      background-color: darken($button-cta-colour, 5%);
+    }
+  }
+
+  &.contact-info {
+    background-color: $button-contact-info;
+    border: 2px solid darken($button-contact-info, 5%);
+    box-shadow: none;
+    color: $white;
+    margin: 0;
+    padding: $pad;
+
+    &:hover {
+      background-color: darken($button-contact-info, 5%);
+    }
+  }
+}

@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// #MAIN-LOGO
+// -----------------------------------------------------------------------------
+
+.luis-logo {
+  $square: 50px;
+
+  display: inline-block;
+  height: $square;
+  padding: 0;
+  position: relative;
+  text-indent: $indent;
+  width: $square;
+
+  &.light-logo {
+    background-image: url("../img/logo/light-logo-square.svg");
+  }
+
+  &.dark-logo {
+    background-image: url("../img/logo/dark-logo-square.svg");
+  }
+
+  &.light-logo,
+  &.dark-logo {
+    background-size: $square;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $venti) {
+    text-indent: 0;
+
+    .text {
+      color: $white;
+      font-size: 200%;
+      position: absolute;
+      right: -210px;
+      top: 5px;
+      width: 200px;
+      letter-spacing: 1px;
+      font-weight: 100;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// #COMPANIES
+// -----------------------------------------------------------------------------
+
+$items-space: 90%;
+$items-margin: 10%;
+
+.companies-worked-at {
+  @include clearfix();
+  @include reset-list();
+
+  > li {
+    float: left;
+    margin: ($items-margin / 3 / 2);
+    padding: $pad-and-half;
+    width: ($items-space / 3);
+
+    @media (min-width: $grande) {
+      margin: ($items-margin / 6 / 2);
+      width: ($items-space / 6);
+    }
+  }
+}
+
+.company-worked-at {
+  height: auto;
+  width: 100%;
+}

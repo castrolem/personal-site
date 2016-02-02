@@ -1,0 +1,72 @@
+// -----------------------------------------------------------------------------
+// #TYPOGRAPHY
+// -----------------------------------------------------------------------------
+
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat");
+
+
+// -----------------------------------------------------------------------------
+// #HEADINGS
+// -----------------------------------------------------------------------------
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: $tuatara;
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 400;
+  margin: 0;
+  padding: $pad-half 0;
+  text-transform: capitalize;
+  line-height: 1;
+}
+
+
+// -----------------------------------------------------------------------------
+// #BODY-TEXT
+// -----------------------------------------------------------------------------
+
+p, .p,
+a, .link,
+blockquote, .blockquote {
+  color: $tuatara;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 200;
+  margin: 0;
+  padding: $pad 0;
+}
+
+p, .p,
+blockquote, .blockquote {
+  line-height: 1.5;
+}
+
+
+// -----------------------------------------------------------------------------
+// #LINKS
+// -----------------------------------------------------------------------------
+
+a, .link {
+  display: inline;
+  margin: 0;
+}
+
+.link {
+  @include single-transition($property: opacity);
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// #HELPERS
+// -----------------------------------------------------------------------------
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }

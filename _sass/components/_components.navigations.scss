@@ -1,0 +1,103 @@
+// -----------------------------------------------------------------------------
+// #NAVIGATIONS
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// #MAIN-NAV
+// -----------------------------------------------------------------------------
+
+.main-nav {
+  @include clearfix();
+  background: $base;
+  box-shadow: 0 1px 4px rgba($black, .2);
+  padding: $pad $pad-and-half;
+  position: fixed;
+  top: 0;
+  transform: translate3d(0, 0, 0);
+  width: 100%;
+  z-index: z($index-list, 'navigation');
+
+  @media (min-width: $grande) {
+    padding: $pad $pad-and-half;
+  }
+
+  ul {
+    display: none;
+
+    @media (min-width: $grande) {
+      @include navigation-list();
+      float: right;
+    }
+  }
+
+  .link {
+    color: $white;
+    padding: $pad $pad-half;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+  }
+
+  .luis-logo.light-logo {
+    $square: 25px;
+
+    @media (max-width: $grande) {
+      background-size: $square;
+      height: $square;
+      width: $square;
+    }
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// #MOBILE-MENU-SWTICH
+// -----------------------------------------------------------------------------
+
+.mobile-menu-switch {
+  color: $white;
+  margin: 0;
+  padding: $pad-quarter;
+  float: right;
+
+  @media (min-width: $grande) {
+    display: none;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// #MOBILE-NAV
+// -----------------------------------------------------------------------------
+
+.mobile-main-nav {
+  @include single-transition($property: transform);
+  background: $white;
+  box-shadow: 0 1px 4px rgba($black, .085);
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transform: translate3d(0, -150%, 0);
+  width: 100%;
+  z-index: z($index-list, 'navigation-mobile');
+
+  &.open { transform: translate3d(0, $main-nav-height, 0); }
+
+  ul { @include reset-list(); }
+
+  .link {
+    @include single-transition($property: background);
+    border-bottom: 1px solid rgba($tuatara, .15);
+    display: block;
+    margin: 0 auto;
+    max-width: $grande;
+    padding: $pad-half $pad-double;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    &:hover {
+      background: rgba($tuatara, .05);
+    }
+  }
+}

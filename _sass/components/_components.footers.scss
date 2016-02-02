@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// #FOOTERS
+// -----------------------------------------------------------------------------
+
+.main-footer {
+  @include clearfix();
+  background-color: $tuatara;
+  padding: $pad;
+
+  small,
+  .site-explanation {
+    color: $white;
+    display: inline-block;
+  }
+
+  small {
+    padding: $pad-half;
+  }
+
+  .site-explanation {
+    padding: 0;
+    float: right;
+
+    .link {
+      color: darken($white, 20%);
+    }
+  }
+}

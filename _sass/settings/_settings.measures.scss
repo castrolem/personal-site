@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// #MEASSURES
+// -----------------------------------------------------------------------------
+
+// spaces
+$space:                   1rem;
+$space-quarter:           $space / 4;
+$space-half:              $space / 2;
+$space-and-half:          $space * 1.5;
+$space-double:            $space * 2;
+
+// paddings
+$pad:                     1rem;
+$pad-quarter:             $pad / 4;
+$pad-half:                $pad / 2;
+$pad-and-half:            $pad * 1.5;
+$pad-double:              $pad * 2;
+
+
+// -----------------------------------------------------------------------------
+// COFFEE-SIZES
+// -----------------------------------------------------------------------------
+// Short, Tall, Grande, Venti, Trenta, American, Depth Charge.
+// Those are the usual sizes of coffee, if you want more, you can use them
+// We define this sizes because are the most common sizes you could have in
+// the web, remember you can replace them with %, rems or any other unit.
+// -----------------------------------------------------------------------------
+
+$short:                   20.00em;
+$tall:                    30.00em;
+$grande:                  47.50em;
+$venti:                   60.00em;
+$trenta:                  71.25em;
+$american:                87.50em;
+$depth-charge:            100.0em;

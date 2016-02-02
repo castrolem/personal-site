@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// #MIXINS
+// -----------------------------------------------------------------------------
+
+@mixin clearfix (){
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+
+@mixin navigation-list() {
+  @include reset-list();
+  display: inline-block;
+
+  li {
+    display: inline-block;
+  }
+}
+
+
+@mixin reset-list() {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+@mixin single-transition($property: all, $speed: .218s, $ease: ease-out) {
+  transition: $property $speed $ease;
+}
+
+
+@mixin vertical-align() {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
