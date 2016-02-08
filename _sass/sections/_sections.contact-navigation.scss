@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// #CONTACT-NAVIGATION
+// -----------------------------------------------------------------------------
+
+.contact-nav {
+  @include clearfix();
+  width: 100%;
+
+  > .button {
+    display: block;
+    float: left;
+    max-width: none;
+    width: 50%;
+  }
+
+  .button:first-child {
+    border-right: 0;
+  }
+}

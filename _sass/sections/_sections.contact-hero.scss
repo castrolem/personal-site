@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------------------
+// #MONEY-SHOT
+// -----------------------------------------------------------------------------
+
+.money-shot {
+  background-color: $base;
+  background-image: url("/img/contact/background-mobile.jpg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-style: preserve-3d;
+  padding: $pad-double $pad;
+
+  @media (min-width: $grande) {
+    background-image: url("/img/contact/background-desktop.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: ($pad * 5) $pad;
+  }
+
+  @media (min-width: $trenta) {
+    height: calc(100% - 54px); // 54px === contact-nav-height
+    padding: 0;
+  }
+
+  > .wrapper {
+    @media (min-width: $trenta) {
+      @include vertical-align();
+    }
+  }
+
+  h1 {
+    text-align: center;
+    color: $white;
+    padding: $pad-double;
+    font-size: 200%;
+    padding-bottom: ($pad * 8);
+
+    @media (min-width: $grande) {
+      font-size: 300%;
+      padding: ($pad * 4) $pad ($pad * 8);
+    }
+
+    @media (min-width: $trenta) {
+      font-size: 500%;
+      padding: 0 0 ($pad * 8);
+    }
+  }
+}

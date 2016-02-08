@@ -6,11 +6,10 @@
       </a>
       <!-- navigation desktop -->
       <ul>
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <li><a class="link page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
+        <li><a class="link" href="/#biography">bio</a></li>
+        <li><a class="link" href="/#workflow">workflow</a></li>
+        <li><a class="link" href="/#projects">projects</a></li>
+        <li><a class="link" href="/contact">contact</a></li>
       </ul>
       <!-- mobile switcher -->
       <a class="mobile-menu-switch" id="mobile-menu-switch" href="#">
@@ -22,11 +21,10 @@
   <!-- mobile navigation items -->
   <nav class="mobile-main-nav">
     <ul>
-      {% for my_page in site.pages %}
-        {% if my_page.title %}
-        <li><a class="link page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-        {% endif %}
-      {% endfor %}
+      <li><a class="link" href="#biography">bio</a></li>
+      <li><a class="link" href="#workflow">workflow</a></li>
+      <li><a class="link" href="#projects">projects</a></li>
+      <li><a class="link" href="/contact">contact</a></li>
     </ul>
   </nav>
 </header>

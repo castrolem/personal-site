@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------------------
+// #PROCESS-SECTION
+// -----------------------------------------------------------------------------
+
+.process-section {
+  padding: ($pad * 6) 0;
+
+  ol {
+    line-height: 1.5;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// #CODE-REVIEW_PRICE
+// -----------------------------------------------------------------------------
+
+.code-review_price {
+  border-bottom: 1px solid rgba($tuatara, .2);
+  border-top: 1px solid rgba($tuatara, .2);
+  padding: $pad-double;
+
+  span {
+    color: rgba($tuatara, .7);
+    display: block;
+    font-size: 300%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: $space-and-half;
+    text-align: center;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  .button {
+    border-radius: 0;
+    margin: 0;
+    max-width: none;
+    padding: $pad-and-half $pad;
+  }
+
+  small {
+    color: rgba($tuatara, .5);
+    display: block;
+    font-size: 75%;
+    margin-top: $space;
+  }
+}
