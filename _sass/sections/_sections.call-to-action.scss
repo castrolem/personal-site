@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// #CALL-TO-ACTION
+// -----------------------------------------------------------------------------
+
+.cta-section {
+  margin: 0 auto;
+  max-width: $grande;
+  padding: ($pad * 7) $pad-double;
+  text-align: center;
+
+  h5 {
+    line-height: 1.5;
+    text-transform: none;
+  }
+}

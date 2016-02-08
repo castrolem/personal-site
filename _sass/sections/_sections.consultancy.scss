@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// #CONSULTANCY
+// -----------------------------------------------------------------------------
+
+.consulting {
+  background-color: $summer-sky;
+  background-image: url("/img/consultancy/background-mobile.jpg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-style: preserve-3d;
+  padding: $pad-double $pad;
+
+  @media (min-width: $grande) {
+    background-image: url("/img/consultancy/background-desktop.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: ($pad * 5) $pad;
+  }
+
+  h1,
+  h3,
+  h4,
+  p {
+    color: $white;
+  }
+
+  a {
+    color: $tangerine;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 175%;
+    margin-bottom: $space-and-half;
+  }
+
+  h3 {
+    font-size: 140%;
+    margin-bottom: $space-and-half;
+  }
+
+  h4 {
+    line-height: 1.5;
+  }
+}

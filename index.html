@@ -2,22 +2,254 @@
 layout: default
 ---
 
-<div class="home">
+<section class="bio hero-section with-background-image" id="biography">
+  <div class="wrapper">
+    <h1>Greetings, traveler</h1>
+    <p>
+      I'm a Full-Stack Developer and computer engineer <strong>currently traveling the world</strong>.
+      In my work, I combine 3 basic principles: User Experience, Beauty and Purpose.
+      I have 5+ years doing Software Development and have completed more than 17 projects (managed 4 of them) in 2 continents.
+      I make webapps that work fast, are easy to use, persuasive, relevant to the customer and fit in the business environment.
+      <br/>
+      For <b>Q2-3</b> I'm Currently: <em>Available to take more projects</em>.
+    </p>
+    <a class="button call-to-action" href="mailto:luiscastroem@gmail.com?subject=Let%E2%80%99s%20work%20together">Let's work together</a>
+  </div>
+</section>
 
-  <h1 class="page-heading">Posts</h1>
+<section class="workflow with-animations" id="workflow">
+  <div class="workflow-item first-item">
+    <h3>
+      <div class="workflow-icon">
+        <span class="oi" data-glyph="beaker" title="beaker" aria-hidden="true"></span>
+      </div>
+      research
+    </h3>
+    <p>
+      We will work together on a daily or weekly basis depending on your availability to figure out the key points of your product.
+    </p>
+  </div>
+  <!-- end of workflow item -->
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="workflow-item second-item">
+    <h3>
+      <div class="workflow-icon">
+        <span class="oi" data-glyph="copywriting" title="copywriting" aria-hidden="true"></span>
+      </div>
+      planning
+    </h3>
+    <p>
+      Based on the points that we draw together, we'll set deliver dates and objectives for each. For this I like to use a project planning app, if your company or team already use one, we'll use it to make the workflow easier.
+    </p>
+  </div>
+  <!-- end of workflow item -->
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="workflow-item third-item">
+    <h3>
+      <div class="workflow-icon">
+        <span class="oi" data-glyph="task" title="task" aria-hidden="true"></span>
+      </div>
+      development
+    </h3>
+    <p>
+      With a beautiful design in place, I will build, test and launch your application. I have experience with different programming languages, my preference is for <em>Ruby</em>.
+    </p>
+  </div>
+  <!-- end of workflow item -->
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div class="workflow-item fourth-item">
+    <h3>
+      <div class="workflow-icon">
+        <span class="oi" data-glyph="graph" title="graph" aria-hidden="true"></span>
+      </div>
+      support
+    </h3>
+    <p>
+      Don’t worry about software installation, site maintenance and backups. I will set everything for you.
+    </p>
+  </div>
+  <!-- end of workflow item -->
+</section>
 
-</div>
+<section class="projects with-slider" id="projects">
+  <div class="wrapper">
+    <h1 class="text-center">work I have done</h1>
+    <div class="slider-wrapper projects-slider">
+      <div class="slider-cell">
+        <h3>RealScout</h3>
+        <h4>You want to find your next house in the US?</h4>
+        <p>
+          This company has one of the best platforms to search with the help of realtors your future home.
+          I was involved in the project when working for Hashlabs creating the whole Frontend of the webapp.
+          The technologies used in this project where AngularJS, jQuery, HTML5, CSS3.
+          I took their amazing designs and mocks and made the Styleguide that now they use in their whole site.
+          They will have a lot of cool things really soon. Want to see their site? Go
+          <a href="https://www.realscout.com/" target="_blank">here</a>.
+        </p>
+      </div> <!-- slider item -->
+
+      <div class="slider-cell">
+        <h3>Yummly</h3>
+        <h4>Yummly was launched in 2010 by foodies on a mission to invent the ultimate kitchen tool.</h4>
+        <p>
+          Whether it’s finding a recipe or going to the store, Yummly wants to make it easier for foodies to do what they love –
+          cook, eat, and share! :ramen: Around that concept, I worked with their designer to create marketing pages,
+          for users of the
+          <a href="http://www.yummly.com/mobile/" target="_blank">iOS app</a>
+          and
+          <a href="https://developer.yummly.com/" target="_blank">developers</a>
+          that wanted to know more about the API.
+        </p>
+      </div> <!-- slider item -->
+
+      <div class="slider-cell">
+        <h3>RxSpeed</h3>
+        <h4></h4>
+        <p>
+          Search millions of performance auto parts from thousands of retailers, you can see more
+          <a href="http://rxspeed.com/" target="_blank">here</a>.
+          In Hashlabs, we took this amazing project and designed the User Experience of the landing page,
+          menu and part picker for the company, we hand coded the Frontend and connected it to the endpoints
+          provided by their development team.
+        </p>
+      </div> <!-- slider item -->
+
+      <div class="slider-cell">
+        <h3>Bigsummit</h3>
+        <h4></h4>
+        <p>
+          I was responsible on checking the quality and organizing what the team that produced the ads for the site did on a daily basis.
+          I created their tasks, did manual testing on the site and created a plan for the animations that users will see in the site.
+          You can see them in their current
+          <a href="http://bigsummit.biz/">site</a>.
+        </p>
+      </div> <!-- slider item -->
+
+      <div class="slider-cell">
+        <h3>Hashlabs</h3>
+        <h4></h4>
+        <p>
+          Proud to be part of the amazing team here, we create Landing pages, web apps and more in Ruby on Rails,
+          Angular and many more languages, I have created many of the custom internal tools and coding guides
+          that all our developers use on a daily basis for our clients. You can learn more of our work
+          <a href="https://www.hashlabs.com/">here</a>.
+        </p>
+      </div> <!-- slider item -->
+
+      <div class="slider-cell">
+        <h3>Next Galaxy Corp</h3>
+        <h4>Want to see the future, this concepts and technology will blow your mind</h4>
+        <p>
+          From VR Concerts, VR Classroom, VR Sports to VR Experiences you will find everything in their single social
+          HUB app called CEEK, it offers scheduled, on demand and streaming 3D, 360 videos and standard content within a
+          fully immersive environment I was the main developer behind the CSS and HTML structure of the
+          <a href="http://www.nextgalaxycorp.com/">site</a>.
+        </p>
+      </div> <!-- slider item -->
+
+      <div class="slider-cell">
+        <h3>Veroes</h3>
+        <h4></h4>
+        <p>
+          I'm from the caribbean and I love rum, so how could I withstand to develop one of the coolest
+          sites for this great company. It all started with the amazing designs that Hashlabs provided,
+          after making decisions on how the User will interact with the site and what the client wanted to get from it,
+          we created their
+          <a href="https://www.ronveroes.com.ve">website</a>.
+        </p>
+      </div> <!-- slider item -->
+
+      <div class="slider-cell">
+        <h3>PackUp</h3>
+        <h4>Is one of those companies that move the world where we live in</h4>
+        <p>
+          at least in the Caribbean part, they have one of the biggest influences in the sugar market,
+          that's why in Hashlabs I was responsible of creating their main site focused to big companies that
+          wanted to hire their service and also create their webapp that organizes their customers requests into
+          a nice dashboard. You can learn more about in
+          <a href="http://www.packup.com.ve/">here</a>.
+        </p>
+      </div> <!-- slider item -->
+
+      <div class="slider-cell">
+        <h3>Grutel</h3>
+        <h4></h4>
+        <p>
+          I took the task of making a landing page where, companies could subscribe and get access to their admin
+          system which holds information on how to request more information, adquire new cable equipments
+          and antennas, add more cable providers and increase their reach to ￼￼￼￼￼￼￼generate more revenue
+          thanks to the streamlined process that the company offer to their current subscribers.
+          <a href="http://www.grutel.net/">Check out their site</a>
+        </p>
+      </div> <!-- slider item -->
+
+      <div class="slider-cell">
+        <h3>Anny Baquero</h3>
+        <h4></h4>
+        <p>
+          It's an actress and model from Venezuela, she needed a landing page to showcase her recent work and photos,
+          currently living in Miami, she also wanted a site that would be easy to maintain and change without help.
+          With the help of the designs from
+          <a href="http://unbungalow.com/">Bungalow Design</a>
+          we created
+          <a href="http://www.annybaquero.com/">her site</a>.
+        </p>
+      </div> <!-- slider item -->
+    </div>
+  </div>
+</section>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul>
+
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+<section class="consulting with-slider" id="consulting">
+  <div class="wrapper">
+    <h1 class="text-center">Companies that I helped</h1>
+    <ul class="slider-wrapper consulting-slider">
+      <div class="slider-cell">
+        <h3>Save1</h3>
+        <h4>Shop and Do Good!</h4>
+        <p>
+          My role was to guide and help the designer to create a seamless experience for the users.
+          We experimented with different colours and ran user testing with different parts of the UI with a
+          focus group. Also determined the interactions and animations we would use for the site and
+          communicated everything to the development team at the company, you can see the end result
+          <a href="http://save1.com/">here</a>.
+        </p>
+      </div>
+      <div class="slider-cell">
+        <h3>Hashlabs</h3>
+        <h4>we make awesome websites</h4>
+        <p>
+          in a weekly basis, I organize the tasks and various elements on the HHRR department of the company,
+          check the code that our Frontend developers and some of the Backend developers produce to ensure
+          the quality of our work and interact with clients.
+          <a href="https://www.hashlabs.com/">Checkout the site</a>.
+        </p>
+      </div>
+      <div class="slider-cell">
+        <h3>Symptomatica</h3>
+        <h4>Get Health Answers From The Best Sources On The Web</h4>
+        <p>
+          I was involved in the project to revise and check code quality and create the style-guide,
+          one of the focus of this project was that we couldn't make any JS to modify or create any views,
+          so we focused on making a pure HTML/CSS template that the developers from the company could re-use for the
+          different views, created a Style-guide and animation guide for them. You can see the site
+          <a href="https://symptomatica.com/">here</a>.
+        </p>
+      </div>
+    </ul>
+  </div>
+</section>

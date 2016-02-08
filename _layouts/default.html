@@ -7,18 +7,22 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
+
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    {{ content }}
+
+    <div class="cta-section">
+      <h3>Scale it now!</h3>
+      <h5>
+        I will write the future face of your company for users and make the patterns that I developed available to you,
+        rest assured that the code will scale and will last.
+      </h5>
+      <a class="button call-to-action" href="mailto:luiscastroem@gmail.com?subject=Let%E2%80%99s%20work%20together">Let's work together</a>
     </div>
 
     {% include footer.html %}
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,6 +33,9 @@
       ga('send', 'pageview');
 
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.js"></script>
+    <script src="js/main.js"></script>
   </body>
 
 </html>

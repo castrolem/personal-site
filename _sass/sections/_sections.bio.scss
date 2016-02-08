@@ -1,0 +1,59 @@
+// -----------------------------------------------------------------------------
+// #BIO
+// -----------------------------------------------------------------------------
+
+.bio {
+  background-color: $base;
+  background-image: url("/img/bio/background-mobile.jpg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-style: preserve-3d;
+  padding: $pad-double $pad;
+
+  @media (min-width: $grande) {
+    background-image: url("/img/bio/background-desktop.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: ($pad * 5) $pad;
+  }
+
+  @media (min-width: $trenta) {
+    padding: 0;
+  }
+
+  > .wrapper {
+    @media (min-width: $trenta) {
+      @include vertical-align();
+    }
+  }
+
+  h1,
+  p {
+    color: $white;
+  }
+
+  h1 {
+    font-size: 350%;
+    padding: 0;
+
+    @media (min-width: $trenta) {
+      font-size: 300%;
+    }
+  }
+
+  p {
+    font-size: 150%;
+    max-width: $tall;
+    line-height: 1.75;
+
+    @media (min-width: $grande) {
+      line-height: 1.5;
+    }
+  }
+
+  .button {
+    margin-left: 0;
+  }
+}
