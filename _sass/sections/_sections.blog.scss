@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// #BLOG
+// -----------------------------------------------------------------------------
+
+.posts-list {
+  padding: ($pad * 3) $pad-double;
+
+  h2 {
+    color: $base;
+    margin-bottom: $space-and-half;
+  }
+}
+
+.post-list {
+  @include reset-list();
+
+  li {
+    padding: $pad-double;
+    border-top: 1px solid rgba($black, 0.3);
+
+    &:last-of-type {
+      border-bottom: 1px solid rgba($black, 0.3);
+    }
+  }
+}
+
+.post-meta {
+  color: rgba($black, 0.6);
+  font-size: 80%;
+}
+
+.post-link {
+  padding: 0;
+  color: $base;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// #POST
+// -----------------------------------------------------------------------------
+.post {
+  background-color: #fafafa;
+
+  &-header {
+    background-color: rgba($black, .05);
+    padding: $pad-double $pad;
+
+    @media (min-width: $grande) {
+      padding: ($pad * 5) $pad;
+    }
+  }
+
+  &-content {
+    padding: $pad-double $pad;
+  }
+}

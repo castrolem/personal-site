@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 
 $button-cta-colour: $base;
+$button-aside-colour: $vida-loca;
 $button-contact-info: $utah-crimson;
 
 .button {
@@ -28,6 +29,17 @@ $button-contact-info: $utah-crimson;
 
     &:hover {
       background-color: darken($button-cta-colour, 5%);
+    }
+  }
+
+  &.aside {
+    background-color: $button-aside-colour;
+    border-radius: 25px;
+    border: 2px solid darken($button-aside-colour, 5%);
+    color: $white;
+
+    &:hover {
+      background-color: darken($button-aside-colour, 5%);
     }
   }
 

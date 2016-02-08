@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// #SIDEBAR
+// -----------------------------------------------------------------------------
+
+aside {
+
+  > .content {
+    background: white;
+    padding: $pad;
+    border-radius: 3px;
+  }
+
+  .code-review_price {
+    margin: $space-double 0;
+  }
+
+  .call-to-action {
+    background-color: $vida-loca;
+  }
+
+  .title {
+    color: $base;
+    margin: $space-half 0;
+  }
+
+  .current-project {
+    max-width: 120px;
+    display: inline-block;
+    margin: $space-quarter;
+  }
+}

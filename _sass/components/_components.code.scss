@@ -1,0 +1,17 @@
+pre {
+  white-space: pre;
+  word-wrap: normal;
+  overflow: auto;
+  padding: 12px;
+  background-color: #333;
+  border-radius: 3px;
+
+  code {
+    color: white;
+  }
+}
+
+code {
+  font-family: Inconsolata, Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  font-style: normal;
+}
