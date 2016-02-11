@@ -57,4 +57,10 @@
   &-content {
     padding: $pad-double $pad;
   }
+
+  .content {
+    @media(min-width: $venti) {
+      padding-right: $pad-double;
+    }
+  }
 }
