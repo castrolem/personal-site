@@ -6,17 +6,24 @@ author: Luis Castro
 tags: 'RealScout'
 ---
 
-## A not so long time ago
-In a repo far far into the cloud. We started by creating a complex application that was huge, and with every project that starts small, it didn’t had much scope for it’s CSS, which it can get really cumbersome for newcomers to work with.
+A not so long time ago in a repo far far into the cloud, we started by creating a complex application with unstructured CSS. As you might imagine, it got really cumbersome for everyone on the team to work with.
+
+Engineers were writing more CSS than HTML - designers had no guide posts when creating new layouts and components.
+
+Over the last couple years, we've introduced a living styleguide built on newer tools like SASS with well structured code that encourages engineers and designers to collaborate on beautiful and consistent user experiences.
+
+## Freedom vs Cohesion
+Freedom breeds design decisions that are based on particular instances of content and context. In a large application design standardization falls by the wayside as the number of uniquely art directed pages increases or as additional designers begin to impose their stylistic discretion. The result is parts of the application that look good on their own, but lack any sense of cohesion as a whole.
+
+> Designers believe in freedom and beauty, engineers believe in consistency. The result of combining both perspectives is User Experience.
+
+## Basic Design Principles
+
 
 To start talking about why we decided to change our approach to the structure of our project, we’ll have to talk about first of how CSS it’s considered usually.
 
 CSS is a language that can be beautiful to write in, but it’s really complex to do because it does not support the Object Oriented Design that we developers are used to. And that’s where SASS comes to the rescue. It’s 2016, if you are not using some kind of pre-processor for your medium to big size project, then there’s time you’re probably giving into your stylesheets that can be used in other tasks.
 
-## Basic design principles
-Freedom breeds design decisions that are based on particular instances of content and context. On a small sampling of pages, this might not be so bad. But as the number of uniquely art directed pages increases, or as additional designers begin to impose their stylistic discretion, design standardization falls by the wayside. The result is pages that look good on their own, but lack any sense of cohesion as a whole.
-
-> Designers believe in freedom and beauty, engineers believe in consistency. The result of combining both perspectives it’s what I call User Experience.
 
 Have you ever grabbed a design book? Basic design principles teaches that everything is inside a GRID, which by itself doesn’t give much freedom but people love GRIDs, and it’s kinda funny when you think that CSS a language engineered for designers as is it right now, doesn’t have GRIDs (read more about the working draft of CSS grids [here](https://www.w3.org/TR/css-grid-1/)).
 
@@ -65,7 +72,7 @@ Our variables are divided by
 ### Objects
 Each of the small snippets of code that are re-usable and independent of where they will be put. For example `buttons`, `inputs`, `links`, `iconography`, etc.
 
-It’s the second section to tackle when making a style-guide, and one of the most important steps, if you did your job at the interface inventory, then this items should be immutable to achieve consistency.
+It’s the second section to tackle when making a style-guide, and one of the most important steps, if you did your job at the interface inventory, then this items should be inmutable to achieve consistency.
 
 For example, this is how part of our SASS looks like for our different buttons.
 
@@ -121,15 +128,27 @@ But hey, we also talked about how cool is flexbox for centering, well, we didn�
 ### Components
 Are the part that can be hard to explain sometimes, we call components all the elements that can contain objects and are displayed in a certain way always, so they would have to have a layout set and more than one object to be called a component.
 
-Some of the components are also immutable, like the pagination or tabs component, both include `buttons`, `links` and a layout that is specific, we don’t want developers to change this component unless there’s a significant change in the design department. So our solution to this was to set up a sub-folder called immutable that contains this type of element.
+Some of the components are also inmutable, like the pagination or tabs component, both include `buttons`, `links` and a layout that is specific, we don’t want developers to change this component unless there’s a significant change in the design department. So our solution to this was to set up a sub-folder called inmutable that contains this type of element.
 
 Outside of this folder, you can find the elements that can change depending on new features or layout decisions. For example, we call everything that our agents see the *“pro side”* of the application, so every *”pro”* component can be changed by feature decisions without affecting the homebuyer side of the application that has similar or equal elements.
 
 ## The future is uncertain but controlled
-Great, you have everything done, but what about future elements that other developers will create without your mentorship, will they follow the work that you have done in the style-guide elements?
 
-Well, this is a really hard thing to answer, but for us, we can say that after deciding on the way of writing code, which is using the **BEM** methodology and you can read more about it [here](https://en.bem.info/method/), we now write more HTML than CSS, we can set up templates for new features without having to write anything in our components, which mean we have achieved an optimal level of consistency and our selectors do are not nested more than 1 level for objects and 3 levels for components (read more about [nesting](http://thesassway.com/intermediate/avoid-nested-selectors-for-more-modular-css)).
+From the Engineering point of view…
+
+* We decided a way of writing code, standardized it so any new member can follow this philosophy without much trouble, using the **BEM** methodology and you can read more about it [here](https://en.bem.info/method/)
+* We now write more HTML than CSS, we can set up templates for new features without having to write anything in our components, which mean we have achieved an optimal level of consistency
+* We follow a pattern for mobile, tablet and desktop views, everything is mobile first and scales nicely to any screen size thanks to the structure that’s set.
+* We write our selectors with coherent names for each new feature and we do not nest them into more than 1 level for objects and 3 levels for components (read more about [nesting](http://thesassway.com/intermediate/avoid-nested-selectors-for-more-modular-css)). Which is great because
 
 > After you have your Style-guide finished. If you are writing more lines of CSS than HTML, then there’s something wrong.
 
-That’s the philosophy to live by and here at RealScout we’re sure that our application will grow and become better for our user base with a streamlined and consistent UI.
+And now from the product side, we made their decisions easier to make and at the same time harder, they now have to think more about how each feature impacts the overall design of the site and if they want to change anything on it that will convert more users into using our application, but the design+development cycle has been sped up since now engineering does not have to bother designers to know if a feature is polished.
+
+* Product team knows what we have and which features they want, now they write better stories for us to tackle and follow consistent patterns.
+* Design does not have to specify anything about objects, only components when making a new feature.
+* Standard Sketch files were written for all the objects, when there’s need to update one of these elements, engineering is notified and can make 1 change for the whole UI, just like Sketch with their Symbol tool.
+* Design always think about the overall product and focus more on UX.
+* Product receives more finished features that need less polish and has less bugs.
+
+That’s the complete flow to live by of both teams and here at RealScout we’re sure that our application will grow and become better for our user base with a streamlined and consistent UI thanks to it.
