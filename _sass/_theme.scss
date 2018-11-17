@@ -83,9 +83,8 @@
   padding-top: .4rem;
 
   @include media_larger_than_mobile {
-    float: right;
-    border-top: none;
-    padding-top: 0;
+    margin-top: .5rem;
+    padding-top: 1rem;
   }
 
   .icon-link-item {
@@ -93,16 +92,18 @@
     margin-left: 5px;
   }
 
-  .icon-link { display: inline-block;
+  .icon-link {
+    display: inline-block;
 
-    &:hover .icon path {
+    &:hover .fab,
+    &:hover .fas {
       fill: #333;
       @include transition(all .2s ease);
     }
   }
 
-  .icon {
-    height: 28px;
+  .fab, .fas {
+    color: $black;
   }
 }
 
