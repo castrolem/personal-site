@@ -13,16 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Luis Castro Personal Site
+email: luiscastroem@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  I'm a Full Stack Developer that makes products that work fast, are easy to use, persuasive, relevant to the customer and fit in the business environment.
+  Currently working in Barcelona, Spain.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://luiscastro.co" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: castrolem
+github_username:  castrolem
 
 # Build settings
 markdown: kramdown
@@ -30,14 +29,49 @@ theme: minima
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Resume settings
+resume_avatar:                  "true"
+resume_name:                    "Luis Castro"
+resume_title:                   "Full Stack Developer"
+
+# used for the contact button in _layouts/resume.html
+resume_contact_email:           "luiscastroem@gmail.com"
+
+# the next two items are used for schema itemprops in _layouts/resume.html
+resume_contact_telephone:       "+34 667-088484"
+resume_contact_address:         "C/ Roser, Barcelona"
+
+resume_header_contact_info:     "C/ Roser, Barcelona • +34 667-088484 • luiscastroem@gmail.com"
+display_header_contact_info:    "false"
+
+resume_header_intro: "<p>I'm a Full Stack Developer that makes products that work fast, are easy to use, persuasive, relevant to the customer and fit in the business environment.</p>"
+
+# use "yes" to display the email contact button,
+# "no" to display an "I'm not looking for work" message,
+# or remove the resume_looking_for_work option entirely
+# to leave blank
+resume_looking_for_work:        "yes"
+
+# Decide which sections to use
+# comment out to hide
+resume_section_experience:      true
+resume_section_education:       true
+resume_section_projects:        true
+resume_section_skills:          true
+resume_section_recognition:     true
+resume_section_links:           true
+resume_section_associations:    true
+# resume_section_interests:       true
+
+# Resume social links
+# uncomment the options you wish to display, and add your own URL
+resume_social_links:
+  resume_github_url:            "https://github.com/castrolem"
+  resume_twitter_url:           "http://twitter.com/castrolem"
+  # resume_dribbble_url:          ""
+  # resume_facebook_url:          "insert Facebook URL here"
+  resume_linkedin_url:          "https://www.linkedin.com/in/castrolem"
+  # resume_instagram_url:         "insert your Instagram URL here"
+  resume_website_url:           "http://luiscastro.co"
+  # resume_medium_url:            ""
+resume_print_social_links:      true
