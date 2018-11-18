@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "Spending your time correctly"
+date:   2016-03-24 19:15:16 +0100
+author: Luis Castro
+tags: 'Development, agile, pair-programming, pair programming'
+---
+Over the past 6 years of practicing different types of programming, I have worked in different environments, traditional and non traditional, with people that are organized and sometimes not so much, but in the last 2+ years being remote and also part of a big team with great people that love to pair-program, has made me realize that there’s one particular style that just rocks and that’s pair-programming, let me tell you why you will think the same.
+What is it?
+
+Pair-programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed in. The two programmers switch roles frequently.
+
+Let’s keep this down to earth. Imagine you’re driving a learning car through your city. The driver is currently using the keyboard and mouse, while the teacher is dropping helpful hints, course corrections and helping the driver along the way, he can even take control of the car once in a while, to make the driver see something done before he can understand how to do it. But it’s not the only way to do it.
+
+## Pairing styles
+There are various styles of pair-programming. All styles are valid, but I have a preference for the method we use and you’ll see soon why.
+
+### Driver-Navigator
+This is the most common method of pair-programming, to the point where I believe this is what people think pair-programming is, it consists of two programmers sharing a single workstation (one screen, keyboard, and mouse among the pair). 
+
+The driver at the keyboard, and the navigator actively involved in the programming task but focusing more on overall direction; it is expected that the programmers swap roles every few minutes or so. But this style of “pairing” can lead into a bad situation. 
+
+This situation is caused by developers that are not interested in different technologies that are commonly used by the same team and leads to the navigator being distracted or doing different tasks not related to the development work currently being done. Another common cause for this is when people are not great at communicating their thoughts and want to develop an idea, so the driver proceeds to code silently for an extensive amount of time, which can have the effect of boring the navigator which naturally proceeds to check his phone or some other non-code-focused task.
+
+### Ping-Pong
+There are a couple ways to use this method, but the basics are, both members write code frequently. Because of this, the stress of the importance of having two sets of live input devices become very important.
+
+The first way is where one member takes the responsibility of writing all the tests for the pairing session time and the second member is responsible for getting them to pass.
+
+The second way of doing the ping-pong style is where the role of “test creator” passes between participants. This is done by having the first member writing a test, then control goes to the second member to turn it green, then responsibilities immediately switch and for writing the next test.
+
+The primary difference between these two is that in the first form, the roles are stable but control is passed. In the second both role and control are passed. We use the latter, which is an effective and great way to introduce people to pair-programming and let me tell you why.
+
+There’s also a variant of this style, pairing only when needed, which we also do. Developers need/want a little uninterrupted alone time. Sometimes when you’re coding and you’re on a good track, know where you’re going, you just need to concentrate on a silenced environment and get stuff done. It gets hard to get into the state of doing things when there’s someone on your side, watching your screen and talking to your ear.
+
+So for small things, doing things alone it’s great. Pairing when you’re stuck or need an extra pair of eyes to catch/guide you helps to avoid mistakes, which we’ll make. Anyone that tells you they don’t is lying.
+
+## Being a mentor
+Developers shouldn’t be faced with a wall when stuck on a problem. If you’re struggling, there should be someone in your company able to reach out and ask for help.
+And that’s why we are encouraged in our team to prioritize pairs that have experience in different topics (Backend and Front-end) to make the learning curve and experience joyful. As a pro tip when you’re looking for a new job, always prioritize teams that do this, it’s extremely common to find dev teams that set prizes for ticket velocity over all things and that can have a strong chilling effect that blocks collaboration and team development. There’s a great article a by Eric Elliot about building balanced development teams if you’re more interested in the management side.
+
+## A couple tips
+1. It’s all about the bandwidth when you’re remote, both ends need to have a great download/upload speed.
+2. One of the best apps when you’re remote, Screen Hero, if you can’t get an invite, don’t worry, there are plenty similar tools around and you can always use Google Hangouts.
+3. For folks that pair in the office, your employer should get your screens with the same quality/resolution, I believe this is very important to have the same conditions when looking at a problem.
+4. Don’t feel bad for asking help when needed, Be open and receptive to it. Pay attention and follow along.
+5. Avoid distractions, turn off notifications, especially if you’re the one navigating.
+6. When pairing with someone that has less experience, let them drive. People learn better by doing. They’ll remember how to do it the next time they’re driving.
+7. Before diving into a problem, discuss it with your teammate, you want to cooperate and get both perspectives before writing anything, what do you expect to happen, what would be a problem if it’s written in such a way, etc. You got 2 developers, 2 minds, use them.
+8. Feeling confident in one area? Try doing it alone, It might now be always right, but you can learn by being challenged. Be proactive about it.
+
+## The end result
+Our team is composed of lots of great developers that are great at most things and superb at others, which to me, it’s the perfect answer to why my moral is always high and when you’re not confident your teammate might have a solution for the problem, talking about might just be enough to trigger a breakthrough. This is things that come with this philosophy in my opinion.
+
+I’ve written some of my best code when pairing because most of it was written with two people’s hands on a keyboard together.
+
+Which is why I encourage you to apply them or to ask your management team to consider it. You would be amazed on how much your productivity will be increased by never hesitating when to ask for help or by stepping up for others.
