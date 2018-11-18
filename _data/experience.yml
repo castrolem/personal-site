@@ -9,10 +9,16 @@
 - company: RealScout
   position: Full Stack Developer
   duration:  Jan, 2015 &mdash; Dec, 2017
-  summary: <ul class="resume-item-list"><li>Increased listing decisions per buyer by 10x.</li><li>Developed a style-guide and train current developers.</li><li>Test driven development with Jasmine test suite and back-end work done with Ruby on Rails and RSpec test suite.</li><li>Developed new components with ReactJS for the web applications.</li><li>Created a Homebuyer and Agent iOS application with React Native.</li><li>Gathered data from Postgres DB and output detailed table charts for Product brainstorming/decision making.</li></ul>
+  summary: Real estate’s choice for collaborative home search. <ul class="resume-item-list"><li>Increased listing decisions per buyer by 10x.</li><li>Developed a style-guide and train current developers.</li><li>Test driven development with Jasmine test suite and back-end work done with Ruby on Rails and RSpec test suite.</li><li>Developed new components with ReactJS for the web applications.</li><li>Created a Homebuyer and Agent iOS application with React Native.</li><li>Gathered data from Postgres DB and output detailed table charts for Product brainstorming/decision making.</li></ul>
+
+# Consultant
+- company: Self Employed
+  position: Software Consultant
+  duration: Oct, 2014 &mdash; Dec, 2014
+  summary: <ul class="resume-item-list"><li>Supervised and created custom code for front-end projects.</li><li>Executed projects from design to code.</li><li>Test-driven development for new business and companies.</li><li>Increased conversion rate for marketing projects.</li></ul>
 
 # Hash Labs
 - company: Hash Labs LLC
   position: Front-End Developer
   duration: Jun, 2012 &mdash; Oct 2014
-  summary: <ul class="resume-item-list"><li>Increased by 10-15% conversion of 10 apps.</li><li>Led the front-end development of 20 projects inside the company.</li><li>Supervised projects (2-3 at a time) and manage more than 3 employees per project.</li><li>Created great User Experiences by improving designs supplied with HTML5/CSS3/JS animations.</li></ul>
+  summary: A software development agency that creates unique web and mobile experiences. <ul class="resume-item-list"><li>Increased by 10-15% conversion of 10 apps.</li><li>Led the front-end development of 20 projects inside the company.</li><li>Supervised projects (2-3 at a time) and manage more than 3 employees per project.</li><li>Created great User Experiences by improving designs supplied with HTML5/CSS3/JS animations.</li></ul>
