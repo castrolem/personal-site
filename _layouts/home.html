@@ -2,11 +2,8 @@
 <html lang="en" dir="ltr">
   {% include head.html %}
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
-    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
-      <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
-
-      <header class="page-header">
+    <header class="page-header">
+      <div class="wrapper" itemscope itemtype="http://schema.org/Person">
         {% if site.resume_avatar == 'true' %}
           <img src="images/avatar@2x.jpg" alt="my photo" class="avatar no-print" itemprop="image">
         {% endif %}
@@ -36,7 +33,12 @@
           {% else %}
           {% endif %}
         </div>
-      </header>
+      </div>
+    </header>
+
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
+      <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
 
       {% if site.resume_section_skills %}
       <section class="content-section">

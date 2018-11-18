@@ -18,7 +18,13 @@
 
 // page header styles
 
-.page-header { padding: 1.5rem 0;
+.page-header {
+  padding: 1.5rem 0;
+  background-image: url('../images/header_background.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4rem;
 
   .avatar {
     width: 95px;
@@ -31,6 +37,7 @@
 
   .header-name {
     @include sans;
+    color: $white;
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
@@ -41,10 +48,16 @@
 
   .header-contact-info {
     @include sans;
+    color: $white;
     text-align: center;
   }
+
   .header-contact-info p a {
-    color: inherit;
+    color: $white;
+  }
+
+  p {
+    color: $white;
   }
 
   .title-bar {
@@ -54,6 +67,7 @@
 
     .header-title {
       @include sans;
+      color: $white;
       font-weight: 300;
       font-size: 1.75rem;
       line-height: 2rem;
@@ -97,13 +111,12 @@
 
     &:hover .fab,
     &:hover .fas {
-      fill: #333;
       @include transition(all .2s ease);
     }
   }
 
   .fab, .fas {
-    color: $black;
+    color: $white;
   }
 }
 
