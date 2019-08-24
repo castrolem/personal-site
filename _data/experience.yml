@@ -1,9 +1,15 @@
 # Jobs
 # MyTaxi
-- company: MyTaxi - The Taxi App
-  position: Front-End Chapter Lead (Senior Developer)
-  duration: Feb, 2018 &mdash; Present
-  summary: Be the voice of developers when starting projects to ask the why/what/how and come up with product the best solutions for the business. <ul class="resume-item-list"><li>Resolve technologies disputes between teams by figuring out with them the proper solution.</li><li>Direct the team to healthy discussions / Empower group members.</li><li>Review code solutions / Suggest code edits.</li><li>Develop new features while mentoring chapter (Front-End) members.</li></ul>
+- company: Cameo
+  position: Full-stack developer (Senior Developer)
+  duration: Aug, 2019 &mdash; Present
+  summary: Book personalized video shoutouts from your favorite people. <ul class="resume-item-list"><li>Improve testing practices and empower the teams to follow best practices.</li><li>Build a robust REST and performant set of APIs using NodeJS</li><li>Optimize and scale the current solutions.</li></ul>
+
+# MyTaxi
+- company: FREE NOW
+  position: Front-End Chapter Lead (Tech Lead)
+  duration: Feb, 2018 &mdash; Aug, 2019
+  summary: Formely known as MyTaxi - The Taxi App. <ul class="resume-item-list"><li>Be the voice of developers when starting projects to ask the why/what/how and come up with product the best solutions for the business.</li><li>Resolve technologies disputes between teams by figuring out with them the proper solution.</li><li>Direct the team to healthy discussions / Empower group members.</li><li>Review code solutions / Suggest code edits.</li><li>Develop new features while mentoring chapter (Front-End) members.</li></ul>
 
 # RealScout
 - company: RealScout
