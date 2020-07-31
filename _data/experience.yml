@@ -1,9 +1,9 @@
 # Jobs
-# MyTaxi
+# Cameo
 - company: Cameo
   position: Full-stack developer (Senior Developer)
   duration: Aug, 2019 &mdash; Present
-  summary: Book personalized video shoutouts from your favorite people. <ul class="resume-item-list"><li>Improve testing practices and empower the teams to follow best practices.</li><li>Build a robust REST and performant set of APIs using NodeJS</li><li>Optimize and scale the current solutions.</li></ul>
+  summary: Book personalized video shoutouts from your favorite people. <ul class="resume-item-list"><li>Improve testing practices and empower the teams to follow best practices.</li><li>Build a robust REST and performant set of APIs using NodeJS</li><li>Optimize and scale the current solutions.</li><li>Created a unique style-guide extensible for developers and designers. (For the React Native app and Website)</li><li>Improved previous testing practices, introduced integration testing and added Cypress to enable easier end-to-end tests.</li></ul>
 
 # MyTaxi
 - company: FREE NOW

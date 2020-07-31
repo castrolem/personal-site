@@ -13,6 +13,7 @@ html {
 body{
   @include serif;
   color: $text_color;
+  background: #f8f8f8;
   font-size: 16px;
   line-height: 1.5;
 }
