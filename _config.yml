@@ -17,7 +17,7 @@ title: Luis Castro • Full Stack Developer
 email: luiscastroem@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I'm a Full Stack Developer that makes products that work fast, are easy to use, persuasive, relevant to the customer and fit in the business environment.
-  Currently working in Barcelona, Spain.
+  Currently working from Barcelona, Spain.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://luiscastro.co" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: castrolem
@@ -44,7 +44,7 @@ resume_contact_address:         "C/ Roser, Barcelona"
 resume_header_contact_info:     "C/ Roser, Barcelona • +34 667-088484 • luiscastroem@gmail.com"
 display_header_contact_info:    "false"
 
-resume_header_intro: "<p>Currently working in Barcelona, Spain. Making products that work fast, are easy to use, persuasive, relevant to the customer and fit in the business environment.</p>"
+resume_header_intro: "<p>Currently working from Barcelona, Spain. Making products that work fast, are easy to use, persuasive, relevant to the customer and fit in the business environment.</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
