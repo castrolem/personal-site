@@ -1,15 +1,17 @@
 <nav>
 	<div>
-		<a href="/" aria-label="home">
+		<a href="/" aria-label="home" class="avatar">
 			<img src="/images/avatar.png" width="49" height="55">
 		</a>
 	</div>
-	<div>
+	<div class="routes">
 		<h2>Luis Castro</h2>
-		<a href="/details">Nitpicky details</a>
-		<a href="/journal">Journal</a>
-		<a href="/podcast">Podcast</a>
-		<a href="/projects">Projects</a>
-		<a href="/setup">Setup</a>
+		<div>
+			<a href="/details" class="{% if '/details.html' == page.url %}active{% endif %}">Nitpicky details</a>
+			<a href="/journal" class="{% if '/journal.html' == page.url %}active{% endif %}">Journal</a>
+			<a href="/podcast" class="{% if '/podcast.html' == page.url %}active{% endif %}">Podcast</a>
+			<a href="/projects" class="{% if '/projects.html' == page.url %}active{% endif %}">Projects</a>
+			<a href="/setup" class="{% if '/setup.html' == page.url %}active{% endif %}">Setup</a>
+		</div>
 	</div>
 </nav>

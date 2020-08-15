@@ -6,8 +6,24 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body{
   @include font;
-  background: $background;
-  font-size: 16px;
+  background: $background--light;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: $text--dark;
+
+  @media (prefers-color-scheme: dark) {
+	background: $background--dark;
+	color: $text--light;
+  }
+}
+
+main {
+  margin: 0 auto;
+  max-width: 80rem;
 }

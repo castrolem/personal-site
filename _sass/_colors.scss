@@ -1,7 +1,13 @@
 // Main colors
-$background: #F9FAFB;
+$background--light: #F9FAFB;
+$background--dark: #3a444b;
 
 // Text colors
-$text: #151118;
-$footnote: rgba($text, 0.75);
-$primary: rgba(#338B93, 0.5);
+// Light mode
+$text--dark: #151118;
+$footnote--dark: rgba($text--dark, 0.75);
+$primary--dark: rgba(#338B93, 0.5);
+// Dark mode
+$text--light: #f0f2f3;
+$footnote--light: rgba($text--light, 0.75);
+$primary--light: rgba(#338B93, 0.5);

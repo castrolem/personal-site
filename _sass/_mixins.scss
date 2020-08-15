@@ -25,22 +25,79 @@
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
 }
 
-@mixin font_light {
+@mixin footnote {
   @include font;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: $footnote--dark;
+
+  @media (prefers-color-scheme: dark) {
+	color: $footnote--light;
+  }
+}
+
+@mixin body {
+  @include font;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: $text--dark;
+
+  @media (prefers-color-scheme: dark) {
+	color: $text--light;
+  }
+}
+
+@mixin light {
+  @include body;
   font-weight: 300;
 }
 
-@mixin font_regular {
+@mixin body_bold {
   @include font;
-  font-weight: 400;
+  @include body;
+  font-weight: 500;
 }
 
-@mixin font_bold {
+@mixin body_link {
   @include font;
-  font-weight: 700;
+  @include body_bold;
+  text-decoration: underline;
+
+  &:hover {
+	opacity: 0.8;
+  }
 }
 
-@mixin font_extrabold {
+@mixin title3 {
+  @include font;
+  @include body;
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+@mixin title2 {
+  @include font;
+  @include body;
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+
+
+@mixin title1 {
+  @include font;
+  @include body;
+  font-weight: 800;
+  font-size: 2.8rem;
+}
+
+
+@mixin large_title {
   @include font;
   font-weight: 800;
+  font-size: 3.4rem;
+  color: $primary--dark;
+
+  @media (prefers-color-scheme: dark) {
+	color: $primary--light;
+  }
 }

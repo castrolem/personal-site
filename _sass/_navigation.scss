@@ -1,0 +1,59 @@
+// Navigation styles
+// ---------------------------------------/
+
+nav {
+  display: flex;
+  padding-top: $space;
+
+  .routes {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+  }
+
+  .avatar {
+	transition: transform 108ms cubic-bezier(.17,.67,.83,.67);
+	align-items: center;
+	display: flex;
+	height: 7.1rem;
+	justify-content: center;
+	margin: $space;
+	width: 7.1rem;
+	opacity: 1;
+
+	&:hover {
+	  opacity: 1;
+	  transform: rotate(-10deg);
+	  filter: drop-shadow(0.25rem 0.25rem 0.5rem rgba($text--dark, 0.1));
+	}
+  }
+
+  h2 {
+	margin: 0 0 $space;
+  }
+
+  a {
+	@include light;
+	color: $text--dark;
+	margin-right: $space--l;
+	text-decoration: none;
+	opacity: 0.5;
+
+	&:hover {
+	  opacity: 0.8;
+	}
+
+	&.active {
+	  opacity: 1;
+	}
+
+	&:not(:nth-last-child) {
+	  margin-right: 0;
+	}
+
+	@media (prefers-color-scheme: dark) {
+	  color: $text--light;
+	}
+  }
+}
