@@ -19,7 +19,7 @@
 		{% for item in podcast | sort: 'pubDate' %}
 		<h2 class="color--primary">{{item.title}}</h2>
 		<p>{{item.description | strip_html | strip_newlines | truncate: 140}}</p>
-		<p><span class="footnote">{{item.pubDate | date: '%B %d, %Y'}} &#9125; </span><a href="{{item.link}}" rel="nofollow" class="footnote--link">Listen on Anchor.fm &#8594;</a></p>
+		<p><span class="footnote">{{item.pubDate | date: '%B %d, %Y'}} &#9125; </span><a href="{{item.link}}" target="_blank" rel="nofollow" class="footnote--link">Listen on Anchor.fm &#8594;</a></p>
 		{% endfor %}
 	</div>
 </main>
