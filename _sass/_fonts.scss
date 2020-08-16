@@ -24,6 +24,11 @@ h4 {
   b {
 	font-weight: 800;
   }
+
+  a {
+	color: inherit;
+	text-decoration: none;
+  }
 }
 
 p {
@@ -32,14 +37,13 @@ p {
 
   a {
 	@include body_link;
-	color: $text--dark;
+	color: inherit;
 
 	&:hover {
 	  opacity: 0.8;
 	}
 
 	&:visited {
-	  color: $text--dark;
 	  opacity: 1;
 	}
   }
@@ -66,23 +70,14 @@ p {
 	@include footnote;
 	font-weight: 600;
 	text-decoration: underline;
-	color: $footnote--dark;
-
-	@media (prefers-color-scheme: dark) {
-	  color: $footnote--light;
-	}
+	color: inherit;
 
 	&:hover {
 	  opacity: 0.8;
 	}
 
 	&:visited {
-	  color: $footnote--dark;
 	  opacity: 1;
-
-	  @media (prefers-color-scheme: dark) {
-		color: $footnote--light;
-	  }
 	}
   }
 }

@@ -5,6 +5,7 @@
   h1 {
 	@include title1;
 	font-size: 6.4rem;
+	margin-bottom: $space--xxl;
 
 	span {
 	  color: $primary--dark;

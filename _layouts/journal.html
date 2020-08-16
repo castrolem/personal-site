@@ -1,8 +1,14 @@
-<html lang="en" dir="ltr">
+<html dir="ltr" lang="en">
 {% include head.html %}
 <body>
 <main>
 	{% include navigation.html %}
-	{{content}}
+	<div class="limited-width">
+		{% for post in site.posts %}
+		<h2 class="color--primary"><a href="{{ post.url }}">{{post.title}}</a></h2>
+		<p>{{ post.excerpt }}</p>
+		<p><span class="footnote">{{post.date | date: '%B %d, %Y'}} &#9125; </span><a href="{{post.url}}" class="footnote--link">Read now &#8594;</a></p>
+		{% endfor %}
+	</div>
 </main>
 </body>

@@ -3,6 +3,10 @@
 <body>
 <main>
 	{% include navigation.html %}
-	{{content}}
+	<div class="limited-width">
+		<h1>{{page.title}}</h1>
+		<p class="footnote">Published on {{page.date | date: '%B %d, %Y'}}</p>
+		{{content}}
+	</div>
 </main>
 </body>
