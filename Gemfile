@@ -22,3 +22,5 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.15"
 end
 
+gem "json"
+gem "activesupport"

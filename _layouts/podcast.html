@@ -14,6 +14,10 @@
 				Spoiler alert, <b>we only do it in Spanish</b>.
 			</p>
 		</section>
+		{% assign podcast = site.data.podcast.rss.channel.item | sort: 'title' %}
+		{% for item in podcast %}
+		{{item.title}} <br />
+		{% endfor %}
 	</div>
 </main>
 </body>
