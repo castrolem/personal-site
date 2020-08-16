@@ -1,4 +1,4 @@
-<html lang="en" dir="ltr">
+<html dir="ltr" lang="en">
 {% include head.html %}
 <body>
 <main>
@@ -15,9 +15,32 @@
 	<div class="limited-width">
 		{% for post in site.posts %}
 		<h2 class="color--primary"><a href="{{ post.url }}">{{post.title}}</a></h2>
-		<p class="footnote">{{ post.excerpt  | strip_html | strip_newlines | truncate: 140 }}</p>
-		<p><span class="footnote">{{post.date | date: '%B %d, %Y'}} &#9125; </span><a href="{{post.url}}" class="footnote--link">Read now &#8594;</a></p>
+		<p class="footnote">{{ post.excerpt | strip_html | strip_newlines | truncate: 140 }}</p>
+		<p>
+			<span class="footnote">{{post.date | date: '%B %d, %Y'}} &#9125; </span>
+			<a class="footnote--link" href="{{post.url}}">Read now &#8594;</a>
+		</p>
 		{% endfor %}
+	</div>
+
+	<div class="projects">
+		<h2>Projects</h2>
+		<div class="column-layout">
+			<a class="box" href="http://chompapp.io" rel="nofollow" target="_blank">
+				<img src="/images/chomp-app-icon.png" alt="Chomp treats AppStore icon" width="64" height="64">
+				<div>
+					<h3>Chomp treats</h3>
+					<p class="footnote">Makes it easy for raw feeders to track their loved ones' food intake.</p>
+				</div>
+			</a>
+			<a class="box" href="https://overcast.fm/itunes1480271316/no-es-s-lo-c-digo" rel="nofollow" target="_blank">
+				<img src="/images/no-es-solo-codigo-icon.png" alt="Album cover of No es sólo código podcast" width="64" height="64">
+				<div>
+					<h3>No es sólo código</h3>
+					<p class="footnote">@duramla and I started this podcast to talk about our vision of the industry.</p>
+				</div>
+			</a>
+		</div>
 	</div>
 </main>
 </body>
