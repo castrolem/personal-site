@@ -10,4 +10,4 @@ $primary--dark: rgba(#338B93, 0.5);
 // Dark mode
 $text--light: #f0f2f3;
 $footnote--light: rgba($text--light, 0.75);
-$primary--light: rgba(#338B93, 0.5);
+$primary--light: rgba(saturate(#338B93, 50%), 0.75);
