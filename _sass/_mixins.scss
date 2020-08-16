@@ -55,7 +55,7 @@
 @mixin body_bold {
   @include font;
   @include body;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @mixin body_link {

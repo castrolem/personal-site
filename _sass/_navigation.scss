@@ -4,6 +4,7 @@
 nav {
   display: flex;
   padding-top: $space;
+  margin-bottom: $space--xxl;
 
   .routes {
 	display: flex;
@@ -13,14 +14,14 @@ nav {
   }
 
   .avatar {
-	transition: transform 108ms cubic-bezier(.17,.67,.83,.67);
 	align-items: center;
 	display: flex;
 	height: 7.1rem;
 	justify-content: center;
-	margin: $space;
-	width: 7.1rem;
+	margin: $space $space $space 0;
 	opacity: 1;
+	transition: transform 108ms cubic-bezier(.17,.67,.83,.67);
+	width: 7.1rem;
 
 	&:hover {
 	  opacity: 1;
@@ -31,29 +32,50 @@ nav {
 
   h2 {
 	margin: 0 0 $space;
+
+	a {
+	  text-decoration: none;
+	  color: $text--dark;
+
+	  &:hover,
+	  &:visited {
+		color: $text--dark;
+	  }
+
+	  @media (prefers-color-scheme: dark) {
+		color: $text--light;
+
+		&:hover,
+		&:visited {
+		  color: $text--light;
+		}
+	  }
+	}
   }
 
-  a {
-	@include light;
-	color: $text--dark;
-	margin-right: $space--l;
-	text-decoration: none;
-	opacity: 0.5;
+  .route-links {
+	a {
+	  @include light;
+	  color: $text--dark;
+	  margin-right: $space--l;
+	  text-decoration: none;
+	  opacity: 0.5;
 
-	&:hover {
-	  opacity: 0.8;
-	}
+	  &:hover {
+		opacity: 0.8;
+	  }
 
-	&.active {
-	  opacity: 1;
-	}
+	  &.active {
+		opacity: 1;
+	  }
 
-	&:not(:nth-last-child) {
-	  margin-right: 0;
-	}
+	  &:not(:nth-last-child) {
+		margin-right: 0;
+	  }
 
-	@media (prefers-color-scheme: dark) {
-	  color: $text--light;
+	  @media (prefers-color-scheme: dark) {
+		color: $text--light;
+	  }
 	}
   }
 }

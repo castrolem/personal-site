@@ -2,14 +2,16 @@
 // ---------------------------------------/
 
 .hero {
-  @include title1;
-  font-size: 3.4rem;
+  h1 {
+	@include title1;
+	font-size: 6.4rem;
 
-  span {
-	color: $primary--dark;
+	span {
+	  color: $primary--dark;
 
-	@media (prefers-color-scheme: dark) {
-	  color: $primary--light;
+	  @media (prefers-color-scheme: dark) {
+		color: $primary--light;
+	  }
 	}
   }
 }

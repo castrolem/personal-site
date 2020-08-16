@@ -1,0 +1,48 @@
+h1 {
+  @include large_title;
+}
+
+h2 {
+  @include title1
+}
+
+h3 {
+  @include title2
+}
+
+h4 {
+  @include title3
+}
+
+h1,
+h2,
+h3,
+h4 {
+  strong,
+  b {
+	font-weight: 800;
+  }
+}
+
+p {
+  @include body;
+
+  a {
+	@include body_link;
+	color: $text--dark;
+
+	&:hover {
+	  opacity: 0.8;
+	}
+
+	&:visited {
+	  color: $text--dark;
+	  opacity: 1;
+	}
+  }
+
+  strong,
+  b {
+	@include body_bold;
+  }
+}
