@@ -56,6 +56,7 @@ nav {
   .route-links {
 	a {
 	  @include light;
+	  display: inline-block;
 	  color: $text--dark;
 	  margin-right: $space--l;
 	  text-decoration: none;
@@ -75,6 +76,10 @@ nav {
 
 	  @media (prefers-color-scheme: dark) {
 		color: $text--light;
+	  }
+
+	  @include media_mobile() {
+		margin-bottom: $space;
 	  }
 	}
   }

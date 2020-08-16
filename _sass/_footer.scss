@@ -1,11 +1,11 @@
 footer {
   margin-top: $space--xxxl;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 0 0 $space--l;
 
   .footnote--link {
-	margin-left: $space;
+	margin-right: $space;
 	display: inline-block;
   }
 
@@ -13,7 +13,16 @@ footer {
 	display: flex;
   }
 
-  & > div:nth-child(2) {
-	justify-content: flex-end;
+  @include media_min(76rem) {
+	grid-template-columns: 1fr 1fr;
+
+	.footnote--link {
+	  margin-left: $space;
+	  margin-right: 0;
+	}
+
+	& > div:nth-child(2) {
+	  justify-content: flex-end;
+	}
   }
 }

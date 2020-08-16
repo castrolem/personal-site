@@ -24,8 +24,12 @@ body{
 }
 
 main {
-  margin: 0 auto;
+  margin: 0 $space--m;
   max-width: 80rem;
+
+  @include media_min(76rem) {
+	margin: 0 auto;
+  }
 }
 
 .page-intro {
@@ -38,5 +42,10 @@ main {
 
 .column-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  row-gap: $space--l;
+
+  @include media_min(76rem) {
+	grid-template-columns: 1fr 1fr;
+  }
 }
