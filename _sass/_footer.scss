@@ -25,4 +25,10 @@ footer {
 	  justify-content: flex-end;
 	}
   }
+
+  img {
+	@media (prefers-color-scheme: dark) {
+	  filter: Invert();
+	}
+  }
 }
