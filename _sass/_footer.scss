@@ -1,0 +1,19 @@
+footer {
+  margin-top: $space--xxxl;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 0 $space--l;
+
+  .footnote--link {
+	margin-left: $space;
+	display: inline-block;
+  }
+
+  & > div {
+	display: flex;
+  }
+
+  & > div:nth-child(2) {
+	justify-content: flex-end;
+  }
+}
