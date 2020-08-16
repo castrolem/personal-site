@@ -6,17 +6,20 @@
 	<div class="limited-width">
 		<section class="page-intro">
 			<p>
-				This is a space where <a href="https://twitter.com/duranmla" rel="nofollow" target="_blank">@duranmla</a>
-				and I gather our thoughts every week and sit down to discuss the state of the tech environment in our lives
-				and give tools to other developers to become more focused and engage better in their work environments.
+				This is a space where <a href="https://twitter.com/duranmla" rel="nofollow"
+				target="_blank">@duranmla</a> and I gather our thoughts every week and sit down to discuss the state of
+				the tech environment in our lives and give tools to other developers to become more focused and engage
+				better in their work environments.
 			</p>
 			<p>
 				Spoiler alert, <b>we only do it in Spanish</b>.
 			</p>
 		</section>
-		{% assign podcast = site.data.podcast.rss.channel.item | sort: 'title' %}
-		{% for item in podcast %}
-		{{item.title}} <br />
+		{% assign podcast = site.data.podcast.rss.channel.item %}
+		{% for item in podcast | sort: 'pubDate' %}
+		<h2 class="color--primary">{{item.title}}</h2>
+		<p>{{item.description | strip_html | strip_newlines | truncate: 140}}</p>
+		<p><span class="footnote">{{item.pubDate | date: '%B %d, %Y'}} &#9125; </span><a href="{{item.link}}" rel="nofollow" class="footnote--link">Listen on Anchor.fm &#8594;</a></p>
 		{% endfor %}
 	</div>
 </main>
