@@ -32,6 +32,10 @@ main {
   margin-bottom: $space--xxl;
 }
 
+.limited-width {
+  max-width: 62rem;
+}
+
 .column-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;

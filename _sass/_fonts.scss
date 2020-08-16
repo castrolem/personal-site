@@ -60,6 +60,7 @@ p {
 
 .footnote {
   @include footnote;
+  margin: $space 0;
 
   a {
 	@include footnote;
@@ -91,6 +92,7 @@ p {
   text-decoration: none;
   color: $footnote--dark;
   opacity: 0.7;
+  margin: $space 0;
 
   @media (prefers-color-scheme: dark) {
 	color: $footnote--light;
