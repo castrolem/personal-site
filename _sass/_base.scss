@@ -28,6 +28,10 @@ main {
   max-width: 80rem;
 }
 
+.page-intro {
+  margin-bottom: $space--xxl;
+}
+
 .column-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;

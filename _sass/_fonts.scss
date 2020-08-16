@@ -49,3 +49,63 @@ p {
 	@include body_bold;
   }
 }
+
+.color--primary {
+  color: $primary--dark;
+
+  @media (prefers-color-scheme: dark) {
+	color: $primary--light;
+  }
+}
+
+.footnote {
+  @include footnote;
+
+  a {
+	@include footnote;
+	font-weight: 600;
+	text-decoration: underline;
+	color: $footnote--dark;
+
+	@media (prefers-color-scheme: dark) {
+	  color: $footnote--light;
+	}
+
+	&:hover {
+	  opacity: 0.8;
+	}
+
+	&:visited {
+	  color: $footnote--dark;
+	  opacity: 1;
+
+	  @media (prefers-color-scheme: dark) {
+		color: $footnote--light;
+	  }
+	}
+  }
+}
+
+.footnote--link {
+  @include footnote;
+  text-decoration: none;
+  color: $footnote--dark;
+  opacity: 0.7;
+
+  @media (prefers-color-scheme: dark) {
+	color: $footnote--light;
+  }
+
+  &:hover {
+	opacity: 0.8;
+  }
+
+  &:visited {
+	color: $footnote--dark;
+	opacity: 1;
+
+	@media (prefers-color-scheme: dark) {
+	  color: $footnote--light;
+	}
+  }
+}
