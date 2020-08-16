@@ -18,6 +18,8 @@ h1,
 h2,
 h3,
 h4 {
+  margin: $space--l 0;
+
   strong,
   b {
 	font-weight: 800;
@@ -26,6 +28,7 @@ h4 {
 
 p {
   @include body;
+  margin: $space--m 0;
 
   a {
 	@include body_link;

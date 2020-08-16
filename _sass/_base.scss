@@ -27,3 +27,8 @@ main {
   margin: 0 auto;
   max-width: 80rem;
 }
+
+.column-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
