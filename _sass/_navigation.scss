@@ -6,6 +6,10 @@ nav {
   padding-top: $space;
   margin-bottom: $space--xxl;
 
+  @include media_mobile() {
+	margin-bottom: $space--xl;
+  }
+
   .routes {
 	display: flex;
 	justify-content: center;
