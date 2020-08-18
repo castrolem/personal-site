@@ -5,7 +5,9 @@
 	{% include navigation.html %}
 	<div class="limited-width">
 		<h1>{{page.title}}</h1>
+		{% if page.date %}
 		<p class="footnote">Published on {{page.date | date: '%B %d, %Y'}}</p>
+		{% endif %}
 		{{content}}
 	</div>
 	{% include footer.html %}
