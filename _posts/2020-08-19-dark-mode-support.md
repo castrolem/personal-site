@@ -17,7 +17,7 @@ I remember reading an article a while ago touting the browsers that support medi
 - Firefox 67 or newer.
 - Microsoft Edge 76 or newer.
 
-***Phew***, that's a long list.... So... To detect whether a browser is running on a dark mode device or not, you’ll need support for `[(prefers-color-scheme: dark)](https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme)` media query, and as 2019 that was fairly new, but on 2020, boy oh boy, we basically have support for it on all browsers.
+***Phew***, that's a long list.... So... To detect whether a browser is running on a dark mode device or not, you’ll need support for [prefers-color-scheme: dark](https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme) media query, and as 2019 that was fairly new, but on 2020, boy oh boy, we basically have support for it on all browsers.
 
 So if all browsers now support this feature, why are websites not supporting it?
 

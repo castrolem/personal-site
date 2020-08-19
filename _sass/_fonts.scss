@@ -31,7 +31,11 @@ h4 {
   }
 }
 
-p {
+ul {
+  padding-left: 0;
+}
+
+p, li {
   @include body;
   margin: $space--m 0;
 
