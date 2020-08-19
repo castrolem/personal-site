@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Missing dark mode goodness"
+title:  "Dark mode support"
 ---
 
 It's 2020, and we still have `background: white` websites when you set your OS to `darkMode === true` , why? Why?! I get this feeling every time it's 9pm and I switch my computer to be in dark mode with the magic automatic setting from macOS and my browser stills shows me a white background at 300 nits of brightness.
@@ -57,12 +57,12 @@ And that's it, CSS has a very simple solution to this problem, now we can ask de
 
 # **Design Guideline & Tools**
 
-There are some properties come from the [material design](https://material.io/design/color/dark-theme.html) that is worth to take a look. Are these mostly for designers? Yes, but that does not mean that as devs we can't take a sneak peek, on the contrary, we should always know about these things to make opinions with a good ground base, the ones I would tell you as a dev to keep an eye for are:
+There are some properties that come from the [material design guidelines](https://material.io/design/color/dark-theme.html) that are worth a look. Are these mostly for designers? Yes, but that does not mean that as devs we can't take a sneak peek, on the contrary, we should always know about these things to make opinions with a good ground base, the ones I would tell you as a dev to keep an eye for are:
 
-- **Contrast:** Dark surfaces and 100% white body text have a contrast level of at least 15.8:1
-- **Depth:** At higher levels of elevation, components express depth by displaying lighter surface colors
-- **Desaturation:** Primary colors are desaturated so they pass the Web Content Accessibility Guidelines’ (WCAG) AA standard of at least 4.5:1 at all elevation levels
-- **Limited color:** Large surfaces use a dark surface color, with limited color accents (light, desaturated and bright, saturated colors)
+- **Contrast:** Dark surfaces and 100% white body text have a contrast level of at least 15.8:1
+- **Depth:** At higher levels of elevation, components express depth by displaying lighter surface colors
+- **Desaturation:** Primary colors are desaturated so they pass the Web Content Accessibility Guidelines’ (WCAG) AA standard of at least 4.5:1 at all elevation levels
+- **Limited color:** Large surfaces use a dark surface color, with limited color accents (light, desaturated and bright, saturated colors)
 
 And the coolest part of it is that you can use Chrome Developer Tools to check all these elements.
 
