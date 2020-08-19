@@ -7,7 +7,9 @@ $background--dark: #3a444b;
 $text--dark: #151118;
 $footnote--dark: rgba($text--dark, 0.75);
 $primary--dark: rgba(#338B93, 0.5);
+$accent--dark: rgba(#943C34, 0.5);
 // Dark mode
 $text--light: #f0f2f3;
 $footnote--light: rgba($text--light, 0.75);
 $primary--light: rgba(saturate(#338B93, 50%), 0.75);
+$accent--light: rgba(saturate(#943C34, 50%), 0.75);
