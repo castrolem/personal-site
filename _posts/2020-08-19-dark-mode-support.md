@@ -68,11 +68,11 @@ And the coolest part of it is that you can use Chrome Developer Tools to check a
 
 # **Reference**
 
-- [https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
-- [https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
-- [https://stackoverflow.com/questions/44271920/css-variables-with-fallback-for-older-browsers](https://stackoverflow.com/questions/44271920/css-variables-with-fallback-for-older-browsers)
-- [https://material.io/design/color/dark-theme.html](https://material.io/design/color/dark-theme.html)
-- [https://javisperez.github.io/tailwindcolorshades/#/](https://javisperez.github.io/tailwindcolorshades/#/)
+- [Using_CSS_custom_properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+- [@media/prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
+- [css-variables-with-fallback-for-older-browsers](https://stackoverflow.com/questions/44271920/css-variables-with-fallback-for-older-browsers)
+- [Material design for dark mode](https://material.io/design/color/dark-theme.html)
+- [Tailwind CSS color shade generator](https://javisperez.github.io/tailwindcolorshades/#/)
 
 <br />
 <br />
