@@ -74,4 +74,7 @@ And the coolest part of it is that you can use Chrome Developer Tools to check a
 - [https://material.io/design/color/dark-theme.html](https://material.io/design/color/dark-theme.html)
 - [https://javisperez.github.io/tailwindcolorshades/#/](https://javisperez.github.io/tailwindcolorshades/#/)
 
-On another note, did you know this site supports dark mode?
+<br />
+<br />
+<br />
+*PD:* On another note, did you know this site supports dark mode?
