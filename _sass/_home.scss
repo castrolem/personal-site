@@ -6,12 +6,6 @@
 	@include title1;
 	font-size: 6.4rem;
 	margin-bottom: $space--xxl;
-	text-shadow: 0.4rem 0.4rem 0.1rem $primary--dark;
-
-	@media (prefers-color-scheme: dark) {
-	  color: $primary--light;
-	  text-shadow: 0.4rem 0.4rem 0.1rem $primary--light;
-	}
 
 	span {
 	  color: $primary--dark;
