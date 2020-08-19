@@ -28,6 +28,7 @@
 @mixin footnote {
   @include font;
   font-weight: 500;
+  font-variation-settings: 'wght' 500;
   font-size: 1.3rem;
   color: $footnote--dark;
 
@@ -39,6 +40,7 @@
 @mixin body {
   @include font;
   font-weight: 400;
+  font-variation-settings: 'wght' 400;
   font-size: 1.7rem;
   color: $text--dark;
 
@@ -50,12 +52,14 @@
 @mixin light {
   @include body;
   font-weight: 300;
+  font-variation-settings: 'wght' 300;
 }
 
 @mixin body_bold {
   @include font;
   @include body;
   font-weight: 600;
+  font-variation-settings: 'wght' 600;
 }
 
 @mixin body_link {
@@ -72,6 +76,7 @@
   @include font;
   @include body;
   font-weight: 500;
+  font-variation-settings: 'wght' 500;
   font-size: 2.2rem;
 }
 
@@ -79,6 +84,7 @@
   @include font;
   @include body;
   font-weight: 800;
+  font-variation-settings: 'wght' 800;
   font-size: 2.2rem;
 }
 
@@ -87,6 +93,7 @@
   @include font;
   @include body;
   font-weight: 800;
+  font-variation-settings: 'wght' 800;
   font-size: 2.8rem;
 }
 
@@ -94,6 +101,7 @@
 @mixin large_title {
   @include font;
   font-weight: 800;
+  font-variation-settings: 'wght' 800;
   font-size: 3.4rem;
   color: $primary--dark;
 
