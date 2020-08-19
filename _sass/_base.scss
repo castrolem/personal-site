@@ -27,7 +27,8 @@ main {
   margin: 0 $space--m;
   max-width: 80rem;
 
-  @include media_min(76rem) {
+  @include media_larger_than_mobile() {
+	padding: 0 $space--m;
 	margin: 0 auto;
   }
 }
@@ -45,7 +46,7 @@ main {
   grid-template-columns: 1fr;
   row-gap: $space--l;
 
-  @include media_min(76rem) {
+  @include media_larger_than_mobile() {
 	grid-template-columns: 1fr 1fr;
   }
 }
