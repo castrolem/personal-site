@@ -32,7 +32,9 @@ h4 {
 }
 
 ul {
-  padding-left: 0;
+  @include media_larger_than_mobile() {
+	padding-left: 0;
+  }
 }
 
 p, li {
