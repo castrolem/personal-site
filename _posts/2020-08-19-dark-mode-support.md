@@ -3,9 +3,9 @@ layout: post
 title:  "Dark mode support"
 ---
 
-It's 2020, and we still have `background: white` websites when you set your OS to `darkMode === true` , why? Why?! I get this feeling every time it's 9pm and I switch my computer to be in dark mode with the magic automatic setting from macOS and my browser stills shows me a white background at 300 nits of brightness.
+It's 2020, and we still have `background: white` websites when you enable your OS built-in dark mode, why? Why?! I get this feeling every time it's 9pm, and I switch my computer to be in dark mode with the magic automatic setting from macOS and my browser stills shows me a white background at 300 nits of brightness.
 
-I remember reading an article a while ago touting the browsers that support media queries for dark mode, which had the following browsers:
+I remember reading an article a while ago touting the browsers that support media queries for the dark mode, which had the following browsers:
 
 - macOS Safari 13 or newer.
 - iOS Safari 13.2 or newer.
