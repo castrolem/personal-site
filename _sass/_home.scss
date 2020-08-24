@@ -46,7 +46,9 @@
   }
 
   &:hover {
-	transform: scale(1.05);
+	@include media_larger_than_mobile() {
+		transform: scale(1.05);
+	}
   }
 
   h3 {
