@@ -23,7 +23,7 @@ Design means almost everything for most users, clean, understandable design with
 
 ### Make it about something you love
 
-We constantly hear about this, if you are not passionate about it, you will quickly lose interest in it. I have been in this situation so many times that you would think at this point I should have a master degree in it 😂, but
+We constantly hear about this, if you are not passionate about it, you will quickly lose interest in it. I have been in this situation so many times that you would think at this point I should have a master degree in it 😂, but it's true, doing what you love sparks joy.
 
 ### Being persistent is key
 
