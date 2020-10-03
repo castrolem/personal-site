@@ -22,7 +22,7 @@ And what the [etymology](https://www.etymonline.com/word/log#etymonline_v_43590)
 What I love the most about these definitions is that you can get the sense that the Logbook measures *the distance the ship traveled and all the things encountered in the ship's journey*. I love that metaphor. Because in life you have a defined set or maybe just one goal but you don't know how much will you do, what people will be involved and what new friendships you'll make along the way.
 
 So how do I differ my logbook from a ship's log?
-I divide my day in "who I met?", "what I did?" and "where I went?". My logbook is a simple list of facts, and because I write facts of the moment I don't give myself the time to pre-judge why I will write on my logbook. Which has given me great insights into things I thought before were mundane and/or won't become significant over time.
+I divide my day in "who I met?", "what I did?" and "where I went?". My logbook is a simple list of facts, and because I write facts of the moment I don't give myself the time to pre-judge what I will write on my logbook. Which has given me great insights into things I thought before were mundane and/or won't become significant over time.
 
 I can reference aspects of my daily life, such as the places I've visited and recall ideas and when I recall these I can do it in greater detail and with a greater degree of accuracy than what I can just remember. The most important aspect is the insights and understanding gains, and the way they influence future decisions.
 
