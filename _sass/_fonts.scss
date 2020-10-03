@@ -112,3 +112,22 @@ p, li {
 	}
   }
 }
+
+blockquote {
+  border-left: 0.3rem solid $footnote--dark;
+  padding-left: 1rem;
+
+  @media (prefers-color-scheme: dark) {
+	border-left-color: $footnote--light;
+  }
+}
+
+hr {
+  border-color: $footnote--dark;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  @media (prefers-color-scheme: dark) {
+	border-color: $footnote--light;
+  }
+}
