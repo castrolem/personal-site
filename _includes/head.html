@@ -5,6 +5,7 @@
 
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
+	<meta name="title" content="Hello! I’m a full-stack developer & content creator.">
 	<meta name="description"
 		  content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
@@ -12,4 +13,18 @@
 	<link rel="stylesheet" href="/css/zenburn.css">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://luiscastro.co/">
+	<meta property="og:title" content="Hello! I’m a full-stack developer & content creator.">
+	<meta property="og:description" content="I'm a Full Stack Developer that makes products that work fast, are easy to use, persuasive, relevant to the customer and fit in the business environment. Currently working from Barcelona, Spain.">
+	<meta property="og:image" content="/images/cover.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://luiscastro.co/">
+	<meta property="twitter:title" content="Hello! I’m a full-stack developer & content creator.">
+	<meta property="twitter:description" content="I'm a Full Stack Developer that makes products that work fast, are easy to use, persuasive, relevant to the customer and fit in the business environment. Currently working from Barcelona, Spain.">
+	<meta property="twitter:image" content="/images/cover.jpg">
 </head>
