@@ -3,7 +3,7 @@ layout: post
 title:  "Personal thoughts on Spotify vs Apple Music"
 ---
 
-I have been toying since the announcement of [Apple One](https://www.apple.com/apple-one/) with the idea of moving into an all Apple ecosystem since I would be saving money by doing this. 
+I have been toying since the announcement of [Apple One](https://www.apple.com/apple-one/) with the idea of moving into an all Apple ecosystem since I would be saving money by doing this.
 
 Thing is… [Spotify](https://www.spotify.com/) has been with me for so long that honestly, moving into an unknown UI/UX is so difficult, so that makes me think that even though I will be saving money by doing this, the annoyances and differences between the services might be enough for me to be loosing on features.
 
@@ -11,7 +11,7 @@ These are going to be my deep dives into the UX and UI of both apps and what mak
 
 ## How I’m attempting to see what’s best for me
 Most of the things in this list are going to be qualitative and not quantitative, which makes things very subjective and personal, so this is my take and it might not be aligned at all with your point of view.
- 
+
 ### Figuring out  the difference between the Apps
 Apple’s Music app, the one that comes with every iPhone and iPad, has a thing that I like, native UI components that look cohesive with the platform, follow the design guidelines of providing a Light and a Dark mode, so I can properly see things even on a bright day.
 
@@ -43,7 +43,7 @@ This is the big one, how do you find music nowadays? I’m sure it’s very simi
 So how good do they fare between my taste? Hard to answer, Spotify has a big advantage intros area, they have me as a user since 2011, that’s a lot of years gathering data and improving their algorithms with my preferences. Apple Music only has me for 2 months, 1 that I did in 2019, and one that I’m doing right now with the 3-month free trial.
 
 I will give for now no winner over this one since it’s not a fair fight, but as a fun anecdote, the other day Apple Music recommended me a list named “Turkish workout essentials” 😂, I wonder what I listened too that a fitness playlist with songs in Turkish was something worthy to recommend.
- 
+
 ### Who’s better at playing music for my workflow
 As a developer that loves to have music in the background, I must admit that one thing that I hate about the whole process, is having to choose what to listen to when I sit down for the first time to work every day.
 
