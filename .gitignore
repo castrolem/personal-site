@@ -3,3 +3,6 @@ _site
 .jekyll-metadata
 .jekyll-cache
 .idea
+
+# Local Netlify folder
+.netlify

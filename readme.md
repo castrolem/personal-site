@@ -1,22 +1,24 @@
-# Luis's Personal Site
+# Public and personal space
+[![Netlify Status](https://api.netlify.com/api/v1/badges/169c9217-5802-44e3-99ef-d36c2bb81f56/deploy-status)](https://app.netlify.com/sites/infallible-morse-393e0d/deploys)
 
-Making this site with HTML5, CSS3 and lots of beverages.
-:coffee: :wine_glass: :beers:
+Continuously improving everyday.
 
 ## Description
-I wanted to create a place where I can post a little about me, that was open source so if anyone wanted to help me create a new cool effect for it, improve the code I made or just learn how I like to work using my code could do that.
-
-Also, this site will function as the default URL in all my profile accounts. It will provide a way for potential clients to contact me and find more about my work. Finally, it will be a window to demonstrate the skills I have learned.
+A personal space where I can public my thoughts and projects, none of the things I publish are associated in any way with my daily job and the companies I have or work for.
 
 
 ## URL
 http://www.luiscastro.co
 
-#### You need to run the following commands in order.
+## Setup
+You want to run this project on your personal computer because you want to learn how I did it? Or just inspiration?
+
+#### You'll need to run the following commands in order.
 
 * Fork and `git clone` your fork.
 * `gem install jekyll`
 * `gem install sass` (Unless you already have Sass gem installed in your computer)
 
 #### To run the server
-You can run the server using `jekyll server` and it will open your default browser in `http://localhost:4000/`.
+* Use `bundle exec jekyll serve`
+* Open a browser with `http://localhost:4000/`.
