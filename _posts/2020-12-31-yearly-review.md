@@ -2,6 +2,11 @@
 layout: post
 title:  "2020 - Review of the year"
 ---
+In our last episode of the podcast [@alexis](https://twitter.com/duranmla) and I discussed with a framework he sent me a bunch of different things regarding the 2020, we can basically call it a "review of the year" from our perspective and what we think we did and need to improve on 2021.
+
+This is a resumed version of that conversation and also translated into english. Happy new year! 🥳 And thanks for reading.
+
+
 ## What went wrong this year?
 * I couldn't continue meeting my goals of meeting new cultures through travel.
 * I didn't invest as much money as I wanted due to fear.
