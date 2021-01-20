@@ -64,3 +64,14 @@
 	color: $footnote--dark;
   }
 }
+
+.project-title {
+  display: grid;
+  grid-gap: 1rem;
+
+  @include media_larger_than_mobile() {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+}
