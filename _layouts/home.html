@@ -13,6 +13,7 @@
 		</h1>
 	</div>
 
+	<h2 class="with-break">Latest journal entries</h2>
 	<div class="limited-width">
 		{% for post in site.posts limit:5 %}
 		<h2 class="color--primary"><a href="{{ post.url }}">{{post.title}}</a></h2>
@@ -25,7 +26,7 @@
 	</div>
 
 	<div class="projects">
-		<h2>Projects</h2>
+		<h2 class="with-break">Projects</h2>
 		<div class="column-layout">
 			<a class="box" href="http://logbook.today" rel="nofollow" target="_blank">
 				<img src="/images/logbook-app-icon.png" alt="The Logbook AppStore icon" width="64" height="64">

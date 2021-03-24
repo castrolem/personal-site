@@ -3,7 +3,7 @@ h1 {
 }
 
 h2 {
-  @include title1
+  @include title1;
 }
 
 h3 {
@@ -130,4 +130,9 @@ hr {
   @media (prefers-color-scheme: dark) {
 	border-color: $footnote--light;
   }
+}
+
+.with-break {
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid rgba($background--dark, 0.1);
 }
