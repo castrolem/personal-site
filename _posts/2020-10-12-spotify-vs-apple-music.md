@@ -61,3 +61,8 @@ With Spotify, I had to give less of my time to get feedback from my music in the
 After writing all these thoughts, I now realize that even though I knew making one of these services fit the broad audience they are trying to market, is way harder than I thought, there are so many little details that influence the way you listen to your music, the nuances of perfectly knowing the lyric of a song to the just give me background music so I can’t hear what’s around me.
 
 I will stick with Apple Music for the whole trial and see what changes does it bring to the way I search and listen to music from the things I described before, I believe it doesn’t matter how much you like one service, trying a different one for a while expands your mind and your way of using the previous ones, it’s stepping out of your comfort zone and seeing what learnings it bring.
+
+----
+
+## Updates
+I did the trial, and I went back to Spotify, honestly, the way Spotify makes it easier to find new artists and curated playlists is better than what I found at Apple Music.
