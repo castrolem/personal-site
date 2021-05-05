@@ -7,7 +7,7 @@
 	<div class="limited-width">
 		<h1>{{page.title}}</h1>
 		{% if page.date %}
-		<p class="footnote">Published on {{page.date | date: '%B %d, %Y'}}</p>
+		<p class="footnote">Published on {{page.date | date: '%B %d, %Y'}} &#8226; {{ content | reading_time_as_i }} to read</p>
 		{% endif %}
 		{{content}}
 	</div>
