@@ -1,23 +1,23 @@
 ---
-layout: post
-title:  "Peer to peer investing"
+layout: post 
+title:  "What I learned of peer to peer investing"
 ---
 
 It took me a bit to start writing about investing, at least publicly, because it has such a stigma with it, I'm not a
 financial advisor nor claim that what I'm saying works for me will work for you, but I do want to share these
-experiences hoping for the best.
+experiences hoping the best.
 
 There are multiple vehicles to start investing in, I have chosen more traditional means too, but I got interested in
-peer-to-peer lending or better known as the P2P investing area which isn't common with American investors, which is why
-I believe that not many people talk about it because the biggest influencers on investing are from the US.
+peer-to-peer lending or better known as the P2P investing area, this is basically all about lending your money to people
+that want to take out loans from companies that aren't traditional banks.
 
 Before I start talking more about the topic, I want to clear something out, most people think about lending as a shady
-business that only big banks and pawnbrokers do, but this isn't the case, there are multiple types of companies and
+business of corporations and pawnbrokers, but this isn't the case, there are multiple types of companies and
 types of loans that you can opt into, more than you'll be able to see in a lifetime.
 
 So how does P2P investing works you may ask, it's simpler than what I believed it to be, in simple terms, you invest
 your money into a platform, companies in these platforms that lend money to people, business, or other entities come in,
-take that money, put it into this persons account and you win an interest rate based on your contribution.
+take that money, put it into this persons account, and you win an interest rate based on your contribution.
 
 Now, on not so simple terms, the platform where you put your money in is just a marketplace for lending companies that
 want to diversify and invest into more people asking for money, to search for investors willing to accept different
@@ -52,7 +52,7 @@ so any profits you receive can be automatically invested again into the marketpl
 it.
 
 There’s one important catch though, always check the option to only participate on loans that have a 100% buyback
-guarantee, meaning, if the borrower fails to make payments and the loan defaults, the company that vetted this person
+guarantee, meaning, if the borrower fails to make payments, and the loan defaults, the company that vetted this person
 must pay back your money plus the accumulated interest to that point to you, if this happens, they usually have 15, 30
 or 60 days to do so depending on the contract.
 
