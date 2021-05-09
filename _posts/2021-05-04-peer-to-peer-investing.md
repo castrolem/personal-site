@@ -7,11 +7,11 @@ It took me a bit to start writing about investing, at least publicly, because it
 financial advisor nor claim that what I'm saying works for me will work for you, but I do want to share these
 experiences hoping the best.
 
-There are multiple vehicles to start investing in, I have chosen more traditional means too, but I got interested in
+There are multiple vehicles to start investing, I have chosen more traditional means, but I got interested in
 peer-to-peer lending or better known as the P2P investing area, this is basically all about lending your money to people
 that want to take out loans from companies that aren't traditional banks.
 
-Before I start talking more about the topic, I want to clear something out, most people think about lending as a shady
+Before I start talking more about the topic, I want to clear something out, I started believing that lending was a shady
 business of corporations and pawnbrokers, but this isn't the case, there are multiple types of companies and
 types of loans that you can opt into, more than you'll be able to see in a lifetime.
 
