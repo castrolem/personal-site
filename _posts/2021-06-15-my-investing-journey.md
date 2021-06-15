@@ -80,3 +80,25 @@ me being Financial Independent, is the beginning of the end of my journey. I lov
 that taking out the need of having to do that for a living and just doing it for the love of the craft can be
 empowering, that's what I aspire, become great at my craft and empower others through their love of the craft and mine
 to become better.
+
+------
+
+If you would like to know the platforms I use to invest, here are some affiliate links
+
+### Peer-to-peer lending platforms
+
+* [Robo.cash](https://robo.cash/ref/adEl)
+* [Mintos](https://www.mintos.com/en/l/ref/EJ3B1V)
+* [Lendermarket](https://www.lendermarket.com/ref/6dqyzs9t?lang=en)
+
+### Cryptocurrencies
+
+* [Coinbase](https://www.coinbase.com/join/castro_juiw)
+* [Block.fi](https://blockfi.com/?ref=6e48c55b)
+
+### Stocks and ETFs
+
+* [DEGIRO](https://www.degiro.es/amigo-invita-amigo/empezar-a-invertir.html?id=&amp;utm_source=mgm)
+
+And if you would like to talk more about investing, investing platforms or dig more about my experiences, please send me
+a message on [Twitter](https://twitter.com/castrolem).
