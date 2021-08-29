@@ -64,7 +64,7 @@ I hope these give you some ideas to start creating your own lifestyle template, 
 What would you do this year to create the lifestyle that works best for you?
 <br/>
 <br/>
-Good luck. I hope this read makes you explore more,
+Good luck. I hope reading my thoughts makes you explore more,
 <br/>
 Luis
 
