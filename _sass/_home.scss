@@ -75,3 +75,15 @@
 	align-items: center;
   }
 }
+
+.img-responsive {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 0.1rem solid $primary--dark;
+  margin: 2rem auto;
+  display: block;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $primary--light;
+  }
+}
