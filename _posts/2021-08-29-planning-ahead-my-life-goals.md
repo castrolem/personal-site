@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My 2022 goals"
+title:  "My plan for 2022"
 ---
 
 All this time during the COVID-19 pandemic made me reflect on my life, you probably did it too. 2020 was an interesting year and I made some goals for 2021 that I didn't make public and I believe this was a mistake, by obscuring these goals I had no accountability.
