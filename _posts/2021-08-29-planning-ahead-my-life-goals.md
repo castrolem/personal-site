@@ -3,7 +3,7 @@ layout: post
 title:  "My plan for 2022"
 ---
 
-All this time during the COVID-19 pandemic made me reflect on my life, you probably did it too. 2020 was an interesting year and I made some goals for 2021 that I didn't make public and I believe this was a mistake, by obscuring these goals I had no accountability.
+The COVID-19 pandemic made me reflect on my life, you probably did it too. 2020 was an interesting year and I made some goals for 2021 that I didn't make public and I believe this was a mistake, by obscuring these goals I had no accountability.
 
 This year I plan to do that differently. I want to give myself permission to try new things, and align my goals to my values and purpose. I'll be sharing them in this blog post and I hope to inspire you too.
 
