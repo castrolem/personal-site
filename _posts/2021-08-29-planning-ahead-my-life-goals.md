@@ -5,7 +5,9 @@ title:  "My plan for 2022"
 
 The COVID-19 pandemic made me reflect on my life, you probably did it too. 2020 was an interesting year and I made some goals for 2021 that I didn't make public and I believe this was a mistake, by obscuring these goals I had no accountability.
 
-This year I plan to do that differently. I want to give myself permission to try new things, and align my goals to my values and purpose. I'll be sharing them in this blog post and I hope to inspire you too.
+I'm planning to do that differently now. I want to give myself permission to try new things, and align my goals to my values and purpose. I'll be sharing them in this blog post and I hope to inspire you too.
+
+So let me tell you what I'm going to start doing from now on and expect to accomplish by the end of 2022.
 
 ## Personal OKRs
 The hardest part of building a framework is to think about the framework you want to build. Huh? Exactly.
