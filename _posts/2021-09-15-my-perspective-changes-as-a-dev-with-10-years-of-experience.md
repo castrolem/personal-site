@@ -13,7 +13,7 @@ quick read on the things I feel shaped my career and the opinions I have maintai
 * Duplication of code is better than abstracting when you are moving fast and trying to prove a point.
 * Bad abstractions can occur on any programming paradigm.
 * Abstracting from the beginning always result in complex and hard-to-maintain code, is better to abstract once the
-  business case.
+  business case rises.
 * Common practices are just someone's opinion, don't follow others' opinions blindly.
 * Designing over-the-top and super scalable solutions when you don't need them makes you a bad engineer.
 * Typed languages are great, especially in a fast-growing company.
