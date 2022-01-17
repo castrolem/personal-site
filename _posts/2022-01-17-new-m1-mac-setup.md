@@ -206,7 +206,7 @@ Here are the steps to get Jekyll running on M1 hardware.
 ```bash
 # list latest stable versions:
 rbenv install -l
-# set export variable before running rbenv install, since it will prevent any v2 of Ruby from compiling on M1 hardwared
+# set export variable before running rbenv install, since it will prevent any v2 of Ruby from compiling on M1 hardware
 export optflags="-Wno-error=implicit-function-declaration";
 # install latest compatible version with Jekyll
 rbenv install 2.6.1
