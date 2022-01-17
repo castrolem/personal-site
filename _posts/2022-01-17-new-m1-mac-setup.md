@@ -166,6 +166,15 @@ Copy your GPG key, beginning with
 
 And now add it to [your GitHub account](https://docs.github.com/en/articles/adding-a-new-gpg-key-to-your-github-account) .
 
+Now, it will ask for your password on every single commit you do, which is a bit annoying depending on how atomic your commits are, which is why I change this to be every hour or so.
+
+```bash
+vim ~/.gnupg/gpg-agent.conf
+
+# Add to the file and save
+default-cache-ttl 3600
+```
+
 ## Node and Yarn
 For JavaScript development, we need Node and as bonus, I like to use Yarn as my package manager instead of NPM, just because it’s faster and has a prettier console output (there are other benefits, but this are my main motivators).
 
