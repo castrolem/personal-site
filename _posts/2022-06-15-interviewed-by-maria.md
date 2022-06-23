@@ -5,7 +5,7 @@ title:  "I was interviewed by a YouTuber"
 
 I was the guest on the #1 episode of the new series of Agile State of Mind channel,
 
-We spoke about deconstructing the Engineering Managers' Role is about breaking the rules, soft skills, collaboration on
+We spoke about deconstructing the Engineering Managers' Role, a bit about breaking the rules, soft skills, collaboration on
 tech specs, and fresh air on what it means to be a real full-stack developer.
 
 Grab your popcorn and put your Engineering lead hat. This was extremely fun to do, and it was really nice to be on the
