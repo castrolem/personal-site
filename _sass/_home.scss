@@ -4,7 +4,7 @@
 .hero {
   h1 {
 	@include title1;
-	font-size: 6.4rem;
+	font-size: 4rem;
 	margin-bottom: $space--xxl;
 
 	span {
