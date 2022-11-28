@@ -95,6 +95,10 @@ p, li {
   opacity: 0.7;
   margin: $space 0;
 
+  img {
+    height: 20px;
+  }
+
   @media (prefers-color-scheme: dark) {
 	color: $footnote--light;
   }
