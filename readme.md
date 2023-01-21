@@ -1,5 +1,4 @@
 # Public and personal space
-[![Netlify Status](https://api.netlify.com/api/v1/badges/169c9217-5802-44e3-99ef-d36c2bb81f56/deploy-status)](https://app.netlify.com/sites/infallible-morse-393e0d/deploys)
 
 Continuously improving everyday.
 
