@@ -7,11 +7,26 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "husky install",
+    "test": ""
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
+    "@astrojs/tailwind": "^5.0.2",
     "astro": "^3.4.3",
+    "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.2",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.1",
+    "prettier-plugin-tailwindcss": "^0.5.6"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
