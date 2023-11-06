@@ -1,16 +1,81 @@
 ---
-
+import {Spotlight} from '../components/react/Spotlight'
+import {TimeZone} from '../components/react/TimeZone'
+import '../global.css'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1 class="text-2xl">My Astro website</h1>
-	</body>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <meta name="viewport" content="width=device-width"/>
+  <meta name="generator" content={Astro.generator}/>
+  <title>Luis Castro &bull; Full-stack developer</title>
+</head>
+<body class="bg-nobel-200 py-12 px-4 flex justify-center items-center min-h-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 w-full max-w-6xl mx-auto">
+  <Spotlight client:load className="md:col-span-3 md:row-span-2">
+    <div class="flex w-full h-full">
+      <div class="flex flex-col justify-between md:max-h-[300px] gap-4">
+        <h6 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">welcome</h6>
+        <div class="space-y-4 ">
+          <p class="text-nobel-950 text-lg leading-relaxed">Hi, I&rsquo;m <strong class="text-piper-500">Luis Castro</strong>, a full-stack developer with a focus on user experience, solving
+            problems for different companies and users for more than 10 years.</p>
+          <p class="text-nobel-950 text-lg leading-relaxed">
+            I speak English (Full professional proficiency) and Spanish (Native or bilingual proficiency) and if you want to
+            know, I love cooking, music and photography, which I combine with my love for traveling around the world and
+            meeting new cultures.
+          </p>
+        </div>
+      </div>
+      <img class="w-auto max-h-[400px] select-none absolute right-[-110px] bottom-[-20px] z-[-1] opacity-50 md:opacity-100 md:relative md:right-auto md:bottom-auto md:z-auto pointer-events-none" src="/public/memoji.webp" alt="memoji of Luis">
+    </div>
+  </Spotlight>
+  <Spotlight client:load className="md:row-span-3">
+    <div class="space-y-4">
+      <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">About me</h2>
+      <p class="text-oxford-blue-900">Let&rsquo;s talk about my technical skills</p>
+      <ul class="list-disc list-inside marker:text-oxford-blue-500">
+        <li class="text-oxford-blue-900">React</li>
+        <li class="text-oxford-blue-900">React-Native</li>
+        <li class="text-oxford-blue-900">TypeScript</li>
+        <li class="text-oxford-blue-900">Ruby on Rails</li>
+        <li class="text-oxford-blue-900">SwiftUI</li>
+        <li class="text-oxford-blue-900">PostgreSQL</li>
+        <li class="text-oxford-blue-900">MongoDB</li>
+      </ul>
+      <p class="text-oxford-blue-900">I have plenty of experience on the industry, spanning various topics like</p>
+      <ul class="list-disc list-inside marker:text-oxford-blue-500">
+        <li class="text-oxford-blue-900">User experience (UX)</li>
+        <li class="text-oxford-blue-900">Strategic planning</li>
+        <li class="text-oxford-blue-900">Design</li>
+        <li class="text-oxford-blue-900">Composition</li>
+        <li class="text-oxford-blue-900">Project management</li>
+      </ul>
+    </div>
+  </Spotlight>
+  <Spotlight client:load className="md:row-span-2">
+    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Let&rsquo;s work together!</h2>
+  </Spotlight>
+  <Spotlight client:load className="md:col-span-2">
+    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Latest blog articles</h2>
+  </Spotlight>
+  <Spotlight client:load>
+    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Where I live</h2>
+  </Spotlight>
+  <Spotlight client:load className="md:col-span-2">
+    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Time zone</h2>
+    <TimeZone client:load />
+  </Spotlight>
+  <Spotlight client:load>
+    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Projects</h2>
+  </Spotlight>
+  <Spotlight client:load>
+    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Podcast</h2>
+  </Spotlight>
+  <Spotlight client:load className="md:col-span-2">
+    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Personal setup</h2>
+  </Spotlight>
+</div>
+</body>
 </html>
