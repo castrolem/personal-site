@@ -4,12 +4,14 @@ import ArrowDownTray from 'astro-heroicons/outline/ArrowDownTray.astro';
 import Radio from 'astro-heroicons/outline/Radio.astro';
 import '@fontsource-variable/hanken-grotesk';
 import '@fontsource/noto-sans';
+import {compareDesc} from 'date-fns';
 
 import Footer from '../components/Footer.astro'
 import Section from "../components/Section.astro";
 import Box from "../components/Box.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
+import Main from "../components/Main.astro";
 
 const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
   dateStyle: 'medium',
@@ -17,13 +19,13 @@ const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
 })
 const PodcastingSinceDate = DateTimeFormat.format(new Date("2019/09/09"))
 const allPosts = await Astro.glob('../pages/posts/*.md');
-const sortedPosts = allPosts.sort((postA, postB) => postA.frontmatter.pubDate > postB.frontmatter.pubDate ? 1 : 0)
+const sortedPosts = allPosts.sort((postA, postB) => compareDesc(new Date(postA.frontmatter.pubDate), new Date(postB.frontmatter.pubDate)))
 const latestPosts = sortedPosts.slice(0, 3)
 const pageTitle = "Luis Castro";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-<main class="max-w-6xl mx-auto w-full text-center px-8">
+<Main>
   <div class="space-y-0 mb-4 max-w-2xl mx-auto">
     <img src="/memoji.webp" class="h-32 w-32 mx-auto mb-4 flex justify-center items-center" alt="Memoji of Luis">
     <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Luis Castro</h1>
@@ -138,10 +140,10 @@ const pageTitle = "Luis Castro";
     </div>
   </Section>
   <hr class="w-64 border-vanilla-100 mx-auto"/>
-  <Section>
+  <Section class="max-w-2xl mx-auto">
     <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Latest posts</h3>
-    <ol>
-      {latestPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+    <ol class="divide-y-2 divide-vanilla-200 divide-dotted">
+      {latestPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate} />)}
     </ol>
   </Section>
 </main>

@@ -1,4 +1,13 @@
 ---
-const { title, url } = Astro.props
+const { title, url, pubDate } = Astro.props
+const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
+  dateStyle: 'full',
+  timeZone: 'Europe/Andorra',
+})
 ---
-<li><a href={url}>{title}</a></li>
+<li>
+  <a href={url} class="flex flex-col text-left py-12">
+    <span class="text-vanilla-600 text-sm">{DateTimeFormat.format(new Date(pubDate))}</span>
+    <span class="font-serif text-2xl tracking-tight font-bold text-vanilla-950">{title}</span>
+  </a>
+</li>

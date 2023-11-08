@@ -1,11 +1,19 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import Main from "../components/Main.astro";
 const {frontmatter} = Astro.props;
+
+const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
+  dateStyle: 'medium',
+  timeZone: 'Europe/Andorra',
+})
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-  <p>Written by {frontmatter.author}</p>
-  <p>Published on: {frontmatter.pubDate.slice(0, 10)}</p>
-  <article class="prose prose-vanilla">
-    <slot/>
-  </article>
+  <Main>
+    <article class="prose prose-vanilla text-left mx-auto">
+      <slot/>
+    </article>
+    <p>Written by {frontmatter.author}</p>
+    <p>Published on: {DateTimeFormat.format(new Date(frontmatter.pubDate))}</p>
+  </Main>
 </BaseLayout>
