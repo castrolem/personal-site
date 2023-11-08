@@ -1,81 +1,102 @@
 ---
-import {Spotlight} from '../components/react/Spotlight'
-import {TimeZone} from '../components/react/TimeZone'
-import '../global.css'
+import ArrowLongRight from 'astro-heroicons/outline/ArrowLongRight.astro';
+import ArrowDownTray from 'astro-heroicons/outline/ArrowDownTray.astro';
+import Radio from 'astro-heroicons/outline/Radio.astro';
+import '@fontsource-variable/hanken-grotesk';
+import '@fontsource/noto-sans';
+
+import Footer from '../components/Footer.astro'
+import Section from "../components/Section.astro";
+import Box from "../components/Box.astro";
+
+const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
+  dateStyle: 'medium',
+  timeZone: 'Europe/Andorra',
+})
+const PodcastingSinceDate = DateTimeFormat.format(new Date("2019/09/09"))
 ---
 
 <html lang="en" class="h-full">
 <head>
   <meta charset="utf-8"/>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <link rel="icon" type="image/ico" href="/favicon.ico"/>
   <meta name="viewport" content="width=device-width"/>
   <meta name="generator" content={Astro.generator}/>
-  <title>Luis Castro &bull; Full-stack developer</title>
+  <title>Luis Castro</title>
 </head>
-<body class="bg-nobel-200 py-12 px-4 flex justify-center items-center min-h-full">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-10 w-full max-w-6xl mx-auto">
-  <Spotlight client:load className="md:col-span-3 md:row-span-2">
-    <div class="flex w-full h-full">
-      <div class="flex flex-col justify-between md:max-h-[300px] gap-4">
-        <h6 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">welcome</h6>
-        <div class="space-y-4 ">
-          <p class="text-nobel-950 text-lg leading-relaxed">Hi, I&rsquo;m <strong class="text-piper-500">Luis Castro</strong>, a full-stack developer with a focus on user experience, solving
-            problems for different companies and users for more than 10 years.</p>
-          <p class="text-nobel-950 text-lg leading-relaxed">
-            I speak English (Full professional proficiency) and Spanish (Native or bilingual proficiency) and if you want to
-            know, I love cooking, music and photography, which I combine with my love for traveling around the world and
-            meeting new cultures.
-          </p>
-        </div>
-      </div>
-      <img class="w-auto max-h-[400px] select-none absolute right-[-110px] bottom-[-20px] z-[-1] opacity-50 md:opacity-100 md:relative md:right-auto md:bottom-auto md:z-auto pointer-events-none" src="/public/memoji.webp" alt="memoji of Luis">
+<body class="bg-vanilla-50 dark:bg-oxford-blue-950 pt-12 min-h-full">
+<nav class="max-w-2xl mx-auto h-24 w-full"></nav>
+<main class="max-w-6xl mx-auto w-full text-center px-8">
+  <div class="space-y-0 mb-4 max-w-2xl mx-auto">
+    <img src="/memoji.webp" class="h-32 w-32 mx-auto mb-4 flex justify-center items-center" alt="Memoji of Luis">
+    <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Luis Castro</h1>
+    <h2 class="font-serif text-sm tracking-wide text-piper-500">Full Stack developer</h2>
+  </div>
+  <Section class="max-w-2xl mx-auto">
+    <p class="text-vanilla-950 text-balance">I&rsquo;m an experienced web and app developer living in Andorra &mdash;
+      for the past 4
+      years I have been working with
+      <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://cameo.com" target="_blank"
+         rel="nofollow noopener">Cameo</a> building a space for creators that
+      allows them to share magical moments with their fans.</p>
+    <p class="text-vanilla-950 text-balance">Since 2012, I have collaborated with multiple start-ups around the world
+      and contributed
+      to their success by delivering reliable and timely code to expand/improve their product offerings. Companies like
+      <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://cameo.com" target="_blank"
+         rel="nofollow noopener">Cameo</a>,
+      <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://freenow.com"
+         target="_blank"
+         rel="nofollow noopener">Freenow</a>,
+      <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://realscout.com"
+         target="_blank"
+         rel="nofollow noopener">RealScout</a> and <a
+        class="underline underline-offset-4 decoration-piper-500 decoration-2"
+        href="https://debtcollective.org/" target="_blank"
+        rel="nofollow noopener">Debt Collective</a>.</p>
+  </Section>
+  <hr class="w-64 border-vanilla-100 mx-auto"/>
+  <Section>
+    <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Latest projects</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-4">
+      <Box class="md:col-span-2 md:hover:-rotate-2 transition-all">
+        <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Peachy</h4>
+        <p class="text-vanilla-950 leading-relaxed">A free and anonymous platform where creators share their wishes and fans make them
+          come true.</p>
+        <a class="inline-flex gap-2 items-center text-piper-500" href="https://www.peachy.gifts?ref=luiscastro.co" target="_blank">Check
+          it out
+          <ArrowLongRight class="h-4 w-4"/>
+        </a>
+      </Box>
+      <Box class="md:hover:rotate-2 transition-all">
+        <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Chomp</h4>
+        <p class="text-vanilla-950 leading-relaxed">Makes it easy for raw feeders to track their loved ones&rsquo; food.</p>
+        <a class="inline-flex gap-2 items-center text-piper-500" target="_blank" href="https://apps.apple.com/us/app/chomp-treats/id1511759798?ref=luiscastro.co">View <ArrowLongRight class="h-4 w-4"/></a>
+      </Box>
+      <Box class="md:hover:-rotate-2 transition-all">
+        <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Waves</h4>
+        <p class="text-vanilla-950 leading-relaxed">Wallpaper pack for iPhone and iPad.</p>
+        <a class="inline-flex gap-2 items-center text-piper-500" target="_blank" href="https://maplecode.gumroad.com/l/waves-wallpaper-pack?ref=luiscastro.co">Download <ArrowDownTray class="h-4 w-4"/></a>
+      </Box>
+      <Box class="md:hover:rotate-2 transition-all">
+        <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Logbook</h4>
+        <p class="text-vanilla-950 leading-relaxed">Local and private way to journal towards your goals.</p>
+      </Box>
+      <Box class="sm:col-span-2 md:col-span-3 md:hover:-rotate-2 transition-all">
+        <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">No es solo código</h4>
+        <p class="text-vanilla-950 leading-relaxed">A podcast that <a
+          class="underline underline-offset-4 decoration-piper-500 decoration-2"
+          href="https://twitter.com/duranmla" target="_blank"
+          rel="nofollow noopener">@duramnla</a> and I started on {PodcastingSinceDate} to talk about
+          our vision of the industry at first which evolved into our way of doing an open weekly retro.</p>
+        <a class="inline-flex gap-2 items-center text-piper-500" target="_blank" href="https://maplecode.gumroad.com/l/waves-wallpaper-pack?ref=luiscastro.co"><Radio class="h-4 w-4"/> Listen</a>
+      </Box>
     </div>
-  </Spotlight>
-  <Spotlight client:load className="md:row-span-3">
-    <div class="space-y-4">
-      <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">About me</h2>
-      <p class="text-oxford-blue-900">Let&rsquo;s talk about my technical skills</p>
-      <ul class="list-disc list-inside marker:text-oxford-blue-500">
-        <li class="text-oxford-blue-900">React</li>
-        <li class="text-oxford-blue-900">React-Native</li>
-        <li class="text-oxford-blue-900">TypeScript</li>
-        <li class="text-oxford-blue-900">Ruby on Rails</li>
-        <li class="text-oxford-blue-900">SwiftUI</li>
-        <li class="text-oxford-blue-900">PostgreSQL</li>
-        <li class="text-oxford-blue-900">MongoDB</li>
-      </ul>
-      <p class="text-oxford-blue-900">I have plenty of experience on the industry, spanning various topics like</p>
-      <ul class="list-disc list-inside marker:text-oxford-blue-500">
-        <li class="text-oxford-blue-900">User experience (UX)</li>
-        <li class="text-oxford-blue-900">Strategic planning</li>
-        <li class="text-oxford-blue-900">Design</li>
-        <li class="text-oxford-blue-900">Composition</li>
-        <li class="text-oxford-blue-900">Project management</li>
-      </ul>
-    </div>
-  </Spotlight>
-  <Spotlight client:load className="md:row-span-2">
-    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Let&rsquo;s work together!</h2>
-  </Spotlight>
-  <Spotlight client:load className="md:col-span-2">
-    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Latest blog articles</h2>
-  </Spotlight>
-  <Spotlight client:load>
-    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Where I live</h2>
-  </Spotlight>
-  <Spotlight client:load className="md:col-span-2">
-    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Time zone</h2>
-    <TimeZone client:load />
-  </Spotlight>
-  <Spotlight client:load>
-    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Projects</h2>
-  </Spotlight>
-  <Spotlight client:load>
-    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Podcast</h2>
-  </Spotlight>
-  <Spotlight client:load className="md:col-span-2">
-    <h2 class="lowercase text-piper-500 text-lg font-light tracking-wider m-0">Personal setup</h2>
-  </Spotlight>
-</div>
+  </Section>
+  <hr class="w-64 border-vanilla-100 mx-auto"/>
+  <Section>
+    <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Latest posts</h3>
+  </Section>
+</main>
+<Footer/>
 </body>
 </html>

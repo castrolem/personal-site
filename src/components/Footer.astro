@@ -1,0 +1,19 @@
+---
+import Social from './Social.astro';
+---
+
+<footer class="mx-auto w-full">
+  <div class="flex justify-center gap-2 bg-vanilla-100">
+    <Social platform="Mastodon" domain="social" username="@castrolem" label="Follow me on Mastodon.social"/>
+    <Social platform="GitHub" username="castrolem" label="Check out my open source contributions"/>
+  </div>
+  <div class="flex justify-center gap-2 bg-vanilla-200 py-4">
+    <small class="text-vanilla-800">
+      Made by <a class="underline underline-offset-2 decoration-vanilla-700 decoration-2" href="https://luiscastro.co">me</a> with <a
+      class="underline underline-offset-2 decoration-vanilla-700 decoration-2" href="https://astro.build" target="_blank"
+      rel="nofollow noopener"></a>Astro and deployed on <a class="underline underline-offset-2 decoration-vanilla-700 decoration-2"
+                                                           href="https://vercel.com/" target="_blank"
+                                                           rel="nofollow noopener">Vercel</a>.
+    </small>
+  </div>
+</footer>

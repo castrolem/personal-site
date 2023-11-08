@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["AkzidenzGroteskBE", "Inter", ...defaultTheme.fontFamily.sans],
-        ex: ["AkzidenzGroteskBE-Ex", "Inter", ...defaultTheme.fontFamily.sans],
+        sans: ["Noto Sans", ...defaultTheme.fontFamily.sans],
+        serif: ["Hanken Grotesk Variable", ...defaultTheme.fontFamily.serif],
       },
       colors: {
         'roof-terracotta': {
@@ -102,20 +102,6 @@ export default {
           '900': 'hsl(330, 1%, 31%)',
           '950': 'hsl(0, 1%, 15%)',
         },
-        'quill-gray': {
-          '50': 'hsl(0, 0%, 99%)',
-          '100': 'hsl(30, 5%, 92%)',
-          '200': 'hsl(45, 4%, 80%)',
-          '300': 'hsl(48, 4%, 72%)',
-          '400': 'hsl(43, 4%, 61%)',
-          '500': 'hsl(40, 4%, 53%)',
-          '600': 'hsl(36, 4%, 48%)',
-          '700': 'hsl(30, 4%, 40%)',
-          '800': 'hsl(30, 3%, 34%)',
-          '900': 'hsl(30, 3%, 28%)',
-          '950': 'hsl(0, 3%, 15%)',
-        },
-
       },
       backgroundImage: {
         'radial-gradient': "radial-gradient(hsl(330, 1%, 31%) 6px, transparent 4px)"
