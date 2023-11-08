@@ -8,24 +8,17 @@ import '@fontsource/noto-sans';
 import Footer from '../components/Footer.astro'
 import Section from "../components/Section.astro";
 import Box from "../components/Box.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
   dateStyle: 'medium',
   timeZone: 'Europe/Andorra',
 })
 const PodcastingSinceDate = DateTimeFormat.format(new Date("2019/09/09"))
+const pageTitle = "Luis Castro";
 ---
 
-<html lang="en" class="h-full">
-<head>
-  <meta charset="utf-8"/>
-  <link rel="icon" type="image/ico" href="/favicon.ico"/>
-  <meta name="viewport" content="width=device-width"/>
-  <meta name="generator" content={Astro.generator}/>
-  <title>Luis Castro</title>
-</head>
-<body class="bg-vanilla-50 dark:bg-oxford-blue-950 pt-12 min-h-full">
-<nav class="max-w-2xl mx-auto h-24 w-full"></nav>
+<BaseLayout pageTitle={pageTitle}>
 <main class="max-w-6xl mx-auto w-full text-center px-8">
   <div class="space-y-0 mb-4 max-w-2xl mx-auto">
     <img src="/memoji.webp" class="h-32 w-32 mx-auto mb-4 flex justify-center items-center" alt="Memoji of Luis">
@@ -33,13 +26,15 @@ const PodcastingSinceDate = DateTimeFormat.format(new Date("2019/09/09"))
     <h2 class="font-serif text-sm tracking-wide text-piper-500">Full Stack developer</h2>
   </div>
   <Section class="max-w-2xl mx-auto">
-    <p class="text-vanilla-950 text-balance leading-relaxed">I&rsquo;m an experienced web and app developer living in Andorra &mdash;
+    <p class="text-vanilla-950 text-balance leading-relaxed">I&rsquo;m an experienced web and app developer living in
+      Andorra &mdash;
       for the past 4
       years I have been working with
       <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://cameo.com" target="_blank"
          rel="nofollow noopener">Cameo</a> building a space for creators that
       allows them to share magical moments with their fans.</p>
-    <p class="text-vanilla-950 text-balance leading-relaxed">Since 2012, I have collaborated with multiple start-ups around the world
+    <p class="text-vanilla-950 text-balance leading-relaxed">Since 2012, I have collaborated with multiple start-ups
+      around the world
       and contributed
       to their success by delivering reliable and timely code to expand/improve their product offerings. Companies like
       <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://cameo.com" target="_blank"
@@ -77,8 +72,10 @@ const PodcastingSinceDate = DateTimeFormat.format(new Date("2019/09/09"))
         <p class="text-vanilla-950 leading-relaxed">I build good looking, user-friendly, responsive and accessible
           <strong>websites</strong>, <strong>blogs</strong>, and <strong>interfaces</strong>. I can run the process from
           start to finish, and develop your MVP or product.</p>
-        <p class="text-vanilla-950 leading-relaxed">Need an <strong>app</strong> instead of a website, no worries, I can also develop for
-          <strong>Android</strong> and <strong>iOS</strong> using react-native, writing comprehensive and scalable code for your start-up.</p>
+        <p class="text-vanilla-950 leading-relaxed">Need an <strong>app</strong> instead of a website, no worries, I can
+          also develop for
+          <strong>Android</strong> and <strong>iOS</strong> using react-native, writing comprehensive and scalable code
+          for your start-up.</p>
         <a class="inline-flex gap-2 items-center text-piper-500" href="https://www.peachy.gifts?ref=luiscastro.co"
            target="_blank">More information and availability
           <ArrowLongRight class="h-4 w-4"/>
@@ -142,5 +139,4 @@ const PodcastingSinceDate = DateTimeFormat.format(new Date("2019/09/09"))
   </Section>
 </main>
 <Footer/>
-</body>
-</html>
+</BaseLayout>
