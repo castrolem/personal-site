@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "M1 Pro Mac development setup guide"
 pubDate: 2022-01-17
 ---

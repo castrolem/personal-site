@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "Refactoring a part of the business"
 pubDate: 2021-08-13
 ---

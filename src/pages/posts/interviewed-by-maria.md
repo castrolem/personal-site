@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "I was interviewed by a YouTuber"
 pubDate: 2022-06-15
 ---

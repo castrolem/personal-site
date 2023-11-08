@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "Rules of the game"
 pubDate: 2020-10-10
 ---

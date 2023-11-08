@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "160 active customers and growing"
 pubDate: 2021-03-14
 ---

@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "2022 - Review of the year"
 pubDate: 2022-12-28
 ---

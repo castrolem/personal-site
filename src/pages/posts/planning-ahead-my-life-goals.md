@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "My plan for 2022"
 pubDate: 2021-08-29
 ---

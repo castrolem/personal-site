@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "React state useReducer vs useState"
 pubDate: 2022-08-29
 ---

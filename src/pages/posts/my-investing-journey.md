@@ -1,5 +1,6 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro 
+layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro" 
 title:  "My investing journey"
 pubDate: 2021-06-15
 ---

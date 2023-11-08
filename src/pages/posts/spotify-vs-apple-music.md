@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "Personal thoughts on Spotify vs Apple Music"
 pubDate: 2020-10-12
 ---

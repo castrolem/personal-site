@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "Slow TV, narratives as a way of living"
 pubDate: 2021-05-31
 ---

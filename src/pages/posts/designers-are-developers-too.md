@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "I believe designers are the next developers"
 pubDate: 2020-08-13
 ---

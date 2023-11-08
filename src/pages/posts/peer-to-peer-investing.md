@@ -1,5 +1,6 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro 
+layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro" 
 title:  "What I learned of peer to peer investing"
 pubDate: 2021-05-04
 ---

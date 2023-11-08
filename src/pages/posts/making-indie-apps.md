@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "The key to starting making apps as an indie"
 pubDate: 2020-08-29
 ---

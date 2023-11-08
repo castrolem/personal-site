@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "Making good CSS is harder than what most people think"
 pubDate: 2020-10-08
 ---

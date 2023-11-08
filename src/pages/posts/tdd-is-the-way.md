@@ -1,5 +1,6 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro 
+layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro" 
 title:  "TDD is the way"
 pubDate: 2021-05-21
 ---

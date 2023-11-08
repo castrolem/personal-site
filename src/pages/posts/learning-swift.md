@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "I started learning Swift and SwiftUI"
 pubDate: 2020-07-29
 ---

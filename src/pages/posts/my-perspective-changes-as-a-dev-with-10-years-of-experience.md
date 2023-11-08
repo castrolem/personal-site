@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "My perspective changes as a software developer with 10 years of experience"
 pubDate: 2021-09-15
 ---

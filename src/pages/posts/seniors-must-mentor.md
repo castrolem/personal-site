@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "Seniors and leads must mentor"
 pubDate: 2022-03-24
 ---

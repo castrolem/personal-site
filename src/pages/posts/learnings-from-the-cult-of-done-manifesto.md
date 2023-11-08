@@ -1,5 +1,6 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro 
+layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro" 
 title:  "Learnings from the cult of done manifesto"
 pubDate: 2021-04-29
 ---

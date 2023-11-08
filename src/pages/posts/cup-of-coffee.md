@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "That ☕️ talk you are not taking"
 pubDate: 2020-08-17
 ---

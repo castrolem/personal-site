@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+author: "Luis Castro"
 title:  "7 Gorgs hike"
 pubDate: 2021-10-18
 ---

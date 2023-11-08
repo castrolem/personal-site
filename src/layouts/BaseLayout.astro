@@ -1,5 +1,6 @@
 ---
 import Body from "../components/Body.astro";
+import Footer from "../components/Footer.astro";
 
 const {pageTitle} = Astro.props;
 ---
@@ -13,5 +14,6 @@ const {pageTitle} = Astro.props;
 </head>
 <Body>
   <slot />
+  <Footer />
 </Body>
 </html>
