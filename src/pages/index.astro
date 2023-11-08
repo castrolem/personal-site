@@ -9,12 +9,16 @@ import Footer from '../components/Footer.astro'
 import Section from "../components/Section.astro";
 import Box from "../components/Box.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
 
 const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
   dateStyle: 'medium',
   timeZone: 'Europe/Andorra',
 })
 const PodcastingSinceDate = DateTimeFormat.format(new Date("2019/09/09"))
+const allPosts = await Astro.glob('../pages/posts/*.md');
+const sortedPosts = allPosts.sort((postA, postB) => postA.frontmatter.pubDate > postB.frontmatter.pubDate ? 1 : 0)
+const latestPosts = sortedPosts.slice(0, 3)
 const pageTitle = "Luis Castro";
 ---
 
@@ -39,10 +43,10 @@ const pageTitle = "Luis Castro";
       to their success by delivering reliable and timely code to expand/improve their product offerings. Companies like
       <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://cameo.com" target="_blank"
          rel="nofollow noopener">Cameo</a>,
-      <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://freenow.com"
+      <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://free-now.com"
          target="_blank"
          rel="nofollow noopener">Freenow</a>,
-      <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://realscout.com"
+      <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://www.realscout.com/"
          target="_blank"
          rel="nofollow noopener">RealScout</a> and <a
         class="underline underline-offset-4 decoration-piper-500 decoration-2"
@@ -136,6 +140,9 @@ const pageTitle = "Luis Castro";
   <hr class="w-64 border-vanilla-100 mx-auto"/>
   <Section>
     <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Latest posts</h3>
+    <ol>
+      {latestPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+    </ol>
   </Section>
 </main>
 <Footer/>
