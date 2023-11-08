@@ -6,12 +6,14 @@ import '@fontsource-variable/hanken-grotesk';
 import '@fontsource/noto-sans';
 import {compareDesc} from 'date-fns';
 
-import Footer from '../components/Footer.astro'
+import {Image} from 'astro:assets';
+import Memoji from '../assets/memoji.png';
 import Section from "../components/Section.astro";
 import Box from "../components/Box.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
 import Main from "../components/Main.astro";
+import Link from "../components/Link.astro";
 
 const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
   dateStyle: 'medium',
@@ -25,126 +27,137 @@ const pageTitle = "Luis Castro";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-<Main>
-  <div class="space-y-0 mb-4 max-w-2xl mx-auto">
-    <img src="/memoji.webp" class="h-32 w-32 mx-auto mb-4 flex justify-center items-center" alt="Memoji of Luis">
-    <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Luis Castro</h1>
-    <h2 class="font-serif text-sm tracking-wide text-piper-500">Full Stack developer</h2>
-  </div>
-  <Section class="max-w-2xl mx-auto">
-    <p class="text-vanilla-950 text-balance leading-relaxed">I&rsquo;m an experienced web and app developer living in
-      Andorra &mdash;
-      for the past 4
-      years I have been working with
-      <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://cameo.com" target="_blank"
-         rel="nofollow noopener">Cameo</a> building a space for creators that
-      allows them to share magical moments with their fans.</p>
-    <p class="text-vanilla-950 text-balance leading-relaxed">Since 2012, I have collaborated with multiple start-ups
-      around the world
-      and contributed
-      to their success by delivering reliable and timely code to expand/improve their product offerings. Companies like
-      <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://cameo.com" target="_blank"
-         rel="nofollow noopener">Cameo</a>,
-      <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://free-now.com"
-         target="_blank"
-         rel="nofollow noopener">Freenow</a>,
-      <a class="underline underline-offset-4 decoration-piper-500 decoration-2" href="https://www.realscout.com/"
-         target="_blank"
-         rel="nofollow noopener">RealScout</a> and <a
-        class="underline underline-offset-4 decoration-piper-500 decoration-2"
-        href="https://debtcollective.org/" target="_blank"
-        rel="nofollow noopener">Debt Collective</a>.</p>
-  </Section>
-  <hr class="w-64 border-vanilla-100 mx-auto"/>
-  <Section>
-    <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">I&rsquo;m available for</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 py-4">
-      <Box class="md:hover:rotate-0 md:-rotate-1 transition-all">
-        <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Full Stack Engineering</h4>
-        <p class="text-vanilla-950 leading-relaxed">
-          I&rsquo;m open for ongoing front-end consulting, standalone projects, and accessibility engineering. I can
-          independently
-          build accessible websites and prototypes, make accessibility improvements to existing products, or work
-          embedded
-          in a team building the front-end for new features.
-        </p>
-        <a class="inline-flex gap-2 items-center text-piper-500" href="https://www.peachy.gifts?ref=luiscastro.co"
-           target="_blank">More information and availability
-          <ArrowLongRight class="h-4 w-4"/>
-        </a>
-      </Box>
-      <Box class="md:hover:rotate-0 md:rotate-1 transition-all">
-        <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Creative coding</h4>
-        <p class="text-vanilla-950 leading-relaxed">I build good looking, user-friendly, responsive and accessible
-          <strong>websites</strong>, <strong>blogs</strong>, and <strong>interfaces</strong>. I can run the process from
-          start to finish, and develop your MVP or product.</p>
-        <p class="text-vanilla-950 leading-relaxed">Need an <strong>app</strong> instead of a website, no worries, I can
-          also develop for
-          <strong>Android</strong> and <strong>iOS</strong> using react-native, writing comprehensive and scalable code
-          for your start-up.</p>
-        <a class="inline-flex gap-2 items-center text-piper-500" href="https://www.peachy.gifts?ref=luiscastro.co"
-           target="_blank">More information and availability
-          <ArrowLongRight class="h-4 w-4"/>
-        </a>
-      </Box>
+  <Main>
+    <div class="space-y-0 mb-4 max-w-2xl mx-auto">
+      <Image src={Memoji} class="h-32 w-32 mx-auto mb-4 flex justify-center items-center" alt="Memoji of Luis"
+             loading="eager" height={384} width={384} quality="max"/>
+      <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Luis Castro</h1>
+      <h2 class="font-serif text-sm tracking-wide text-piper-500">Full Stack developer</h2>
     </div>
-  </Section>
-  <hr class="w-64 border-vanilla-100 mx-auto"/>
-  <Section>
-    <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Latest projects</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-4">
-      <Box class="md:col-span-2 md:hover:rotate-0 md:-rotate-1 transition-all">
-        <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Peachy</h4>
-        <p class="text-vanilla-950 leading-relaxed">A free and anonymous platform where creators share their wishes and
-          fans make them
-          come true.</p>
-        <a class="inline-flex gap-2 items-center text-piper-500" href="https://www.peachy.gifts?ref=luiscastro.co"
-           target="_blank">Check
-          it out
-          <ArrowLongRight class="h-4 w-4"/>
-        </a>
-      </Box>
-      <Box class="md:hover:rotate-0 md:rotate-1 transition-all">
-        <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Chomp</h4>
-        <p class="text-vanilla-950 leading-relaxed">Makes it easy for raw feeders to track their loved ones&rsquo;
-          food.</p>
-        <a class="inline-flex gap-2 items-center text-piper-500" target="_blank"
-           href="https://apps.apple.com/us/app/chomp-treats/id1511759798?ref=luiscastro.co">View
-          <ArrowLongRight class="h-4 w-4"/>
-        </a>
-      </Box>
-      <Box class="md:hover:rotate-0 md:-rotate-1 transition-all">
-        <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Waves</h4>
-        <p class="text-vanilla-950 leading-relaxed">Wallpaper pack for iPhone and iPad.</p>
-        <a class="inline-flex gap-2 items-center text-piper-500" target="_blank"
-           href="https://maplecode.gumroad.com/l/waves-wallpaper-pack?ref=luiscastro.co">Download
-          <ArrowDownTray class="h-4 w-4"/>
-        </a>
-      </Box>
-      <Box class="md:hover:rotate-0 md:rotate-1 transition-all">
-        <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Logbook</h4>
-        <p class="text-vanilla-950 leading-relaxed">Local and private way to journal towards your goals.</p>
-      </Box>
-      <Box class="sm:col-span-2 md:col-span-3 md:hover:rotate-0 md:-rotate-1 transition-all">
-        <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">No es solo código</h4>
-        <p class="text-vanilla-950 leading-relaxed">A podcast that <a
-          class="underline underline-offset-4 decoration-piper-500 decoration-2"
-          href="https://twitter.com/duranmla" target="_blank"
-          rel="nofollow noopener">@duramnla</a> and I started on <b>{PodcastingSinceDate}</b> to talk about
-          our vision of the industry at first which evolved into our way of doing an open weekly retro.</p>
-        <a class="inline-flex gap-2 items-center text-piper-500" target="_blank"
-           href="https://maplecode.gumroad.com/l/waves-wallpaper-pack?ref=luiscastro.co">
-          <Radio class="h-4 w-4"/>
-          Listen</a>
-      </Box>
-    </div>
-  </Section>
-  <hr class="w-64 border-vanilla-100 mx-auto"/>
-  <Section class="max-w-2xl mx-auto">
-    <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Latest posts</h3>
-    <ol class="divide-y-2 divide-vanilla-200 divide-dotted">
-      {latestPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate} />)}
-    </ol>
-  </Section>
-</main>
+    <Section class="max-w-2xl mx-auto">
+      <p class="text-vanilla-950 text-balance leading-relaxed">I&rsquo;m an experienced web and app developer living in
+        Andorra &mdash;
+        for the past 4
+        years I have been working with
+        <Link href="https://cameo.com" isExternal={true}>Cameo</Link>
+        building a space for creators that
+        allows them to share magical moments with their fans.
+      </p>
+      <p class="text-vanilla-950 text-balance leading-relaxed">Since 2012, I have collaborated with multiple start-ups
+        around the world
+        and contributed
+        to their success by delivering reliable and timely code to expand/improve their product offerings. Companies
+        like
+        <Link href="https://cameo.com" isExternal={true}>Cameo</Link>
+        ,
+        <Link href="https://free-now.com" isExternal={true}>Freenow</Link>
+        ,
+        <Link href="https://www.realscout.com/" isExternal={true}>RealScout</Link>
+        and
+        <Link href="https://debtcollective.org/" isExternal={true}>Debt Collective</Link>
+        .
+      </p>
+    </Section>
+    <hr class="w-64 border-vanilla-100 mx-auto"/>
+    <Section>
+      <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">I&rsquo;m available for</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 py-4">
+        <Box class="md:hover:rotate-0 md:-rotate-1 transition-all">
+          <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Full Stack Engineering</h4>
+          <p class="text-vanilla-950 leading-relaxed">
+            I&rsquo;m open for ongoing front-end consulting, standalone projects, and accessibility engineering. I can
+            independently
+            build accessible websites and prototypes, make accessibility improvements to existing products, or work
+            embedded
+            in a team building the front-end for new features.
+          </p>
+          <a class="inline-flex gap-2 items-center text-piper-500" href="https://www.peachy.gifts?ref=luiscastro.co"
+             target="_blank">More information and availability
+            <ArrowLongRight class="h-4 w-4"/>
+          </a>
+        </Box>
+        <Box class="md:hover:rotate-0 md:rotate-1 transition-all">
+          <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Creative coding</h4>
+          <p class="text-vanilla-950 leading-relaxed">I build good looking, user-friendly, responsive and accessible
+            <strong>websites</strong>, <strong>blogs</strong>, and <strong>interfaces</strong>. I can run the process
+            from
+            start to finish, and develop your MVP or product.</p>
+          <p class="text-vanilla-950 leading-relaxed">Need an <strong>app</strong> instead of a website, no worries, I
+            can
+            also develop for
+            <strong>Android</strong> and <strong>iOS</strong> using react-native, writing comprehensive and scalable
+            code
+            for your start-up.</p>
+          <a class="inline-flex gap-2 items-center text-piper-500" href="https://www.peachy.gifts?ref=luiscastro.co"
+             target="_blank">More information and availability
+            <ArrowLongRight class="h-4 w-4"/>
+          </a>
+        </Box>
+      </div>
+    </Section>
+    <hr class="w-64 border-vanilla-100 mx-auto"/>
+    <Section>
+      <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Latest projects</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-4">
+        <Box class="md:col-span-2 md:hover:rotate-0 md:-rotate-1 transition-all">
+          <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Peachy</h4>
+          <p class="text-vanilla-950 leading-relaxed">A free and anonymous platform where creators share their wishes
+            and
+            fans make them
+            come true.</p>
+          <Link href="https://www.peachy.gifts?ref=luiscastro.co" isExternal={true}
+                class="inline-flex gap-2 items-center text-piper-500 no-underline">
+            Check it out
+            <ArrowLongRight class="h-4 w-4"/>
+          </Link>
+        </Box>
+        <Box class="md:hover:rotate-0 md:rotate-1 transition-all">
+          <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Chomp</h4>
+          <p class="text-vanilla-950 leading-relaxed">Makes it easy for raw feeders to track their loved ones&rsquo;
+            food.</p>
+          <Link href="https://apps.apple.com/us/app/chomp-treats/id1511759798?ref=luiscastro.co" isExternal={true}
+                class="inline-flex gap-2 items-center text-piper-500 no-underline">
+            View
+            <ArrowLongRight class="h-4 w-4"/>
+          </Link>
+        </Box>
+        <Box class="md:hover:rotate-0 md:-rotate-1 transition-all">
+          <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Waves</h4>
+          <p class="text-vanilla-950 leading-relaxed">Wallpaper pack for iPhone and iPad.</p>
+          <Link href="https://maplecode.gumroad.com/l/waves-wallpaper-pack?ref=luiscastro.co" isExternal={true}
+                class="inline-flex gap-2 items-center text-piper-500 no-underline">
+            Download
+            <ArrowDownTray class="h-4 w-4"/>
+          </Link>
+        </Box>
+        <Box class="md:hover:rotate-0 md:rotate-1 transition-all">
+          <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Logbook</h4>
+          <p class="text-vanilla-950 leading-relaxed">Local and private way to journal towards your goals.</p>
+        </Box>
+        <Box class="sm:col-span-2 md:col-span-3 md:hover:rotate-0 md:-rotate-1 transition-all">
+          <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">No es solo código</h4>
+          <p class="text-vanilla-950 leading-relaxed">A podcast that
+            <Link href="https://twitter.com/duranmla" isExternal={true}>
+              @duramnla
+            </Link>
+            and I started on <b>{PodcastingSinceDate}</b> to talk about
+            our vision of the industry at first which evolved into our way of doing an open weekly retro.
+          </p>
+          <Link href="https://maplecode.gumroad.com/l/waves-wallpaper-pack?ref=luiscastro.co" isExternal={true}
+                class="inline-flex gap-2 items-center text-piper-500 no-underline">
+            <Radio class="h-4 w-4"/>
+            Listen
+          </Link>
+        </Box>
+      </div>
+    </Section>
+    <hr class="w-64 border-vanilla-100 mx-auto"/>
+    <Section class="max-w-2xl mx-auto">
+      <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Latest posts</h3>
+      <ol class="divide-y-2 divide-vanilla-200 divide-dotted">
+        {latestPosts.map((post) =>
+          <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate}/>)}
+      </ol>
+    </Section>
+  </main>
 </BaseLayout>
