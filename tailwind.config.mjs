@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Noto Sans", ...defaultTheme.fontFamily.sans],
-        serif: ["Hanken Grotesk Variable", ...defaultTheme.fontFamily.serif],
+        serif: ["Donegal One", ...defaultTheme.fontFamily.serif],
       },
       colors: {
         'roof-terracotta': {

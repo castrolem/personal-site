@@ -2,8 +2,6 @@
 import ArrowLongRight from 'astro-heroicons/outline/ArrowLongRight.astro';
 import ArrowDownTray from 'astro-heroicons/outline/ArrowDownTray.astro';
 import Radio from 'astro-heroicons/outline/Radio.astro';
-import '@fontsource-variable/hanken-grotesk';
-import '@fontsource/noto-sans';
 import {compareDesc} from 'date-fns';
 
 import {Image} from 'astro:assets';
@@ -156,7 +154,7 @@ const pageTitle = "Luis Castro";
       <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Latest posts</h3>
       <ol class="divide-y-2 divide-vanilla-200 divide-dotted">
         {latestPosts.map((post) =>
-          <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate}/>)}
+          <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate} tags={post.frontmatter.tags}/>)}
       </ol>
     </Section>
   </main>

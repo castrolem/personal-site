@@ -1,8 +1,9 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 author: "Luis Castro"
-title:  "2022 - Review of the year"
+title:  "Review of the year"
 pubDate: 2022-12-28
+tags: ["mastermind", "goals"]
 ---
 This year has been a big one, we could talk about how there has been a lot of movement on the macroeconomics situation of most countries, that a war started between countries that aren't that far from where I live, or that we could be living the start of another dotcom like a cycle.
 

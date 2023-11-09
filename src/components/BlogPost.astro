@@ -1,13 +1,17 @@
 ---
-const { title, url, pubDate } = Astro.props
+import Tag from "./Tag.astro";
+const { title, url, pubDate, tags } = Astro.props
 const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
   dateStyle: 'full',
   timeZone: 'Europe/Andorra',
 })
 ---
 <li>
-  <a href={url} class="flex flex-col text-left py-12">
+  <a href={url} class="flex flex-col text-left py-12 md:hover:translate-y-0.5 md:transition-all">
     <span class="text-vanilla-600 text-sm">{DateTimeFormat.format(new Date(pubDate))}</span>
-    <span class="font-serif text-2xl tracking-tight font-bold text-vanilla-950">{title}</span>
+    <span class="font-serif text-2xl tracking-tight font-bold text-vanilla-950 mb-4 mt-1">{title}</span>
+    <span class="flex flex-wrap gap-2">
+      {tags?.map(tag => <Tag>{tag}</Tag>)}
+    </span>
   </a>
 </li>
