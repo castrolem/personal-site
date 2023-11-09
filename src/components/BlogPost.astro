@@ -11,7 +11,7 @@ const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
     <span class="text-vanilla-600 dark:text-oxford-blue-200 text-sm">{DateTimeFormat.format(new Date(pubDate))}</span>
     <span class="font-serif text-2xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50 mb-4 mt-1">{title}</span>
     <span class="flex flex-wrap gap-2">
-      {tags?.map(tag => <Tag>{tag}</Tag>)}
+      {tags?.map((tag: string) => <Tag>{tag}</Tag>)}
     </span>
   </a>
 </li>

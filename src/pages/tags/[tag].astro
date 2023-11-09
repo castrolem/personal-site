@@ -3,12 +3,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import BlogPost from "../../components/BlogPost.astro";
 import Main from "../../components/Main.astro";
 
-export async function getStaticPaths() {
+export async function getStaticPaths(): Promise<any> {
   const allPosts = await Astro.glob('../posts/*.md');
 
-  const uniqueTags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())].filter(Boolean);
+  const uniqueTags: string[] = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())].filter(Boolean);
 
-  return uniqueTags.map((tag) => {
+  return uniqueTags.map((tag: string) => {
     const filteredPosts = allPosts
       .filter(post => post.frontmatter.tags)
       .filter((post) => post.frontmatter.tags.includes(tag));
@@ -21,13 +21,29 @@ export async function getStaticPaths() {
 
 const {tag} = Astro.params;
 const {posts} = Astro.props;
+
+
+interface Post {
+  url: string;
+  frontmatter: {
+    title: string
+    pubDate: string
+    tags?: string[]
+  }
+}
+
+interface Props {
+  posts: Post[]
+}
 ---
 <BaseLayout pageTitle={tag}>
   <Main>
-    <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50 leading-loose mb-4">Posts tagged
+    <h1
+      class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50 leading-loose mb-4">
+      Posts tagged
       with {tag}</h1>
     <ol class="divide-y-2 divide-vanilla-200 divide-dotted">
-      {posts.map((post) =>
+      {posts.map((post: Post) =>
         <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate}
                   tags={post.frontmatter.tags}/>)}
     </ol>
