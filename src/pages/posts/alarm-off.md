@@ -33,7 +33,7 @@ At this point, I realized, to find my true circadian rhythm like the video menti
 spreadsheet (yay, numbers). So I made a basic template on Notion to track a few habits I'm trying to solidify and it
 looks like this.
 
-![Notion habit tracker template glimpse](/images/notion-habit-tracking-glimpse.png){:class="img-responsive"}
+![Notion habit tracker template glimpse](../../assets/posts/notion-habit-tracking-glimpse.png)
 
 So as you can see from this extract, I have consistently been waking up between 7:30 am and 8:15 am with a few outliers
 where I went to be really late, but that's not the takeaway from the exercise I'm doing, the real benefit is that I have

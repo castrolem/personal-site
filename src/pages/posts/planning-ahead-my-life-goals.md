@@ -16,7 +16,7 @@ The hardest part of building a framework is to think about the framework you wan
 
 I divided my goals into buckets that affect different parts of my life –– health, growth, career, finances, hobbies.
 
-![2022 goals framework](/images/goals-framework.png){:class="img-responsive"}
+![2022 goals framework](../../assets/posts/goals-framework.png)
 
 ## Tracking my habits
 I will be tracking what I do through Notion, this is the template to track these habits that I'm using.

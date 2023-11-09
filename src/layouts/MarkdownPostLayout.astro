@@ -8,6 +8,14 @@ const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
   timeZone: 'Europe/Andorra',
 })
 ---
+<style is:global>
+    img {
+        @apply mx-auto;
+        @apply block;
+        @apply rounded-2xl;
+        @apply overflow-hidden;
+    }
+</style>
 <BaseLayout pageTitle={frontmatter.title}>
   <Main>
     <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 leading-loose mb-4">{frontmatter.title}</h1>

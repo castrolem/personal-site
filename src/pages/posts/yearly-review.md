@@ -14,7 +14,7 @@ I will start this year's review like always, looking at what I wanted to accompl
 ## Personal OKRs review
 Last year I divided my goals into buckets that affect different parts of my life.
 
-![2022 goals framework](/images/goals-framework.png){:class="img-responsive"}
+![2022 goals framework](../../assets/posts/goals-framework.png)
 
 With this theme in mind, let's talk about each of these challenges, from top to bottom.
 

@@ -9,111 +9,113 @@ const pageTitle = "Luis Castro – Work";
 const skills = ["React", "Astro", "NextJS", "PostgreSQL", "MongoDB", "Prisma", "TailwindCSS", "React-Native"];
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <Main class="space-y-12">
-    <div class="space-y-4 text-left">
-      <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Work with me</h1>
-      <p class="text-vanilla-950 leading-relaxed text-lg">
-        I&rsquo;m a full stack developer with plenty of silicon valley level start up experiences.
-        You can hire me on a freelance basis for short-term and long-term projects, code reviews and training.
-      </p>
-      <p class="text-vanilla-950 leading-relaxed">
-        I&rsquo;m looking to take on new clients <strong>starting on 2024</strong>. Interested in working together? Send
-        me an email at
-        <Link href="mailto:luiscastro@hey.com">luiscastro@hey.com</Link>
-        .
-      </p>
-    </div>
-    <hr class="w-64 border-vanilla-100 mx-auto"/>
-    <section class="space-y-8 text-left">
-      <h2 class="font-serif text-2xl tracking-tight font-bold text-vanilla-950">
-        Full stack engineering
-      </h2>
-      <p class="text-vanilla-950 leading-relaxed">
-        I&rsquo;m a full stack engineer, with a focus on creating performant and well designed web and mobile
-        applications. I build <strong>user friendly</strong> and <strong>scalable</strong> code bases.
-      </p>
-      <p class="text-vanilla-950 leading-relaxed">
-        I&rsquo;m open for ongoing consulting, standalone projects and general engineering. I&rsquo;m able to build your
-        applications and prototypes and take your ideas from paper to reality, make improvements on an existing code
-        base, create documentation papers and work embedded in a team building new features.
-      </p>
+  <Main class="mb-48">
+    <div class="space-y-12 max-w-2xl mx-auto text-left">
       <div class="space-y-4">
-        <h3 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">
-          Technologies
-        </h3>
-        <div class="flex flex-wrap gap-2">
-          {skills.map(skill =>
-            <Tag>{skill}</Tag>)}
+        <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950">Work with me</h1>
+        <p class="text-vanilla-950 leading-relaxed text-lg">
+          I&rsquo;m a full stack developer with plenty of silicon valley level start up experiences.
+          You can hire me on a freelance basis for short-term and long-term projects, code reviews and training.
+        </p>
+        <p class="text-vanilla-950 leading-relaxed">
+          I&rsquo;m looking to take on new clients <strong>starting on 2024</strong>. Interested in working together? Send
+          me an email at
+          <Link href="mailto:luiscastro@hey.com">luiscastro@hey.com</Link>
+          .
+        </p>
+      </div>
+      <hr class="w-64 border-vanilla-100 mx-auto"/>
+      <section class="space-y-8 text-left">
+        <h2 class="font-serif text-2xl tracking-tight font-bold text-vanilla-950">
+          Full stack engineering
+        </h2>
+        <p class="text-vanilla-950 leading-relaxed">
+          I&rsquo;m a full stack engineer, with a focus on creating performant and well designed web and mobile
+          applications. I build <strong>user friendly</strong> and <strong>scalable</strong> code bases.
+        </p>
+        <p class="text-vanilla-950 leading-relaxed">
+          I&rsquo;m open for ongoing consulting, standalone projects and general engineering. I&rsquo;m able to build your
+          applications and prototypes and take your ideas from paper to reality, make improvements on an existing code
+          base, create documentation papers and work embedded in a team building new features.
+        </p>
+        <div class="space-y-4">
+          <h3 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">
+            Technologies
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            {skills.map(skill =>
+              <Tag>{skill}</Tag>)}
+          </div>
         </div>
-      </div>
-      <div class="space-y-4">
-        <h3 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">
-          Work track and outcome examples
-        </h3>
-        <ul class="list-disc marker:text-vanilla-600 space-y-4">
-          <li>
-            <h4 class="font-serif text-lg tracking-tight font-bold text-vanilla-950">
-              Ongoing consulting.
-            </h4>
-            <p class="text-vanilla-950 leading-relaxed">
-              I have worked with teams and their managers to improve company workflows, document best practices and
-              embed
-              a test-driven development mindset. For this type of work I use
-              an <i>hourly rate</i> and work remotely and in the Spain timezone. I do not limit consulting services to
-              any
-              specific timeframe but I do limit my hours to a maximum of 20-hours per week.
-            </p>
-          </li>
-          <li>
-            <h4 class="font-serif text-lg tracking-tight font-bold text-vanilla-950">
-              Product prototype.
-            </h4>
-            <p class="text-vanilla-950 leading-relaxed">
-              I have developed projects with NextJS, Astro, Node, Express, React and React-native. Integrated Stripe and
-              other payment providers. Worked adding data from different database services like Sanity or using a
-              dedicated database with MongoDB and PostgreSQL. So I&rsquo;m able to
-              focus on all your desired user flows and create a responsive design, performant and well documented
-              project
-              from the start.
-            </p>
-          </li>
-          <li>
-            <h4 class="font-serif text-lg tracking-tight font-bold text-vanilla-950">
-              Embedded team.
-            </h4>
-            <p class="text-vanilla-950 leading-relaxed">
-              I can assist your team on implementing new features, or improve existing ones. For this type of work I use
-              an <i>hourly rate</i> and work remotely and in the Spain timezone. I do not limit consulting services to
-              any
-              specific timeframe but I do limit my hours to a maximum of 20-hours per week.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <hr class="w-64 border-vanilla-100 mx-auto"/>
-    <section class="text-left space-y-8">
-      <h2 class="font-serif text-2xl tracking-tight font-bold text-vanilla-950">
-        Training session
-      </h2>
-      <p class="text-vanilla-950 leading-relaxed">
-        I have developed multiple products that span all type of audiences and demographics, If you want to learn what
-        is needed to build all type of products, work with your designers to speed up the interaction between them and
-        your developer team or just want to dive into the world of code development for start ups.
-      </p>
-      <p class="text-vanilla-950 leading-relaxed">
-        You can book me for one-off presentations and training sessions, 1-on-1 and Q&amp;As.
-      </p>
-    </section>
+        <div class="space-y-4">
+          <h3 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">
+            Work track and outcome examples
+          </h3>
+          <ul class="list-disc marker:text-vanilla-600 space-y-4">
+            <li>
+              <h4 class="font-serif text-lg tracking-tight font-bold text-vanilla-950">
+                Ongoing consulting.
+              </h4>
+              <p class="text-vanilla-950 leading-relaxed">
+                I have worked with teams and their managers to improve company workflows, document best practices and
+                embed
+                a test-driven development mindset. For this type of work I use
+                an <i>hourly rate</i> and work remotely and in the Spain timezone. I do not limit consulting services to
+                any
+                specific timeframe but I do limit my hours to a maximum of 20-hours per week.
+              </p>
+            </li>
+            <li>
+              <h4 class="font-serif text-lg tracking-tight font-bold text-vanilla-950">
+                Product prototype.
+              </h4>
+              <p class="text-vanilla-950 leading-relaxed">
+                I have developed projects with NextJS, Astro, Node, Express, React and React-native. Integrated Stripe and
+                other payment providers. Worked adding data from different database services like Sanity or using a
+                dedicated database with MongoDB and PostgreSQL. So I&rsquo;m able to
+                focus on all your desired user flows and create a responsive design, performant and well documented
+                project
+                from the start.
+              </p>
+            </li>
+            <li>
+              <h4 class="font-serif text-lg tracking-tight font-bold text-vanilla-950">
+                Embedded team.
+              </h4>
+              <p class="text-vanilla-950 leading-relaxed">
+                I can assist your team on implementing new features, or improve existing ones. For this type of work I use
+                an <i>hourly rate</i> and work remotely and in the Spain timezone. I do not limit consulting services to
+                any
+                specific timeframe but I do limit my hours to a maximum of 20-hours per week.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr class="w-64 border-vanilla-100 mx-auto"/>
+      <section class="text-left space-y-8">
+        <h2 class="font-serif text-2xl tracking-tight font-bold text-vanilla-950">
+          Training session
+        </h2>
+        <p class="text-vanilla-950 leading-relaxed">
+          I have developed multiple products that span all type of audiences and demographics, If you want to learn what
+          is needed to build all type of products, work with your designers to speed up the interaction between them and
+          your developer team or just want to dive into the world of code development for start ups.
+        </p>
+        <p class="text-vanilla-950 leading-relaxed">
+          You can book me for one-off presentations and training sessions, 1-on-1 and Q&amp;As.
+        </p>
+      </section>
 
-    <Box>
-      <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Contact Information</h4>
-      <p class="text-vanilla-950 leading-relaxed">
-        Want to work with me on a project? Need a training session? Contact me on
-        <Link href="mailto:luiscastro@hey.com">luiscastro@hey.com</Link>
-        to discuss.
-        Please include your expected timeline, scope and budget in your initial email so I can get back to you faster.
-      </p>
-    </Box>
+      <Box>
+        <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950">Contact Information</h4>
+        <p class="text-vanilla-950 leading-relaxed">
+          Want to work with me on a project? Need a training session? Contact me on
+          <Link href="mailto:luiscastro@hey.com">luiscastro@hey.com</Link>
+          to discuss.
+          Please include your expected timeline, scope and budget in your initial email so I can get back to you faster.
+        </p>
+      </Box>
+    </div>
   </Main>
 </BaseLayout>
