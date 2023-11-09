@@ -3,17 +3,17 @@ import Social from './Social.astro';
 ---
 
 <footer class="mx-auto w-full mt-12">
-  <div class="flex justify-center gap-2 bg-vanilla-100">
+  <div class="flex justify-center gap-2 bg-vanilla-100 dark:bg-oxford-blue-900">
     <Social platform="Mastodon" domain="social" username="@castrolem" label="Follow me on Mastodon.social"/>
     <Social platform="GitHub" username="castrolem" label="Check out my open source contributions"/>
     <a href="/setup" aria-label="My personal setup"
-       class="underline underline-offset-4 decoration-piper-500 font-bold text-vanilla-800 decoration-2 py-4 px-2 inline-flex md:hover:-translate-y-0.5 md:transition-all">Workstation</a>
+       class="underline underline-offset-4 decoration-piper-500 font-bold text-vanilla-800 dark:text-oxford-blue-100 decoration-2 py-4 px-2 inline-flex md:hover:-translate-y-0.5 md:transition-all">Workstation</a>
   </div>
-  <div class="flex justify-center gap-2 bg-vanilla-200 py-4">
-    <small class="text-vanilla-800">
-      Made by <a class="underline underline-offset-2 decoration-vanilla-700 decoration-2" href="https://luiscastro.co">me</a> with <a
-      class="underline underline-offset-2 decoration-vanilla-700 decoration-2" href="https://astro.build" target="_blank"
-      rel="nofollow noopener">Astro</a> and deployed on <a class="underline underline-offset-2 decoration-vanilla-700 decoration-2"
+  <div class="flex justify-center gap-2 bg-vanilla-200 dark:bg-oxford-blue-950 py-4">
+    <small class="text-vanilla-800 dark:text-oxford-blue-100">
+      Made by <a class="underline underline-offset-2 decoration-vanilla-700 dark:decoration-oxford-blue-200 decoration-2" href="https://luiscastro.co">me</a> with <a
+      class="underline underline-offset-2 decoration-vanilla-700 dark:decoration-oxford-blue-200 decoration-2" href="https://astro.build" target="_blank"
+      rel="nofollow noopener">Astro</a> and deployed on <a class="underline underline-offset-2 decoration-vanilla-700 dark:decoration-oxford-blue-200 decoration-2"
                                                            href="https://vercel.com/" target="_blank"
                                                            rel="nofollow noopener">Vercel</a> &dash; &copy; {new Date().getFullYear()} Luis Castro.
     </small>

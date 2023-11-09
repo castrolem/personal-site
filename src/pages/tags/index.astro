@@ -10,7 +10,7 @@ const pageTitle = "Tag Index";
 
 <BaseLayout>
   <Main>
-    <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 leading-loose mb-4">{pageTitle}</h1>
+    <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50 leading-loose mb-4">{pageTitle}</h1>
     <div class="flex gap-2">
       {tags.map((tag) => (
         <a href={`/tags/${tag}`} rel="tag"><Tag>{tag}</Tag></a>

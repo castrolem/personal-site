@@ -11,8 +11,8 @@ const sortedPosts = allPosts.sort((postA, postB) => compareDesc(new Date(postA.f
 
 <BaseLayout pageTitle={pageTitle}>
   <Main>
-    <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 leading-loose mb-4">My open journal</h1>
-    <p class="leading-loose text-vanilla-950">This is a collection of thoughts that I openly share with everyone.</p>
+    <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50 leading-loose mb-4">My open journal</h1>
+    <p class="leading-loose text-vanilla-950 dark:text-oxford-blue-50">This is a collection of thoughts that I openly share with everyone.</p>
     <ol class="divide-y-2 divide-vanilla-200 divide-dotted">
       {sortedPosts.map((post) =>
         <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate} tags={post.frontmatter.tags} />)}

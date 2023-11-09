@@ -2,4 +2,4 @@
 const {platform, domain = "com", username, label} = Astro.props;
 ---
 <a href={`https://www.${platform.toLowerCase()}.${domain}/${username}`} aria-label={label} target="_blank"
-   class="underline underline-offset-4 decoration-piper-500 font-bold text-vanilla-800 decoration-2 py-4 px-2 inline-flex md:hover:-translate-y-0.5 md:transition-all">{platform}</a>
+   class="underline underline-offset-4 decoration-piper-500 font-bold text-vanilla-800 dark:text-oxford-blue-100 decoration-2 py-4 px-2 inline-flex md:hover:-translate-y-0.5 md:transition-all">{platform}</a>

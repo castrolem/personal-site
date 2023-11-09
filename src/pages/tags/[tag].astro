@@ -24,7 +24,7 @@ const {posts} = Astro.props;
 ---
 <BaseLayout pageTitle={tag}>
   <Main>
-    <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 leading-loose mb-4">Posts tagged
+    <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50 leading-loose mb-4">Posts tagged
       with {tag}</h1>
     <ol class="divide-y-2 divide-vanilla-200 divide-dotted">
       {posts.map((post) =>
