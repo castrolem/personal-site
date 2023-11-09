@@ -56,7 +56,7 @@ const pageTitle = "Luis Castro";
         .
       </p>
     </Section>
-    <hr class="w-64 border-vanilla-100 mx-auto"/>
+    <hr class="w-64 border-vanilla-100 dark:border-oxford-blue-400 mx-auto"/>
     <Section>
       <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">I&rsquo;m available for</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 py-4">
@@ -93,7 +93,7 @@ const pageTitle = "Luis Castro";
         </Box>
       </div>
     </Section>
-    <hr class="w-64 border-vanilla-100 mx-auto"/>
+    <hr class="w-64 border-vanilla-100 dark:border-oxford-blue-400 mx-auto"/>
     <Section>
       <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">Latest projects</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-4">
@@ -149,10 +149,10 @@ const pageTitle = "Luis Castro";
         </Box>
       </div>
     </Section>
-    <hr class="w-64 border-vanilla-100 mx-auto"/>
+    <hr class="w-64 border-vanilla-100 dark:border-oxford-blue-400 mx-auto"/>
     <Section class="max-w-2xl mx-auto">
       <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">Latest posts</h3>
-      <ol class="divide-y-2 divide-vanilla-200 divide-dotted">
+      <ol class="divide-y-2 divide-vanilla-200 dark:divide-oxford-blue-400 divide-dotted">
         {latestPosts.map((post) =>
           <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate} tags={post.frontmatter.tags}/>)}
       </ol>

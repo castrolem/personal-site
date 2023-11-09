@@ -42,7 +42,7 @@ interface Props {
       class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50 leading-loose mb-4">
       Posts tagged
       with {tag}</h1>
-    <ol class="divide-y-2 divide-vanilla-200 divide-dotted">
+    <ol class="divide-y-2 divide-vanilla-200 dark:divide-oxford-blue-400 divide-dotted">
       {posts.map((post: Post) =>
         <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate}
                   tags={post.frontmatter.tags}/>)}
