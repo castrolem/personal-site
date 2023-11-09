@@ -11,12 +11,12 @@ const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
 <BaseLayout pageTitle={frontmatter.title}>
   <Main>
     <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 leading-loose mb-4">{frontmatter.title}</h1>
+    <div class="text-center my-12">
+      <small class="block text-vanilla-950">Written by {frontmatter.author}</small>
+      <small class="block text-vanilla-600">Published on: {DateTimeFormat.format(new Date(frontmatter.pubDate))}</small>
+    </div>
     <article class="prose prose-vanilla text-left mx-auto">
       <slot/>
     </article>
   </Main>
-  <div class="text-center my-12">
-    <small class="block text-vanilla-950">Written by {frontmatter.author}</small>
-    <small class="block text-vanilla-600">Published on: {DateTimeFormat.format(new Date(frontmatter.pubDate))}</small>
-  </div>
 </BaseLayout>
