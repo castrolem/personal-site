@@ -1,0 +1,196 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Main from "../components/Main.astro";
+import Link from "../components/Link.astro";
+const pageTitle = "My personal setup"
+---
+<BaseLayout pageTitle={pageTitle}>
+  <Main>
+    <section class="py-12">
+      <p class="leading-loose text-vanilla-950">
+        As a person that has been working remotely for a long time (7+ years of experience) I get a lot of
+        questions
+        regarding my setup and how I’m able to focus on my daily tasks when working from home.
+      </p>
+      <p class="leading-loose text-vanilla-950">
+        A few of the links below are affiliate links which means I get paid or rewarded in some way if you use
+        them
+        to
+        purchase, but rest assured these are all tools and services I actually use.
+      </p>
+    </section>
+
+    <div class="text-left flex flex-col gap-12">
+      <div>
+        <h2 class="font-serif text-2xl tracking-tight font-bold text-vanilla-950">
+          Workstation
+        </h2>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://support.apple.com/kb/SP858?viewlocale=en_US&locale=en_US">
+            MacBook Pro 16”, M1 Pro (10 cores / 16 GPU cores), 16GB of RAM (2021)
+          </Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          This is my personal computer, and it does not
+          reflect what I use on my day-to-day work environment, but it's a great machine to develop my personal projects
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://nuphy.com/collections/keyboards/products/halo75?variant=40295611334765">
+            NuPhy Halo75
+          </Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          My pet got used to the sound of me pressing keys on my keyboard, and I'm glad cuz I missed mechanical
+          keyboards,
+          this model isn't perfect and it has a few issues but it's a decent board for my needs.
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://www.logitech.com/en-us/products/mice/mx-master-3.910-005647.html">
+            Logitech MX Master 3
+          </Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          For the same reasons I replaced my MX Master 1 for the second edition, I recently replaced my Master 2 for the
+          3rd
+          edition.
+          What was the reason you may ask? I dropped it by mistake and it was a terrible drop.
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://www.apple.com/studio-display/">
+            Apple Studio Display
+          </Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          Well, it has all the bells and whistles of the LG 5K UltraFine display but with a better panel and a better
+          build
+          quality.
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://www.fully.com/standing-desks/jarvis/jarvis-frame-only.html">Fully Jarvis
+            Standing desk (Extended version)
+          </Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          Love these legs, they are near silent when raising or lowering and they can lift enough weight, that’s why I
+          bought an IKEA kitchen counter of almost 2m long to get a huge workspace area.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-serif text-2xl tracking-tight font-bold text-vanilla-950">
+          Software
+        </h2>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://www.jetbrains.com/webstorm/">WebStorm</Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          The best IDE when developing with JavaScript or TypeScript, I love the keyboard shortcuts and the built-in
+          elements of it for testing purposes.
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://plugins.jetbrains.com/plugin/12100-dark-purple-theme">Dark Purple</Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          Darker than Darcula and the other defaults from Intellij, it has a big advantage over themes based in
+          Material
+          Design, which is, you don’t have to install anything extra that slows down your IDE to customize the colors.
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://vercel.com/font">Geist</Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          Went from JetBrains Mono to this one because it embodies the design principles of simplicity, minimalism, and speed, drawing inspiration from the renowned Swiss design movement I like.
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://iterm2.com">iTerm 2</Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          Extends great keyboard shortcuts over the built-in terminal in macOS.
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://github.com/castrolem">GitHub</Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          It’s free, looks good, and works better than the other options.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-serif text-2xl tracking-tight font-bold text-vanilla-950">
+          Design
+        </h2>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://www.figma.com">Figma</Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          After using Sketch for a while on my personal projects and Figma at work, I cannot come back to Sketch
+          anymore, Figma has evolved so much and introduced so many excellent features that work with my workflows in
+          and out of the office.
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://www.pixelmator.com/pro/">Pixelmator Pro</Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          This is my favorite software for editing photos, I got into Pixelmator on 2011 and have been a fan of their
+          work
+          since then.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-serif text-2xl tracking-tight font-bold text-vanilla-950">
+          Podcasting / Streaming
+        </h2>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-solo-studio">
+            Focusrite Scarlett CM25 MkIII
+          </Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          I upgraded from a Blue Yeti to this Microphone and I’m amazed by the difference in sound quality that it
+          delivers.
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-solo-studio">
+            Focusrite Scarlett 2i2 3rd Gen
+          </Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          I love the physical knobs and the visual feedback from the LED wheel for how loud you are speaking.
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://artproaudio.com/product/tube-mp-the-original/">ART Tube MP</Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          It’s a solid preamp for those moments where I don’t want to be as close to the microphone, usually when
+          talking
+          to my co-workers over Zoom or when pair-programming.
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://europe.beyerdynamic.com/dt-990-pro.html">Beyerdynamic DT 990 Pro
+            headphones
+          </Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          I use them to monitor my own voice when I’m recording but also, to listen to music, it’s such a good pair of
+          headphones, their sound quality can be compared with much much higher price headphones.
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="http://rogueamoeba.com/audiohijackpro/">Audio Hijack Pro</Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          I use this to record all of my podcast, even the ones where we talk over Skype, FaceTime or others. Amazing
+          software, highly recommended.
+        </p>
+        <p class="leading-loose text-vanilla-950 mt-4">
+          <Link isExternal={true} href="https://obsproject.com">OBS Studio</Link>
+        </p>
+        <p class="leading-loose text-vanilla-950">
+          It’s free, it’s ok. If I get more into livestreaming and get a benefit from them, I would consider investing
+          on
+          a more polished software.
+        </p>
+      </div>
+    </div>
+  </Main>
+</BaseLayout>
