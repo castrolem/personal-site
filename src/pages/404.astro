@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Memoji from "../assets/scared.png";
+import {Image} from "astro:assets";
+const pageTitle = "Whoops";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div class="space-y-0 mb-4 max-w-lg mx-auto flex-col flex justify-center h-fit text-center">
+    <Image src={Memoji} class="h-64 w-64 mx-auto mb-4 flex justify-center items-center" alt="Memoji of Luis"
+           loading="eager" height={384} width={384} quality="max"/>
+    <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50 leading-loose mb-4">{pageTitle}</h1>
+    <p class="text-vanilla-950 dark:text-oxford-blue-50 leading-relaxed text-lg">
+      <strong>I&rsquo;m sorry.</strong> Things have changed around, so you might have a bad link that was previously saved.
+    </p>
+  </div>
+</BaseLayout>
