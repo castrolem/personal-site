@@ -3,7 +3,7 @@ import '@fontsource/donegal-one';
 import '@fontsource/noto-sans';
 import Body from "../components/Body.astro";
 import Footer from "../components/Footer.astro";
-import { ViewTransitions } from 'astro:transitions';
+import {ViewTransitions} from 'astro:transitions';
 
 const {pageTitle} = Astro.props;
 ---
@@ -14,10 +14,12 @@ const {pageTitle} = Astro.props;
   <meta name="viewport" content="width=device-width"/>
   <meta name="generator" content={Astro.generator}/>
   <title>{pageTitle}</title>
-  <ViewTransitions />
+  <meta name="description"
+        content="I'm an experienced web and app developer living in Andorra. I'm open for ongoing front-end consulting, standalone projects, and general engineering."/>
+  <ViewTransitions/>
 </head>
 <Body>
-  <slot />
-  <Footer />
+<slot/>
+<Footer/>
 </Body>
 </html>
