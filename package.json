@@ -20,7 +20,7 @@
     "@fontsource/noto-sans": "^5.0.17",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
-    "astro": "^3.4.3",
+    "astro": "^3.5.5",
     "astro-heroicons": "^0.3.0",
     "clsx": "^2.0.0",
     "date-fns": "^2.30.0",
