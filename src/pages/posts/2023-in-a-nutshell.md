@@ -18,7 +18,7 @@ tags: [ "mastermind", "goals" ]
 4. I’m grateful for doing well at diversifying in different investment vehicles and how it has paid off. 2023 was a
    great year to grow, and it has been good for my health.
 5. I focused on my hobbies and allowed myself to enjoy my free time and relax.
-6. Started a new business with friends that has an interesting angle, I cannot say too much about it other than it is a
+6. Started a new business with friends that has an interesting angle. I cannot say too much about it other than it is a
    project that we proposed ourselves to do, and we accomplished to ship our first iteration of it. Since we shipped our
    v1 in December, I’m grateful for the opportunity to learn and grow through the process.
 7. I had an amazing time in South Africa and this year taught me that it was such an experience that I started comparing
@@ -31,8 +31,8 @@ tags: [ "mastermind", "goals" ]
    of them because these are people that were important for me and will continue to be.
 2. I could have planned better my investments this year. I was spotty in my first half of the year because I had my
    focus on too many topics and didn’t automate the process enough.
-3. I stopped feeling excited about my current workplace, I felt that I grew in different areas in my career through the
-   people I met, but since the last massive lay-off the vibe of the workplace and the goals drastically changed a
+3. I stopped feeling excited about my current workplace. I felt that I grew in different areas in my career through the
+   people I met. Since the last massive lay-off the vibe of the workplace and the goals drastically changed a
    version that does not make feel as excited as I was before.
 
 ## What did I learn?
