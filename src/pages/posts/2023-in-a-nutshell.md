@@ -16,13 +16,12 @@ tags: [ "mastermind", "goals" ]
 3. I have an amazing group of friends that’s supportive of my goals, keeps me engaged and that I can relate with on many
    topics.
 4. I’m grateful for doing well at diversifying in different investment vehicles and how it has paid off. 2023 was a
-   great year to grow, and it has been good for my
-5. disgusting health.
-6. I focused on my hobbies and allowed myself to enjoy my free time and relax.
-7. Started a new business with friends that has an interesting angle, I cannot say too much about it other than it is a
+   great year to grow, and it has been good for my health.
+5. I focused on my hobbies and allowed myself to enjoy my free time and relax.
+6. Started a new business with friends that has an interesting angle, I cannot say too much about it other than it is a
    project that we proposed ourselves to do, and we accomplished to ship our first iteration of it. Since we shipped our
    v1 in December, I’m grateful for the opportunity to learn and grow through the process.
-8. I had an amazing time in South Africa and this year taught me that it was such an experience that I started comparing
+7. I had an amazing time in South Africa and this year taught me that it was such an experience that I started comparing
    everything to it. 10/10 would recommend putting the country higher on your must-visit list if you haven’t.
 
 ## What didn’t go well?
