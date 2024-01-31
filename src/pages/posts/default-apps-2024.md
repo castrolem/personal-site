@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 author: "Luis Castro"
 title: "Default apps for 2024"
 pubDate: 2024-01-31
+description: "My chosen apps for 2024"
 tags: [ "personal", "misc" ]
 ---
 
@@ -11,7 +12,7 @@ Mastodon a multitude of people posting about their default apps in their own blo
 since it looks like this would be a fun one to do 😅.
 
 Most of my choices are oriented on trying out the private first focused products; I've been through my phase of trying a
-specific app for everything, but nowadays I'm settling down on things that actually work and don't sell my data to others.
+specific app for everything, but nowadays, I'm settling down on things that actually work and don't sell my data to others.
 
 - 📧 Mail service: [Hey](https://www.hey.com)
 - 📬 Mail client: [Hey](https://www.hey.com) (iOS and the web on macOS)

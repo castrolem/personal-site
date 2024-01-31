@@ -14,7 +14,7 @@ import Main from "../components/Main.astro";
 import Link from "../components/Link.astro";
 
 const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
-  dateStyle: 'medium',
+  formatMatcher: "best fit",
   timeZone: 'Europe/Andorra',
 })
 const PodcastingSinceDate = DateTimeFormat.format(new Date("2019/09/09"))

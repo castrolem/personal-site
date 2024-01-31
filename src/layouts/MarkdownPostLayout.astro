@@ -1,10 +1,10 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import Main from "../components/Main.astro";
-const {frontmatter} = Astro.props;
+const {frontmatter, url, ...rest} = Astro.props;
 
 const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
-  dateStyle: 'medium',
+  formatMatcher: "best fit",
   timeZone: 'Europe/Andorra',
 })
 ---
@@ -16,7 +16,7 @@ const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
         @apply overflow-hidden;
     }
 </style>
-<BaseLayout pageTitle={frontmatter.title}>
+<BaseLayout pageTitle={frontmatter.title} url={url}>
   <Main>
     <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50 leading-loose mb-4">{frontmatter.title}</h1>
     <div class="text-center my-12">

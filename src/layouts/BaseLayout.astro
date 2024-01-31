@@ -5,7 +5,7 @@ import Body from "../components/Body.astro";
 import Footer from "../components/Footer.astro";
 import {ViewTransitions} from 'astro:transitions';
 
-const {pageTitle} = Astro.props;
+const { pageTitle, url, description = ''} = Astro.props;
 ---
 <html lang="en" class="h-full bg-vanilla-300 dark:bg-oxford-blue-950">
 <head>
@@ -16,6 +16,16 @@ const {pageTitle} = Astro.props;
   <title>{pageTitle}</title>
   <meta name="description"
         content="I'm an experienced web and app developer living in Andorra. I'm open for ongoing front-end consulting, standalone projects, and general engineering."/>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={pageTitle} />
+  {url && <meta property="og:url" content={url} />}
+  {description && <meta property="og:description" content={description} />}
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:title" content={pageTitle} />
+  {url && <meta property="twitter:url" content={url} />}
+  {description && <meta property="twitter:description" content={description} />}
   <ViewTransitions/>
 </head>
 <Body>
