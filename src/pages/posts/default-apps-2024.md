@@ -37,3 +37,5 @@ specific app for everything, but nowadays I'm settling down on things that actua
 - 🧮 Code Editor: [WebStorm](https://www.jetbrains.com/webstorm/)
 - 👨🏻‍💻 Terminal: [iTerm 2](https://iterm2.com)
 - 🔎 Search: [Duckduckgo](https://duckduckgo.com)
+- ✈️ Flight tracking: [Flighty](https://flightyapp.com)
+- 📦 Package tracking: [Parcel](https://parcel.app)
