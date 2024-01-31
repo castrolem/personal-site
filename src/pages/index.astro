@@ -13,8 +13,9 @@ import BlogPost from "../components/BlogPost.astro";
 import Main from "../components/Main.astro";
 import Link from "../components/Link.astro";
 
+// noinspection TypeScriptValidateTypes
 const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
-  formatMatcher: "best fit",
+  dateStyle: 'medium',
   timeZone: 'Europe/Andorra',
 })
 const PodcastingSinceDate = DateTimeFormat.format(new Date("2019/09/09"))

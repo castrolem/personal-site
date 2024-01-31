@@ -1,6 +1,7 @@
 ---
 import Tag from "./Tag.astro";
 const { title, url, pubDate, tags } = Astro.props
+// noinspection TypeScriptValidateTypes
 const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
   dateStyle: 'full',
   timeZone: 'Europe/Andorra',

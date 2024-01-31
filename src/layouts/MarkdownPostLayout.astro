@@ -3,8 +3,9 @@ import BaseLayout from "./BaseLayout.astro";
 import Main from "../components/Main.astro";
 const {frontmatter, url} = Astro.props;
 
+// noinspection TypeScriptValidateTypes
 const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
-  formatMatcher: "best fit",
+  dateStyle: 'medium',
   timeZone: 'Europe/Andorra',
 })
 ---
