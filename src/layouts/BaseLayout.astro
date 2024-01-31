@@ -4,8 +4,16 @@ import '@fontsource/noto-sans';
 import Body from "../components/Body.astro";
 import Footer from "../components/Footer.astro";
 import {ViewTransitions} from 'astro:transitions';
+import MemojiCover from "../assets/memoji-cover.jpg";
+import {getImage} from "astro:assets";
 
-const { pageTitle, url, description = ''} = Astro.props;
+const optimizedBackground = await getImage({src: MemojiCover})
+const {
+  pageTitle,
+  url,
+  description = 'I\'m an experienced web and app developer living in Andorra, for the past 4 years I have been working with Cameo\n' +
+    'building a space for creators allows them to share magical moments with their fans.'
+} = Astro.props;
 ---
 <html lang="en" class="h-full bg-vanilla-300 dark:bg-oxford-blue-950">
 <head>
@@ -13,19 +21,26 @@ const { pageTitle, url, description = ''} = Astro.props;
   <link rel="icon" type="image/ico" href="/favicon.ico"/>
   <meta name="viewport" content="width=device-width"/>
   <meta name="generator" content={Astro.generator}/>
+  <!-- Primary Meta Tags -->
   <title>{pageTitle}</title>
   <meta name="description"
         content="I'm an experienced web and app developer living in Andorra. I'm open for ongoing front-end consulting, standalone projects, and general engineering."/>
   <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content={pageTitle} />
-  {url && <meta property="og:url" content={url} />}
-  {description && <meta property="og:description" content={description} />}
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content={pageTitle}/>
+  <meta property="og:image" content={optimizedBackground.src}/>
+  {url &&
+    <meta property="og:url" content={url}/>}
+  {description &&
+    <meta property="og:description" content={description}/>}
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary" />
-  <meta property="twitter:title" content={pageTitle} />
-  {url && <meta property="twitter:url" content={url} />}
-  {description && <meta property="twitter:description" content={description} />}
+  <meta property="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:title" content={pageTitle}/>
+  {url &&
+    <meta property="twitter:url" content={url}/>}
+  {description &&
+    <meta property="twitter:description" content={description}/>}
+  <meta property="twitter:image" content={optimizedBackground.src}/>
   <ViewTransitions/>
 </head>
 <Body>
