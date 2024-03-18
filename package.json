@@ -19,7 +19,7 @@
     "@fontsource/donegal-one": "^5.0.19",
     "@fontsource/noto-sans": "^5.0.20",
     "@types/react": "^18.2.61",
-    "@types/react-dom": "^18.2.21",
+    "@types/react-dom": "^18.2.22",
     "astro": "^4.4.15",
     "astro-expressive-code": "^0.33.4",
     "astro-heroicons": "^2.1.1",
