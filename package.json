@@ -21,7 +21,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "astro": "^4.14.2",
-    "astro-expressive-code": "^0.35.6",
+    "astro-expressive-code": "^0.36.0",
     "astro-heroicons": "^2.1.5",
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
