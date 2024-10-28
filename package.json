@@ -18,7 +18,7 @@
     "@astrojs/tailwind": "^5.1.2",
     "@fontsource/donegal-one": "^5.1.0",
     "@fontsource/noto-sans": "^5.1.0",
-    "@types/react": "^18.3.11",
+    "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "astro": "^4.16.6",
     "astro-expressive-code": "^0.37.0",
