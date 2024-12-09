@@ -14,7 +14,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/react": "^3.6.3",
-    "@astrojs/rss": "^4.0.9",
+    "@astrojs/rss": "^4.0.10",
     "@astrojs/tailwind": "^5.1.2",
     "@fontsource/donegal-one": "^5.1.0",
     "@fontsource/noto-sans": "^5.1.0",
