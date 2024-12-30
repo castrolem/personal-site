@@ -16,7 +16,7 @@
     "@astrojs/react": "^4.1.0",
     "@astrojs/rss": "^4.0.10",
     "@astrojs/tailwind": "^5.1.4",
-    "@fontsource/donegal-one": "^5.1.0",
+    "@fontsource/donegal-one": "^5.1.1",
     "@fontsource/noto-sans": "^5.1.0",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^18.3.1",
