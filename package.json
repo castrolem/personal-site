@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.5",
-    "@astrojs/react": "^4.4.1",
+    "@astrojs/react": "^4.4.2",
     "@astrojs/rss": "^4.0.13",
     "@astrojs/tailwind": "^6.0.2",
     "@fontsource/donegal-one": "^5.2.8",
