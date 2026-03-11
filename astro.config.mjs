@@ -1,11 +1,13 @@
-import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import react from "@astrojs/react";
+// @ts-check
 
-import expressiveCode from "astro-expressive-code";
+import tailwindcss from "@tailwindcss/vite"
+import { defineConfig } from "astro/config"
+import react from "@astrojs/react"
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react(), expressiveCode()],
-  site: "https://luiscastro.co"
-});
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  integrations: [react()],
+})

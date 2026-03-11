@@ -1,175 +1,145 @@
 ---
-import ArrowLongRight from 'astro-heroicons/outline/ArrowLongRight.astro';
-import ArrowDownTray from 'astro-heroicons/outline/ArrowDownTray.astro';
-import Radio from 'astro-heroicons/outline/Radio.astro';
-import {compareDesc} from 'date-fns';
-
-import {Image} from 'astro:assets';
-import Memoji from '../assets/memoji.png';
-import Section from "../components/Section.astro";
-import Box from "../components/Box.astro";
-import BaseLayout from "../layouts/BaseLayout.astro";
-import BlogPost from "../components/BlogPost.astro";
-import Main from "../components/Main.astro";
-import Link from "../components/Link.astro";
-
-// noinspection TypeScriptValidateTypes
-const DateTimeFormat = new Intl.DateTimeFormat('en-US', {
-  dateStyle: 'medium',
-  timeZone: 'Europe/Andorra',
-})
-const PodcastingSinceDate = DateTimeFormat.format(new Date("2019/09/09"))
-const allPosts = await Astro.glob('../pages/posts/*.md');
-const sortedPosts = allPosts.sort((postA, postB) => compareDesc(new Date(postA.frontmatter.pubDate), new Date(postB.frontmatter.pubDate)))
-const latestPosts = sortedPosts.slice(0, 3)
-const pageTitle = "Luis Castro";
+import Layout from "@/layouts/main.astro"
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <Main>
-    <div class="space-y-0 mb-4 max-w-2xl mx-auto">
-      <Image src={Memoji} class="h-32 w-32 mx-auto mb-4 flex justify-center items-center" alt="Memoji of Luis"
-             loading="eager" height={384} width={384} quality="max"/>
-      <h1 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">Luis
-        Castro</h1>
-      <h2 class="font-serif text-sm tracking-wide text-piper-500 dark:text-oxford-blue-200">Full Stack developer</h2>
-    </div>
-    <Section class="max-w-2xl mx-auto">
-      <p class="text-vanilla-950 dark:text-oxford-blue-50 leading-relaxed text-balance">I&rsquo;m an experienced web and
-        mobile developer based in <Link href="https://en.wikipedia.org/wiki/Andorra" isExternal={true}>Andorra</Link>.
-        I&rsquo;m currently building <Link href="https://digg.com" isExternal={true}>Digg</Link>&rsquo;s
-        mobile app, where you can share and discover the best of the internet—and beyond.
-      </p>
-      <p class="text-vanilla-950 dark:text-oxford-blue-50 leading-relaxed text-balance">
-        I love working in the realm between
-        design and code. Some things that makes me excited are JavaScript frameworks (yeah), CSS, Design
-        Systems, Animation, crafting excellent component APIs and making interfaces feel fun and personal.
-      </p>
-      <p class="text-vanilla-950 dark:text-oxford-blue-50 text-balance leading-relaxed">Since 2012, I have collaborated
-        with multiple start-ups
-        around the world
-        and contributed
-        to their success by delivering reliable and timely code to expand/improve their product offerings. Companies
-        like
-        <Link href="https://digg.com" isExternal={true}>Digg</Link>
-        ,
-        <Link href="https://cameo.com" isExternal={true}>Cameo</Link>
-        ,
-        <Link href="https://free-now.com" isExternal={true}>Freenow</Link>
-        ,
-        <Link href="https://www.realscout.com/" isExternal={true}>RealScout</Link>
-        and
-        <Link href="https://debtcollective.org/" isExternal={true}>Debt Collective</Link>
-        .
-      </p>
-    </Section>
-    <hr class="w-64 border-vanilla-100 dark:border-oxford-blue-400 mx-auto"/>
-    <Section>
-      <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">I&rsquo;m
-        available for</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 py-4">
-        <Box class="md:hover:rotate-0 md:-rotate-1 transition-all">
-          <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">Full Stack
-            Engineering</h4>
-          <p class="text-vanilla-950 dark:text-oxford-blue-50 leading-relaxed">
-            I&rsquo;m open for ongoing front-end consulting, standalone projects, and general engineering. I can
-            independently
-            build accessible websites and prototypes, make accessibility improvements to existing products, or work
-            embedded
-            in a team building the front-end for new features.
+<Layout>
+  <main class="mx-auto flex min-h-svh w-full max-w-6xl flex-col gap-10 px-6 py-8 sm:px-10 lg:px-12">
+    <header class="flex flex-col gap-6 rounded-4xl border bg-card/80 p-6 shadow-sm backdrop-blur sm:p-8">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+        <div class="max-w-2xl space-y-4">
+          <p class="text-sm uppercase tracking-[0.24em] text-muted-foreground">
+            Braun-inspired palette
           </p>
-          <a class="inline-flex gap-2 items-center text-piper-500" href="/work"
-          >More information and availability
-            <ArrowLongRight class="h-4 w-4"/>
-          </a>
-        </Box>
-        <Box class="md:hover:rotate-0 md:rotate-1 transition-all">
-          <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">Creative
-            coding</h4>
-          <p class="text-vanilla-950 dark:text-oxford-blue-50 leading-relaxed">I build good looking, user-friendly,
-            responsive and accessible
-            <strong>websites</strong>, <strong>blogs</strong>, and <strong>interfaces</strong>. I can run the process
-            from
-            start to finish, and develop your MVP or product.</p>
-          <p class="text-vanilla-950 dark:text-oxford-blue-50 leading-relaxed">Need an <strong>app</strong> instead of a
-            website, no worries, I
-            can
-            also develop for
-            <strong>Android</strong> and <strong>iOS</strong> using react-native, writing comprehensive and scalable
-            code
-            for your start-up.</p>
-          <a class="inline-flex gap-2 items-center text-piper-500" href="/work"
-          >More information and availability
-            <ArrowLongRight class="h-4 w-4"/>
-          </a>
-        </Box>
+          <div class="space-y-3">
+            <h1 class="max-w-xl text-4xl leading-none font-medium text-balance sm:text-5xl">
+              Warm neutrals, signal orange, and sage green translated into semantic tokens.
+            </h1>
+            <p class="max-w-xl text-base leading-7 text-muted-foreground sm:text-lg">
+              The theme pulls from the white casings, soft grey wall, black linework, orange dial,
+              and sage control in the reference image. Token pairings were selected to keep normal
+              text at or above WCAG AA contrast in both themes.
+            </p>
+          </div>
+        </div>
+
+        <div class="rounded-full border bg-background/75 px-4 py-2 text-sm text-muted-foreground">
+          Follows system appearance via CSS media queries
+        </div>
       </div>
-    </Section>
-    <hr class="w-64 border-vanilla-100 dark:border-oxford-blue-400 mx-auto"/>
-    <Section>
-      <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">Latest
-        projects</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-4">
-        <!--<Box class="md:col-span-2 md:hover:rotate-0 md:-rotate-1 transition-all">-->
-        <!--  <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">Peachy</h4>-->
-        <!--  <p class="text-vanilla-950 dark:text-oxford-blue-50 leading-relaxed">A free and anonymous platform where-->
-        <!--    creators share their wishes-->
-        <!--    and-->
-        <!--    fans make them-->
-        <!--    come true.</p>-->
-        <!--  <Link href="https://www.peachy.gifts?ref=luiscastro.co" isExternal={true}-->
-        <!--        class="inline-flex gap-2 items-center text-piper-500 no-underline">-->
-        <!--    Check it out-->
-        <!--    <ArrowLongRight class="h-4 w-4"/>-->
-        <!--  </Link>-->
-        <!--</Box>-->
-        <Box class="md:hover:rotate-0 md:rotate-1 md:col-span-2 transition-all">
-          <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">Chomp</h4>
-          <p class="text-vanilla-950 dark:text-oxford-blue-50 leading-relaxed">Makes it easy for raw feeders to track
-            their loved ones&rsquo;
-            food.</p>
-        </Box>
-        <Box class="md:hover:rotate-0 md:-rotate-1 transition-all">
-          <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">Waves</h4>
-          <p class="text-vanilla-950 dark:text-oxford-blue-50 leading-relaxed">Wallpaper pack for iPhone and iPad.</p>
-          <Link href="https://maplecode.gumroad.com/l/waves-wallpaper-pack?ref=luiscastro.co" isExternal={true}
-                class="inline-flex gap-2 items-center text-piper-500 no-underline">
-            Download
-            <ArrowDownTray class="h-4 w-4"/>
-          </Link>
-        </Box>
-        <Box class="md:hover:rotate-0 md:rotate-1 transition-all">
-          <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">Logbook</h4>
-          <p class="text-vanilla-950 dark:text-oxford-blue-50 leading-relaxed">Local and private way to journal towards
-            your goals.</p>
-        </Box>
-        <Box class="sm:col-span-2 md:col-span-3 md:hover:rotate-0 md:-rotate-1 transition-all">
-          <h4 class="font-serif text-xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">No es solo
-            código</h4>
-          <p class="text-vanilla-950 dark:text-oxford-blue-50 leading-relaxed">A podcast that
-            <Link href="https://twitter.com/duranmla" isExternal={true}>
-              @duramnla
-            </Link>
-            and I started on <b>{PodcastingSinceDate}</b> to talk about
-            our vision of the industry at first which evolved into our way of doing an open weekly retro.
-          </p>
-          <Link href="https://podcasters.spotify.com/pod/show/noessolocodigo" isExternal={true}
-                class="inline-flex gap-2 items-center text-piper-500 no-underline">
-            <Radio class="h-4 w-4"/>
-            Listen our archived episodes
-          </Link>
-        </Box>
+
+      <div class="grid gap-3 sm:grid-cols-4">
+        <div class="rounded-3xl border bg-background p-4">
+          <p class="text-sm text-muted-foreground">Background</p>
+          <p class="mt-2 text-2xl">Soft paper</p>
+          <p class="mt-3 font-mono text-xs text-muted-foreground">`background` / `card`</p>
+        </div>
+        <div class="rounded-3xl border bg-primary p-4 text-primary-foreground">
+          <p class="text-sm/none opacity-80">Primary</p>
+          <p class="mt-2 text-2xl">Ink contrast</p>
+          <p class="mt-3 font-mono text-xs opacity-80">`primary`</p>
+        </div>
+        <div class="rounded-3xl border bg-brand-orange p-4 text-[#181718]">
+          <p class="text-sm/none opacity-70">Accent signal</p>
+          <p class="mt-2 text-2xl">Orange dial</p>
+          <p class="mt-3 font-mono text-xs opacity-70">`brand-orange`</p>
+        </div>
+        <div class="rounded-3xl border bg-brand-sage p-4 text-[#181718]">
+          <p class="text-sm/none opacity-80">Accent support</p>
+          <p class="mt-2 text-2xl">Sage switch</p>
+          <p class="mt-3 font-mono text-xs opacity-80">`brand-sage`</p>
+        </div>
       </div>
-    </Section>
-    <hr class="w-64 border-vanilla-100 dark:border-oxford-blue-400 mx-auto"/>
-    <Section class="max-w-2xl mx-auto">
-      <h3 class="font-serif text-3xl tracking-tight font-bold text-vanilla-950 dark:text-oxford-blue-50">Latest
-        posts</h3>
-      <ol class="divide-y-2 divide-vanilla-200 dark:divide-oxford-blue-400 divide-dotted">
-        {latestPosts.map((post) =>
-          <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate}
-                    tags={post.frontmatter.tags}/>)}
-      </ol>
-    </Section>
+    </header>
+
+    <section class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+      <article class="rounded-4xl border bg-card/85 p-6 shadow-sm backdrop-blur sm:p-8">
+        <div class="flex items-center justify-between gap-4">
+          <div>
+            <p class="text-sm uppercase tracking-[0.2em] text-muted-foreground">Token system</p>
+            <h2 class="mt-2 text-2xl font-medium">Light and dark roles</h2>
+          </div>
+          <div class="hidden rounded-full border bg-muted px-3 py-1 text-xs text-muted-foreground sm:block">
+            Tailwind v4 semantic tokens
+          </div>
+        </div>
+
+        <div class="mt-6 grid gap-4 sm:grid-cols-2">
+          <div class="rounded-3xl border bg-background p-5">
+            <p class="text-sm text-muted-foreground">Readable surfaces</p>
+            <p class="mt-2 text-lg">
+              Neutral layers stay slightly warm, matching the product shells instead of drifting
+              into sterile blue-grey.
+            </p>
+          </div>
+          <div class="rounded-3xl border bg-muted p-5">
+            <p class="text-sm text-muted-foreground">Support hierarchy</p>
+            <p class="mt-2 text-lg">
+              Muted and secondary tones compress contrast without dropping body text below AA.
+            </p>
+          </div>
+          <div class="rounded-3xl border bg-accent p-5 text-accent-foreground">
+            <p class="text-sm opacity-80">Sage accent</p>
+            <p class="mt-2 text-lg">
+              Used for supportive emphasis, filters, and calm surfaces rather than primary actions.
+            </p>
+          </div>
+          <div class="rounded-3xl border p-5">
+            <p class="text-sm text-muted-foreground">High-signal color</p>
+            <p class="mt-2 text-lg">
+              Orange is reserved for highlights, charts, and focus states so it keeps the same
+              visual punch as the original dial.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-3 text-sm text-muted-foreground">
+          <span class="rounded-full border bg-primary px-4 py-2 text-primary-foreground">
+            Primary action
+          </span>
+          <span class="rounded-full border bg-secondary px-4 py-2 text-secondary-foreground">
+            Secondary
+          </span>
+          <span class="rounded-full border bg-background px-4 py-2 text-foreground">
+            Outline
+          </span>
+          <span class="rounded-full border bg-muted px-4 py-2 text-foreground">Ghost</span>
+        </div>
+      </article>
+
+      <aside class="rounded-4xl border bg-card/85 p-6 shadow-sm backdrop-blur sm:p-8">
+        <p class="text-sm uppercase tracking-[0.2em] text-muted-foreground">Contrast checks</p>
+        <h2 class="mt-2 text-2xl font-medium">AA-safe pairings</h2>
+
+        <div class="mt-6 space-y-3">
+          <div class="rounded-3xl border bg-background p-4">
+            <div class="flex items-center justify-between gap-4">
+              <span>Light foreground on paper</span>
+              <span class="rounded-full bg-secondary px-2.5 py-1 text-xs">16.1:1</span>
+            </div>
+          </div>
+          <div class="rounded-3xl border bg-primary p-4 text-primary-foreground">
+            <div class="flex items-center justify-between gap-4">
+              <span>Primary button</span>
+              <span class="rounded-full bg-primary-foreground/15 px-2.5 py-1 text-xs">12.7:1</span>
+            </div>
+          </div>
+          <div class="rounded-3xl border bg-accent p-4 text-accent-foreground">
+            <div class="flex items-center justify-between gap-4">
+              <span>Accent surface</span>
+              <span class="rounded-full bg-black/10 px-2.5 py-1 text-xs dark:bg-white/10">
+                4.5:1+
+              </span>
+            </div>
+          </div>
+          <div class="rounded-3xl border p-4">
+            <p class="text-sm leading-6 text-muted-foreground">
+              The palette keeps orange and sage expressive, but text-critical roles stay on
+              neutral or proven AA-safe surfaces. That avoids the common problem of attractive
+              accent colors failing in links, body copy, and low-emphasis UI.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </section>
   </main>
-</BaseLayout>
+</Layout>
