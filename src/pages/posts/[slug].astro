@@ -42,9 +42,6 @@ const formatDate = (value: Date) =>
           {formatDate(post.data.publishedAt)}
         </p>
         <h1 class="text-4xl leading-none">{post.data.title}</h1>
-        {post.data.description && (
-          <p class="text-base leading-7 text-muted-foreground">{post.data.description}</p>
-        )}
       </div>
 
       {post.data.tags.length > 0 && (
@@ -58,7 +55,7 @@ const formatDate = (value: Date) =>
       )}
     </header>
 
-    <div class="space-y-5 text-base leading-8">
+    <div class="space-y-5 text-base leading-8 [&_a]:underline [&_img]:rounded-2xl [&_img]:border [&_img]:border-border [&_img]:shadow-sm [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5">
       <Content />
     </div>
   </article>
