@@ -4,6 +4,12 @@ description: ""
 publishedAt: 2025-12-16
 tags:
   - "notes"
+preview: |
+  I have been known for doing lots of deep dives and research before I buy anything among my friends, so I decided to share those thoughts and ideas with everyone. I'd like to make this a monthly thing, only when I have something interesting to share. Some months you will hear nothing, and that is the point.
+  
+  Here's the good stuff: things you might not know existed, and might be interested in. Here are a few that I'm loving and using right now, plus my conclusions after I inevitably obsessed over the details.
+  
+  I finally stopped doing the "level + pencil + patience" routine and bought two tools that have saved me an unreasonable amount of time:
 draft: false
 ---
 I have been known for doing lots of deep dives and research before I buy anything among my friends, so I decided to share those thoughts and ideas with everyone. I'd like to make this a monthly thing, only when I have something interesting to share. Some months you will hear nothing, and that is the point.

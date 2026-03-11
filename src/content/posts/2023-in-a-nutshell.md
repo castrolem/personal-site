@@ -5,6 +5,13 @@ publishedAt: 2024-01-01
 tags:
   - "mastermind"
   - "goals"
+preview: |
+  them to grow and build up a piggy bank for their next ventures.
+  
+  therefore, I do not have to rush any decision if I want to change the workplace. Before, I dread doing this, but in
+     2023 I now see it as something that’s fun and refreshing.
+  
+  topics.
 draft: false
 ---
 ## What went well?

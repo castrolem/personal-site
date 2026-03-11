@@ -5,6 +5,13 @@ publishedAt: 2024-01-31
 tags:
   - "personal"
   - "misc"
+preview: |
+  I saw this on [Matt Birchler's blog](https://birchtree.me/blog/my-default-apps-at-the-end-of-2023/), and then saw on
+  Mastodon a multitude of people posting about their default apps in their own blogs. So I decided to jump on the trend,
+  since it looks like this would be a fun one to do 😅.
+  
+  Most of my choices are oriented on trying out the private first focused products; I've been through my phase of trying a
+  specific app for everything, but nowadays, I'm settling down on things that actually work and don't sell my data to others.
 draft: false
 ---
 I saw this on [Matt Birchler's blog](https://birchtree.me/blog/my-default-apps-at-the-end-of-2023/), and then saw on

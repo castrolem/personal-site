@@ -5,6 +5,22 @@ publishedAt: 2024-02-01
 tags:
   - "programming"
   - "code reviews"
+preview: |
+  My inner circle of friends is mostly composed of developers, and we always talk
+  about what separates so-called senior developers from actual senior developers.
+  In my opinion, it boils down to professionalism versus wishful thinking.
+  
+  There's always pressure from the Agile flavour your company has chosen to use to
+  show where you are, what's missing, and how we (the team) can unblock you to
+  complete your tasks. If you haven't finished your task, don't lie about it (not
+  even to yourself) – this leads to tech debt that you or your teammates will have
+  to finish and stress about later. If you want to maintain control of the
+  situation and things slip out of control, finish the code you started writing.
+  
+  Nowadays, this is quite easy to implement; we have many tools to enforce how
+  written code can be read. Nobody likes a discussion about when to use curly
+  braces or lingering commas at the end of the JavaScript code base. Use prettier,
+  use eslint, use the tools available, and automate all of this work right now.
 draft: false
 ---
 My inner circle of friends is mostly composed of developers, and we always talk

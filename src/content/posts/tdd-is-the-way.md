@@ -3,6 +3,15 @@ title: "TDD is the way"
 description: ""
 publishedAt: 2021-05-21
 tags: []
+preview: |
+  I was giving some thought about my #programming approach using Test Driven Development lately and how much am I
+  imparting the knowledge with my teammates of my experiences with it.
+  
+  I must admit that I love the process and I'm not going to explain here what TDD is, there are many articles about it.
+  I'm focusing this journal entry on one thing, the fact that it can be detrimental if you overuse it or use the process
+  on the wrong things.
+  
+  reported and allowing myself to understand the problem better by behaving in an automated way like the end-user.
 draft: false
 ---
 I was giving some thought about my #programming approach using Test Driven Development lately and how much am I

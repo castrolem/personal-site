@@ -3,6 +3,12 @@ title: "Personal thoughts on Spotify vs Apple Music"
 description: ""
 publishedAt: 2020-10-12
 tags: []
+preview: |
+  I have been toying since the announcement of [Apple One](https://www.apple.com/apple-one/) with the idea of moving into an all Apple ecosystem since I would be saving money by doing this.
+  
+  Thing is… [Spotify](https://www.spotify.com/) has been with me for so long that honestly, moving into an unknown UI/UX is so difficult, so that makes me think that even though I will be saving money by doing this, the annoyances and differences between the services might be enough for me to be loosing on features.
+  
+  These are going to be my deep dives into the UX and UI of both apps and what makes them great or less usable in my personal opinions.
 draft: false
 ---
 I have been toying since the announcement of [Apple One](https://www.apple.com/apple-one/) with the idea of moving into an all Apple ecosystem since I would be saving money by doing this.

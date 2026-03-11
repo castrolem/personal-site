@@ -3,6 +3,12 @@ title: "160 active customers and growing"
 description: ""
 publishedAt: 2021-03-14
 tags: []
+preview: |
+  In January 2021, I launched [the logbook](https://logbook.today/), an app for people like me that want to do journaling with a more calmed down approach. At first, I envisioned this product mostly for me, I have tried multiple apps like mine in the past but haven't enjoyed the process as much because all of them have something that I dislike, constant notifications, reminders, game theories, and other clickbait ways to draw your attention and make you use them,
+  
+  So I said no to all those apps, and I built mine focusing on the core value of I want to journal when I want to journal and not when an app tells me I should, That's how I like to journal and describe my journey towards completing multiple goals to myself.
+  
+  It has been an interesting journey, and I must admit that I was quite scared when I launched this app and posted about it on [producthunt](https://www.producthunt.com/posts/logbook). It received some really nice comments from the community, and it has been downloaded by people in 40 different countries.
 draft: false
 ---
 In January 2021, I launched [the logbook](https://logbook.today/), an app for people like me that want to do journaling with a more calmed down approach. At first, I envisioned this product mostly for me, I have tried multiple apps like mine in the past but haven't enjoyed the process as much because all of them have something that I dislike, constant notifications, reminders, game theories, and other clickbait ways to draw your attention and make you use them,

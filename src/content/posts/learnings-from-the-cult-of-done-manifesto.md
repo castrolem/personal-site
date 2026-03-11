@@ -3,6 +3,18 @@ title: "Learnings from the cult of done manifesto"
 description: ""
 publishedAt: 2021-04-29
 tags: []
+preview: |
+  Digging through my notes I found an article that spoke
+  about [the cult of done manifesto](https://medium.com/@bre/the-cult-of-done-manifesto-724ca1c2ff13) that I have saved a
+  while ago and thought at that time it was an interesting way of looking at how you make and do things.
+  
+  I connected with all these ideas and felt like it really represented my way of viewing how I wanted to approach growth
+  in general. I’m someone that really dislikes procrastinating, but that also have a hard time at relaxing and just
+  slowing down the pace, so banishing procrastination, in general, was a very interesting moto for me, I started with
+  following the simple rule of “If you haven’t done anything about it, abandon it and move on to the next thing”.
+  
+  That mentality has worked great to deliver different side projects lately, to grow my knowledge by reading, doing, and
+  exploring different areas inside my job and outside of my job knowledge.
 draft: false
 ---
 Digging through my notes I found an article that spoke

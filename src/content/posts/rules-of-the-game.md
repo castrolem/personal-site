@@ -3,6 +3,10 @@ title: "Rules of the game"
 description: ""
 publishedAt: 2020-10-10
 tags: []
+preview: |
+  A list of the "rules" that I have been applying as **my way to live** for the past ~3 years and will continue doing.
+  
+  I revisit these "rules" every year, and have found that in the past 2 revisions I haven't added or removed anything from this list.
 draft: false
 ---
 A list of the "rules" that I have been applying as **my way to live** for the past ~3 years and will continue doing.

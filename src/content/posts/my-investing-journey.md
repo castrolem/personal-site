@@ -3,6 +3,20 @@ title: "My investing journey"
 description: ""
 publishedAt: 2021-06-15
 tags: []
+preview: |
+  I started to talk about a way to start investing on
+  [what I learned from peer to peer investing](https://luiscastro.co/2021/05/04/peer-to-peer-investing), but I didn't explain what made me say "I need to start investing", and I believe this is even more important than saying what has
+  worked for me.
+  
+  For me it all started in 2020, you probably know the drill here, COVID-19 hit different populations in different ways
+  but I was paying attention to the financial market and seeing the drop in different sectors thinking how would this
+  affect my daily life, I was too scared seeing the downhill trends in the charts on my Stocks app and it made sense, I
+  didn't know anything about it, so these lines where just lines going down in red for me, how could I not be scared of
+  them?
+  
+  Fast-forward a few months, and the recovery of the markets starts to be noticeable, all the charts show their graphs in
+  green and the lines have an upwards trend, but here I am, seeing all this data on my screen and still not understanding
+  much of what I'm seeing.
 draft: false
 ---
 I started to talk about a way to start investing on

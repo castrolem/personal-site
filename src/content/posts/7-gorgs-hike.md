@@ -3,6 +3,16 @@ title: "7 Gorgs hike"
 description: ""
 publishedAt: 2021-10-18
 tags: []
+preview: |
+  During this fall and after some health issues that I finally resolved, I wanted to explore nature more, after a bit of reading and hearing some recommendations I decided to visit this route.
+  
+  In Girona we find this beautiful route of the **Torrent de la Cabana** which descends through the mountains and forms 7 small falls called **Gorgs**. This is a hike that most people would recommend doing during the summer, but let me tell you why it was great to do during this time of the year too.
+  
+  It's an easy hike, not too many ups and downs during the route, and you don't have to have a great physical condition to complete it. I saw families with kids between 1-7 years old which means it's a quite accessible route to do.
+  
+  [![Map and coordinates](../../assets/posts/hikes/map-route.webp)](https://maps.apple.com/?address=Carretera%20Gombr%C3%A8n,%2017530%20Campdev%C3%A0nol,%20Girona,%20Spain&ll=42.227497,2.139639&q=Ruta%20del%20Sets%20Gorgs&_ext=EiYpFifCC44cRUAx4UQ+xoURAUA5lPznZ7QdRUBBFZKFLV4qAUBQBA%3D%3D)
+  
+  ![Map of 7 Gorgs route and parking spot](../../assets/posts/hikes/IMG_0096.webp)
 draft: false
 ---
 During this fall and after some health issues that I finally resolved, I wanted to explore nature more, after a bit of reading and hearing some recommendations I decided to visit this route.

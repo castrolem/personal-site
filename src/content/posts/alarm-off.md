@@ -3,6 +3,19 @@ title: "Alarm off"
 description: ""
 publishedAt: 2021-09-06
 tags: []
+preview: |
+  For the past 20 days, I have been experimenting with not having my alarm turned on. Honestly, I was a skeptic when I
+  started with it, I had some words from Alexis ([@duranmla](https://twitter.com/duranmla)) and his experiences to guide
+  me and ease my doubts. Now I want to share my experience.
+  
+  I had my alarm set to 8:00 am, which by today standards is actually an hour that not many can have their alarm set to, I
+  have a great schedule and situation, I don't have to travel far to get to my job, in fact, my bedroom is just 1 door
+  away from my office where I'm currently typing this post while sipping a cup of coffee.
+  
+  I have said it many times on my podcast, I don't even work in the morning, my workday starts at 1:00 pm, and that's
+  because I love the morning to do my chores and go out when most people can't or don't want to.
+  
+  ![Notion habit tracker template glimpse](../../assets/posts/notion-habit-tracking-glimpse.png)
 draft: false
 ---
 For the past 20 days, I have been experimenting with not having my alarm turned on. Honestly, I was a skeptic when I

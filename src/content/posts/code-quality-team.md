@@ -3,6 +3,12 @@ title: "Code Quality team"
 description: ""
 publishedAt: 2021-01-06
 tags: []
+preview: |
+  Mostly known as “core team” or “architecture team”, are teams whose sole responsibility in the company is to improve the quality and performance of the experience that the end-user receives.
+  
+  You probably heard them before and thought “... Isn’t quality and performance something that all teams should have metrics on?” Well... yes, but, and there’s always a but. Product teams run a backlog with new or tweaks of features that affect the business and most of the time these experiences are 90% there when speaking about performance and quality.
+  
+  It’s that 10% that’s hard to achieve and requires more time or knowledge that most product teams can’t afford to have because the business has to keep finding new and better ways of engaging with the user.
 draft: false
 ---
 Mostly known as “core team” or “architecture team”, are teams whose sole responsibility in the company is to improve the quality and performance of the experience that the end-user receives.

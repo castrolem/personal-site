@@ -3,6 +3,18 @@ title: "Refactoring a part of the business"
 description: ""
 publishedAt: 2021-08-13
 tags: []
+preview: |
+  As an engineer, I spend most of my time thinking about the best possible solutions for the problems we encounter, and as
+  many engineers I know, I don't spend nearly half of the time I spend on new solutions at updating, upgrading, and
+  overall improving previous code I made.
+  
+  That's overall fine in our industry, for the most part, we follow the philosophy of if it ain't broken don't touch it.
+  But what if we need to modify that code to add new things? Well, we are touching something now that isn't broken but
+  adding more complexity to it which means, more points of failure and possibly introducing new ways of breaking it.
+  
+  At this point you are thinking, well, it's time to refactor it! But I want to make you ask yourself, refactor what? Our
+  new code, our previous code, the combination of both? Can we retrofit our new logic into the old one? If you can't
+  answer those questions with a resounding yes... Well, let's say you are now entering "rewrite" territory.
 draft: false
 ---
 As an engineer, I spend most of my time thinking about the best possible solutions for the problems we encounter, and as

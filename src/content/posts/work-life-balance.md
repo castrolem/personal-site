@@ -3,6 +3,12 @@ title: "Work-life balance"
 description: ""
 publishedAt: 2022-07-18
 tags: []
+preview: |
+  This week I saw a couple of Twitter threads ([an example of 1 of them](https://twitter.com/viajeradelriio/status/1548938005871747074), PS is in Spanish) that made me think about my work-life prioritization and what’s the balance I have been pursuing, and why. I reached the apex of this thought when I received a [newsletter](https://www.youngmoney.co/p/truth-worklife-balance) about the same topic which inspired me to write today's post.
+  
+  First, let me tell you how I pictured work-life balance, **my belief was to have a healthy one, you should avoid speaking of your work-life outside of work and your events during work**. This behavior limited me because I could only emphasize with the team members I spoke with about my personal life, which took me a while to be open about it, to be honest.
+  
+  So once I understood that talking about both was ok and that I enjoyed speaking about them, this made me healthily re-think my friendships. I started to understand that most of the friends I have were like my old self version, trying to separate things out and never speaking out loud about them, which made me question one thing, do we have a work-life balance? Did we hate what we do? Do we just do it because we have to and there’s no enjoyment in it?
 draft: false
 ---
 This week I saw a couple of Twitter threads ([an example of 1 of them](https://twitter.com/viajeradelriio/status/1548938005871747074), PS is in Spanish) that made me think about my work-life prioritization and what’s the balance I have been pursuing, and why. I reached the apex of this thought when I received a [newsletter](https://www.youngmoney.co/p/truth-worklife-balance) about the same topic which inspired me to write today's post.

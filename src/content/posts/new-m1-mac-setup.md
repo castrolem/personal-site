@@ -3,6 +3,12 @@ title: "M1 Pro Mac development setup guide"
 description: ""
 publishedAt: 2022-01-17
 tags: []
+preview: |
+  A guide to set up my M1 Pro MacBook,  why? Well, the last time I upgraded my personal computer, it was 2017 and I had a list of things that I installed on my dev setup at that point in time that honestly ins’t valid anymore for my current development process.
+  
+  Heads up, the process might actually be easier than what I anticipated. Most software is now written to run on Apple Silicon.
+  
+  By default MacOS puts the dock at the bottom and is always displayed. I’m one of those persons that like to run the dock on the left side of the screen and also have it hide when not used. This is to maximise the vertical workspace area. I also don’t love the behaviour of Big Sur that minimises the window into a separated view, so I change this config to always minimise to the app icon.
 draft: false
 ---
 A guide to set up my M1 Pro MacBook,  why? Well, the last time I upgraded my personal computer, it was 2017 and I had a list of things that I installed on my dev setup at that point in time that honestly ins’t valid anymore for my current development process.

@@ -3,6 +3,12 @@ title: "A new beginning"
 description: ""
 publishedAt: 2022-09-14
 tags: []
+preview: |
+  I'm pulling the plug of being comfortable with the apartment, the city, the state, the country I live in, and everyone within a 20km radius from me.
+  
+  How? I'm moving to another country, a smaller one that's not that far, and not too many people even know exists, to begin with.
+  
+  Why? Because I want something different, I want to live in the mountains and in a country that treats me well, and that sentence might sound interesting to you, so let's break down what that means for me.
 draft: false
 ---
 I'm pulling the plug of being comfortable with the apartment, the city, the state, the country I live in, and everyone within a 20km radius from me.

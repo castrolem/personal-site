@@ -3,6 +3,12 @@ title: "The key to starting making apps as an indie"
 description: ""
 publishedAt: 2020-08-29
 tags: []
+preview: |
+  After a few months of doing indie apps on the side of my normal job, I have thought about key elements to make your apps successful based on it, there might be some obvious ones but I will still make the effort to point them out.
+  
+  The goods and the bad ones, they are there, they are still hanging in the AppStore, do they have reviews? how many? How recent? What do people say in them?
+  
+  This is one of the things I constantly check, at least once a week, because it gives me insights into what I could add to my app that people are clamoring on others and make them convert from their current one to mine.
 draft: false
 ---
 After a few months of doing indie apps on the side of my normal job, I have thought about key elements to make your apps successful based on it, there might be some obvious ones but I will still make the effort to point them out.

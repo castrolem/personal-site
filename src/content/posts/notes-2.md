@@ -4,6 +4,13 @@ description: ""
 publishedAt: 2026-02-07
 tags:
   - "notes"
+preview: |
+  Howdy, fine people. Remember when I said "once a month, if something interesting happened"? I did not take into consideration the "what if you do way too many things in a month" scenario. So here we are. It's early February, but this one is a recap of late December and January.
+  
+  I'll get to some life updates further down, but as always, let's to start with the good stuff: things you might not know existed, and might be interested in. Here are a few that I'm loving and using right now, plus my conclusions after I inevitably obsessed over the details.
+  
+  **Fashion**
+  Winter season is sweater season. I took a chance on this [1941 USN Seaman Sweater (Anthracite)](https://www.pikebrothers.com/en/1941-USN-Seaman-Sweater-Anthracite/P0204-23-0004-L). I'd only tried Pike Brothers for their pants before, and there's a lot of talk online about their wool sweaters. I'm liking it, but I strongly recommend trying it in a store first. It has a very specific fit. I normally wear M, but I sized up because I didn’t like how the M sat on me.
 draft: false
 ---
 Howdy, fine people. Remember when I said "once a month, if something interesting happened"? I did not take into consideration the "what if you do way too many things in a month" scenario. So here we are. It's early February, but this one is a recap of late December and January.

@@ -3,6 +3,14 @@ title: "My perspective changes as a software developer with 10 years of experien
 description: ""
 publishedAt: 2021-09-15
 tags: []
+preview: |
+  Inspired by a conversation I had with a teammate about my career and how I became a staff engineer, I decided to post a
+  quick read on the things I feel shaped my career and the opinions I have maintained, changed, and kept during the past
+  10 years.
+  
+  business case rises.
+  
+  solution to the problem than writing the solution.
 draft: false
 ---
 Inspired by a conversation I had with a teammate about my career and how I became a staff engineer, I decided to post a

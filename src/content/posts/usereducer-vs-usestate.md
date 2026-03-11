@@ -3,6 +3,12 @@ title: "React state useReducer vs useState"
 description: ""
 publishedAt: 2022-08-29
 tags: []
+preview: |
+  The other day at my day to day job I came out with this [thought that I had to tweet](https://twitter.com/Castrolem/status/1559920744112463874), because I wanted to seek validation from the community about it.
+  
+  To my surprise, lots of people actually felt the same as I, some shared it publicly and others via other channels, but there was a common factor, **local State prevails** and **global state is the root of all evil** within React.
+  
+  You probably know this already, focusing on your local state first makes more sense than putting everything into the global state, because **not everything has to be shared by every single page and user flow** your app contains. So that's not an area we'll focus in this blog post.
 draft: false
 ---
 The other day at my day to day job I came out with this [thought that I had to tweet](https://twitter.com/Castrolem/status/1559920744112463874), because I wanted to seek validation from the community about it.

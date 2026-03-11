@@ -5,6 +5,17 @@ publishedAt: 2023-11-11
 tags:
   - "programming"
   - "code reviews"
+preview: |
+  One of the things that I have vocalised to myself after
+  reading [this article](https://blog.danlew.net/2021/02/23/stop-nitpicking-in-code-reviews/)
+  from [Dan Lew](https://blog.danlew.net) with the same name, is that I have stopped this behaviour by my own without
+  noticing it. Like the article states, it has made me happier to do so.
+  
+  Let me explain my point of view on why I believe this is the natural progression of every senior developer in a company
+  and my reasons behind proposing more adoption of tools like [standardJS](https://standardjs.com) on your workflows.
+  
+  Code is opinionated, we all have our own personal biases and our own way of writing that comes baked in with our
+  personalities, what is easy to understand and write for me might not be so easy for the person in front of me.
 draft: false
 ---
 One of the things that I have vocalised to myself after

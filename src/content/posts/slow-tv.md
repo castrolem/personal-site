@@ -3,6 +3,20 @@ title: "Slow TV, narratives as a way of living"
 description: ""
 publishedAt: 2021-05-31
 tags: []
+preview: |
+  I found this week during my podcast listening sessions the concept of slow TV thanks
+  to [this episode of Invisibilia](https://overcast.fm/+Ht-EBtVEw), to give you a resume of it, the whole concept is to
+  produce a show with no plot, no characters, and surely no tension... Have you seen
+  those [live streams on YouTube of trains on Norway](https://www.youtube.com/results?search_query=norway+live+train)?
+  Well, that's basically it.
+  
+  This concept on paper sounds so simple and yet, it isn't. It made me feel uncomfortable for a reason, it made me listen
+  to my inner thoughts and start thinking about the story of my life, it made me daydream of things and I should be doing
+  or that I wanted to do and I haven't done because I haven't put the time to do them.
+  
+  It all started with untaken trips that I should 100% do, but it grew further than that. Why haven't I taken these trips?
+  Why haven't I put the time into researching what would make them possible? etc. And after a while contemplating the
+  railroad and these beautiful nordic scenarios, it hit me.
 draft: false
 ---
 I found this week during my podcast listening sessions the concept of slow TV thanks

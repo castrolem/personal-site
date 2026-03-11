@@ -3,6 +3,12 @@ title: "Keeping a logbook"
 description: ""
 publishedAt: 2020-10-03
 tags: []
+preview: |
+  I love journaling, mainly because it makes me rethink what I have done during my day and understand all the important things I have accomplished or couldn't finish, and most importantly how that made me feel.
+  
+  Now, to be effective with your Journal, you need to do various processes that you might not want to or have the time to do so and that's when it all starts crumbling into less effective journal entries.
+  
+  There has to be a better way of keeping the benefits of the journal but not having to do all the ceremonies? (Kinda a throwback to those discussions between doing SCRUM or Kanban hah), well, for me there is a way.
 draft: false
 ---
 I love journaling, mainly because it makes me rethink what I have done during my day and understand all the important things I have accomplished or couldn't finish, and most importantly how that made me feel.

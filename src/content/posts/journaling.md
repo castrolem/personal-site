@@ -3,6 +3,12 @@ title: "The need for journaling"
 description: ""
 publishedAt: 2020-08-18
 tags: []
+preview: |
+  I used to be able to get by every day without knowing exactly how things made me feel. When people asked me how I felt, the answer was quite easy "I dunno. Everything seems ok so I'm fine", and I was always answering "Fine and you?".
+  
+  So I started journaling because I wanted to know what I accomplished every day. This was a pain in the ***, not because it was hard to do, but because I had to invest time into writing things I accomplished every, single, day. So I asked myself, there has to be a better way of doing this?
+  
+  Meet my approach to journaling — I got some goals I want to accomplish this year, and I only want to journal the things I do for those goals and on some occasions other things that just made me feel either good or bad but are worth remembering.
 draft: false
 ---
 I used to be able to get by every day without knowing exactly how things made me feel. When people asked me how I felt, the answer was quite easy "I dunno. Everything seems ok so I'm fine", and I was always answering "Fine and you?".

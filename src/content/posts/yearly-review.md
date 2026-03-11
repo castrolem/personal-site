@@ -5,6 +5,14 @@ publishedAt: 2022-12-28
 tags:
   - "mastermind"
   - "goals"
+preview: |
+  This year has been a big one, we could talk about how there has been a lot of movement on the macroeconomics situation of most countries, that a war started between countries that aren't that far from where I live, or that we could be living the start of another dotcom like a cycle.
+  
+  All of which sounds like we just had one of the worst years in a while, but like always, there's some good too.
+  
+  I will start this year's review like always, looking at what I wanted to accomplish this year and how close I got to between those boundaries. Then I will reflect on a few life events that changed how  I think I should approach the exercise of making new goals for 2023.
+  
+  ![2022 goals framework](../../assets/posts/goals-framework.png)
 draft: false
 ---
 This year has been a big one, we could talk about how there has been a lot of movement on the macroeconomics situation of most countries, that a war started between countries that aren't that far from where I live, or that we could be living the start of another dotcom like a cycle.

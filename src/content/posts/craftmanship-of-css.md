@@ -3,6 +3,12 @@ title: "Making good CSS is harder than what most people think"
 description: ""
 publishedAt: 2020-10-08
 tags: []
+preview: |
+  It’s not just about knowing the code or the properties in this case that you can apply to any element in your DOM. It’s also about knowing how each browser rendering engine will display your attributes.
+  
+  Lately, the trend of front-end developers is to focus on JavaScript and learn all about the frameworks, V8 performance, and other elements that make these web apps interactive and fulfill their business intentions.
+  
+  This is good, but it’s also clear that we have been neglecting a bit the CSS side of it, there are things like [styled-components](https://styled-components.com) which try to break the barrier between doing CSS as we have been doing for decades now into the JS world and other similar tools, but that’s not the main issue. The main issue is:
 draft: false
 ---
 It’s not just about knowing the code or the properties in this case that you can apply to any element in your DOM. It’s also about knowing how each browser rendering engine will display your attributes.

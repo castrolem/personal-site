@@ -3,6 +3,12 @@ title: "I started learning Swift and SwiftUI"
 description: ""
 publishedAt: 2020-07-29
 tags: []
+preview: |
+  As a senior developer, learning a new language isn't as hard as it was when I was starting my career, the way you express yourself is similar to other languages, so you think more about "what's the syntax for doing X in this language?" vs "how would I do this?".
+  
+  So why learn Swift? Is it to just do apps for the Apple ecosystem? — I mean, I have been doing apps for the same ecosystem using React-Native. I don't need to learn a new language to make good apps for the users inside their ecosystem.
+  
+  I'm learning Swift because I want to make experiences that I believe right now I cannot make with tools like React-Native. Experiences that make my users feel engaged but that also, makes them feel appreciated in different ways.
 draft: false
 ---
 As a senior developer, learning a new language isn't as hard as it was when I was starting my career, the way you express yourself is similar to other languages, so you think more about "what's the syntax for doing X in this language?" vs "how would I do this?".
