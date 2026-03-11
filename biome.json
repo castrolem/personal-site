@@ -1,0 +1,26 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.4.6/schema.json",
+  "files": {
+    "ignoreUnknown": true,
+    "includes": ["**", "!dist", "!.astro", "!node_modules"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "includes": ["**/*.{js,jsx,ts,tsx,mjs,cjs,json,jsonc}"]
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
+  }
+}

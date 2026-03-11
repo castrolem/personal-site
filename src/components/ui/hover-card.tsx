@@ -1,10 +1,10 @@
-import * as React from "react"
-import { PreviewCard as PreviewCardPrimitive } from "@base-ui/react/preview-card"
+import type * as React from "react";
+import { PreviewCard as PreviewCardPrimitive } from "@base-ui/react/preview-card";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
-const HoverCard = PreviewCardPrimitive.Root
-const HoverCardTrigger = PreviewCardPrimitive.Trigger
+const HoverCard = PreviewCardPrimitive.Root;
+const HoverCardTrigger = PreviewCardPrimitive.Trigger;
 
 function HoverCardContent({
   className,
@@ -13,13 +13,23 @@ function HoverCardContent({
   sideOffset = 18,
   ...props
 }: React.ComponentPropsWithoutRef<typeof PreviewCardPrimitive.Popup> & {
-  align?: React.ComponentPropsWithoutRef<typeof PreviewCardPrimitive.Positioner>["align"]
-  side?: React.ComponentPropsWithoutRef<typeof PreviewCardPrimitive.Positioner>["side"]
-  sideOffset?: React.ComponentPropsWithoutRef<typeof PreviewCardPrimitive.Positioner>["sideOffset"]
+  align?: React.ComponentPropsWithoutRef<
+    typeof PreviewCardPrimitive.Positioner
+  >["align"];
+  side?: React.ComponentPropsWithoutRef<
+    typeof PreviewCardPrimitive.Positioner
+  >["side"];
+  sideOffset?: React.ComponentPropsWithoutRef<
+    typeof PreviewCardPrimitive.Positioner
+  >["sideOffset"];
 }) {
   return (
     <PreviewCardPrimitive.Portal>
-      <PreviewCardPrimitive.Positioner align={align} side={side} sideOffset={sideOffset}>
+      <PreviewCardPrimitive.Positioner
+        align={align}
+        side={side}
+        sideOffset={sideOffset}
+      >
         <PreviewCardPrimitive.Popup
           data-slot="hover-card-content"
           className={cn(
@@ -30,7 +40,7 @@ function HoverCardContent({
         />
       </PreviewCardPrimitive.Positioner>
     </PreviewCardPrimitive.Portal>
-  )
+  );
 }
 
-export { HoverCard, HoverCardContent, HoverCardTrigger }
+export { HoverCard, HoverCardContent, HoverCardTrigger };

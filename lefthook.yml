@@ -1,0 +1,10 @@
+pre-commit:
+  jobs:
+    - name: biome lint
+      glob: "*.{js,jsx,ts,tsx,mjs,cjs,json,jsonc}"
+      run: ./node_modules/.bin/biome lint --write --no-errors-on-unmatched {staged_files}
+      stage_fixed: true
+    - name: biome format
+      glob: "*.{js,jsx,ts,tsx,mjs,cjs,json,jsonc,astro,css}"
+      run: ./node_modules/.bin/biome format --write --no-errors-on-unmatched {staged_files}
+      stage_fixed: true
