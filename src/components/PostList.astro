@@ -2,7 +2,9 @@
 import { render } from "astro:content";
 import { createMarkdownProcessor } from "@astrojs/markdown-remark";
 import { Button } from "@/components/ui/button";
+import { PostAuthor } from "@/components/PostAuthor";
 import type { PostEntry } from "@/lib/posts";
+import { getPostsByTag, getPublishedPosts } from "@/lib/posts";
 
 interface Props {
   posts: PostEntry[];
@@ -20,6 +22,10 @@ const formatDate = (value: Date) =>
   });
 
 const markdown = await createMarkdownProcessor();
+const [allPosts, bookPosts] = await Promise.all([
+  getPublishedPosts(),
+  getPostsByTag("#book"),
+]);
 
 const renderedPosts = await Promise.all(
   posts.map(async (post) => {
@@ -53,43 +59,38 @@ const renderedPosts = await Promise.all(
     <ul class="space-y-24">
       {renderedPosts.map(({ post, previewHtml, Content }) => (
         <li>
-          <article class="py-4">
-            <div class="flex items-baseline justify-between gap-4">
-              <h2 class="text-xl leading-tight">
-                <a
-                  class="transition-colors hover:text-muted-foreground"
-                  href={`/posts/${post.id}/`}
-                >
-                  {post.data.title}
-                </a>
-              </h2>
-              <p class="shrink-0 text-sm text-muted-foreground">
-                {formatDate(post.data.publishedAt)}
-              </p>
-            </div>
+          <article class="space-y-6 py-2">
+            <PostAuthor
+              client:idle
+              publishedAt={formatDate(post.data.publishedAt)}
+              totalBooks={bookPosts.length}
+              totalPosts={allPosts.length}
+            />
 
-            <div class="mt-4 space-y-4 text-base leading-8 text-foreground [&_a]:underline [&_img]:rounded-2xl [&_img]:border [&_img]:border-border [&_img]:shadow-sm [&_p]:text-foreground [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5">
+            <div class="pl-16">
+              <div class="space-y-4 text-foreground [&_a]:text-primary [&_a]:no-underline hover:[&_a]:underline [&_img]:rounded-3xl [&_img]:border [&_img]:border-border [&_img]:shadow-sm [&_p]:text-foreground [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:list-decimal [&_ol]:pl-6">
               {previewHtml ? (
                 <Fragment set:html={previewHtml} />
               ) : (
                 Content && <Content />
               )}
-            </div>
-
-            {post.data.tags.length > 0 && (
-              <div class="mt-4 flex flex-wrap gap-2">
-                {post.data.tags.map((tag) => (
-                  <span class="rounded-full bg-muted px-2.5 py-1 text-xs text-muted-foreground">
-                    {tag}
-                  </span>
-                ))}
               </div>
-            )}
 
-            <div class="mt-4">
-              <Button href={`/posts/${post.id}/`} size="sm" variant="secondary">
-                Open post
-              </Button>
+              {post.data.tags.length > 0 && (
+                <div class="mt-5 flex flex-wrap gap-2">
+                  {post.data.tags.map((tag) => (
+                    <span class="rounded-full bg-muted px-2.5 py-1 text-xs text-muted-foreground">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+
+              <div class="mt-5">
+                <Button href={`/posts/${post.id}/`} size="sm" variant="secondary">
+                  Open post
+                </Button>
+              </div>
             </div>
           </article>
         </li>

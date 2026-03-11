@@ -33,21 +33,11 @@ const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
     <div
       class="mx-auto flex min-h-svh w-full max-w-2xl flex-col px-6 py-10 sm:px-8 sm:py-12"
     >
-      <header class="mb-12 flex flex-col gap-8">
-        <div class="space-y-2">
-          <a
-            class="inline-flex text-sm tracking-[0.24em] uppercase text-muted-foreground"
-            href="/"
-          >
-            Luis Castro
-          </a>
-          <p class="max-w-md text-sm leading-6 text-muted-foreground">
-            Notes, longer essays, daily fragments, and books worth keeping
-            around.
-          </p>
-        </div>
-
-        <nav aria-label="Primary" class="flex flex-wrap gap-2">
+      <header class="sticky top-6 z-20 mb-12 flex justify-center">
+        <nav
+          aria-label="Primary"
+          class="flex w-fit max-w-full flex-wrap items-center justify-center gap-2 rounded-[2rem] border border-border/70 bg-card/80 p-1 backdrop-blur-md"
+        >
           {
             navigation.map(({ href, label }) => {
               const isActive =
@@ -60,10 +50,10 @@ const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
               return (
                 <a
                   class:list={[
-                    "rounded-full border px-4 py-2 text-sm transition-colors",
+                    "rounded-full border px-5 py-2.5 text-sm font-medium transition-colors",
                     isActive
-                      ? "border-foreground bg-foreground text-background"
-                      : "border-border bg-card text-muted-foreground hover:border-foreground hover:text-foreground",
+                      ? "border-background bg-background text-foreground"
+                      : "border-transparent bg-transparent text-muted-foreground hover:text-foreground",
                   ]}
                   href={href}
                 >
