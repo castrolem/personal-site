@@ -1,5 +1,12 @@
 ---
 import "@/styles/global.css";
+import { HugeiconsIcon } from "@hugeicons/react";
+import {
+  BookOpen01Icon,
+  Calendar03Icon,
+  News01Icon,
+  UserIcon,
+} from "@hugeicons/core-free-icons";
 
 interface Props {
   title?: string;
@@ -12,10 +19,10 @@ const {
 } = Astro.props as Props;
 
 const navigation = [
-  { href: "/", label: "Posts" },
-  { href: "/dailies", label: "Dailies" },
-  { href: "/library", label: "Library" },
-  { href: "/about", label: "About" },
+  { href: "/", label: "Posts", icon: News01Icon },
+  { href: "/dailies", label: "Dailies", icon: Calendar03Icon },
+  { href: "/library", label: "Library", icon: BookOpen01Icon },
+  { href: "/about", label: "About", icon: UserIcon },
 ];
 
 const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
@@ -39,7 +46,7 @@ const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
           class="flex w-fit max-w-full flex-wrap items-center justify-center gap-2 rounded-[2rem] border border-border/70 bg-card/80 p-1 backdrop-blur-md"
         >
           {
-            navigation.map(({ href, label }) => {
+            navigation.map(({ href, label, icon }) => {
               const isActive =
                 href === "/"
                   ? pathname === "/" ||
@@ -50,13 +57,21 @@ const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
               return (
                 <a
                   class:list={[
-                    "rounded-full border px-5 py-2.5 text-sm font-medium transition-colors",
+                    "inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-medium transition-colors",
                     isActive
                       ? "border-background bg-background text-foreground"
                       : "border-transparent bg-transparent text-muted-foreground hover:text-foreground",
                   ]}
                   href={href}
                 >
+                  <HugeiconsIcon
+                    aria-hidden="true"
+                    className="size-4 shrink-0"
+                    color="currentColor"
+                    icon={icon}
+                    size={16}
+                    strokeWidth={1.8}
+                  />
                   {label}
                 </a>
               );
