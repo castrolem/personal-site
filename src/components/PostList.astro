@@ -69,25 +69,19 @@ const renderedPosts = await Promise.all(
 
             <div class="pl-16">
               <div class="space-y-4 text-foreground [&_a]:text-primary [&_a]:no-underline hover:[&_a]:underline [&_img]:rounded-3xl [&_img]:border [&_img]:border-border [&_img]:shadow-sm [&_p]:text-foreground [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:list-decimal [&_ol]:pl-6">
-              {previewHtml ? (
-                <Fragment set:html={previewHtml} />
-              ) : (
-                Content && <Content />
-              )}
+                {previewHtml ? (
+                  <Fragment set:html={previewHtml} />
+                ) : (
+                  Content && <Content />
+                )}
               </div>
 
-              {post.data.tags.length > 0 && (
-                <div class="mt-5 flex flex-wrap gap-2">
-                  {post.data.tags.map((tag) => (
-                    <span class="rounded-full bg-muted px-2.5 py-1 text-xs text-muted-foreground">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
-
               <div class="mt-5">
-                <Button href={`/posts/${post.id}/`} size="sm" variant="secondary">
+                <Button
+                  href={`/posts/${post.id}/`}
+                  size="sm"
+                  variant="secondary"
+                >
                   Open post
                 </Button>
               </div>
