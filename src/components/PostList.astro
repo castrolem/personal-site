@@ -1,6 +1,7 @@
 ---
 import { render } from "astro:content";
 import { createMarkdownProcessor } from "@astrojs/markdown-remark";
+import { Button } from "@/components/ui/button";
 import type { PostEntry } from "@/lib/posts";
 
 interface Props {
@@ -86,12 +87,9 @@ const renderedPosts = await Promise.all(
             )}
 
             <div class="mt-4">
-              <a
-                class="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                href={`/posts/${post.id}/`}
-              >
+              <Button href={`/posts/${post.id}/`} size="sm" variant="secondary">
                 Open post
-              </a>
+              </Button>
             </div>
           </article>
         </li>

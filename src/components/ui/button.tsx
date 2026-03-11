@@ -1,3 +1,4 @@
+import type * as React from "react"
 import { Button as ButtonPrimitive } from "@base-ui/react/button"
 import { cva, type VariantProps } from "class-variance-authority"
 
@@ -40,12 +41,30 @@ const buttonVariants = cva(
   }
 )
 
+type ButtonProps = ButtonPrimitive.Props &
+  VariantProps<typeof buttonVariants> & {
+    href?: string
+  } & React.AnchorHTMLAttributes<HTMLAnchorElement>
+
 function Button({
   className,
   variant = "default",
   size = "default",
+  href,
   ...props
-}: ButtonPrimitive.Props & VariantProps<typeof buttonVariants>) {
+}: ButtonProps) {
+  if (href) {
+    return (
+      <ButtonPrimitive
+        data-slot="button"
+        nativeButton={false}
+        render={<a href={href} />}
+        className={cn(buttonVariants({ variant, size, className }))}
+        {...props}
+      />
+    )
+  }
+
   return (
     <ButtonPrimitive
       data-slot="button"
