@@ -1,0 +1,28 @@
+---
+import Layout from "@/layouts/main.astro"
+import PostsArchive from "@/components/PostsArchive.astro"
+import { getPublishedPosts, paginatePosts } from "@/lib/posts"
+
+export async function getStaticPaths() {
+  const allPosts = await getPublishedPosts()
+  const { totalPages } = paginatePosts(allPosts, 1)
+
+  return Array.from({ length: Math.max(totalPages - 1, 0) }, (_, index) => {
+    const page = index + 2
+
+    return {
+      params: { page: String(page) },
+      props: paginatePosts(allPosts, page),
+    }
+  })
+}
+
+const pagination = Astro.props
+---
+
+<Layout
+  title={`Posts | Page ${pagination.currentPage} | Luis Castro`}
+  description={`Posts archive, page ${pagination.currentPage}.`}
+>
+  <PostsArchive {...pagination} />
+</Layout>

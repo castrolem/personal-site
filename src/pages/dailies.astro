@@ -1,0 +1,25 @@
+---
+import Layout from "@/layouts/main.astro"
+import PostList from "@/components/PostList.astro"
+import { getPostsByTag } from "@/lib/posts"
+
+const posts = await getPostsByTag("#daily")
+---
+
+<Layout title="Dailies | Luis Castro" description="Shorter posts tagged #daily.">
+  <section class="space-y-8">
+    <div class="space-y-3">
+      <p class="text-sm uppercase tracking-[0.22em] text-muted-foreground">Short form</p>
+      <h1 class="text-4xl leading-none">Dailies</h1>
+      <p class="text-base leading-7 text-muted-foreground">
+        Brief updates, fragments, and notes tagged <span class="text-foreground">#daily</span>.
+      </p>
+    </div>
+
+    <PostList
+      posts={posts}
+      emptyTitle="No dailies yet"
+      emptyMessage="Posts tagged `#daily` will be collected here automatically."
+    />
+  </section>
+</Layout>

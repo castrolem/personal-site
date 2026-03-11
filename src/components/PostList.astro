@@ -1,0 +1,59 @@
+---
+import type { PostEntry } from "@/lib/posts"
+
+interface Props {
+  posts: PostEntry[]
+  emptyTitle: string
+  emptyMessage: string
+}
+
+const { posts, emptyTitle, emptyMessage } = Astro.props as Props
+
+const formatDate = (value: Date) =>
+  value.toLocaleDateString("en", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  })
+---
+
+{
+  posts.length > 0 ? (
+    <ul class="space-y-4">
+      {posts.map((post) => (
+        <li>
+          <a
+            class="block rounded-3xl border border-border bg-card px-5 py-4 transition-colors hover:border-foreground"
+            href={`/posts/${post.id}/`}
+          >
+            <div class="flex items-baseline justify-between gap-4">
+              <h2 class="text-xl leading-tight">{post.data.title}</h2>
+              <p class="shrink-0 text-sm text-muted-foreground">
+                {formatDate(post.data.publishedAt)}
+              </p>
+            </div>
+
+            {post.data.description && (
+              <p class="mt-3 text-sm leading-6 text-muted-foreground">{post.data.description}</p>
+            )}
+
+            {post.data.tags.length > 0 && (
+              <div class="mt-4 flex flex-wrap gap-2">
+                {post.data.tags.map((tag) => (
+                  <span class="rounded-full bg-muted px-2.5 py-1 text-xs text-muted-foreground">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
+          </a>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <div class="rounded-3xl border border-dashed border-border bg-card px-5 py-6">
+      <h2 class="text-lg">{emptyTitle}</h2>
+      <p class="mt-2 text-sm leading-6 text-muted-foreground">{emptyMessage}</p>
+    </div>
+  )
+}

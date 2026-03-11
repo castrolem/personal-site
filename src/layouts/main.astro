@@ -1,15 +1,89 @@
 ---
-import "@/styles/global.css"
+import "@/styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Luis Castro",
+  description = "Writing, notes, and references.",
+} = Astro.props as Props;
+
+const navigation = [
+  { href: "/", label: "Posts" },
+  { href: "/dailies", label: "Dailies" },
+  { href: "/library", label: "Library" },
+  { href: "/about", label: "About" },
+];
+
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Lighthouse</title>
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
   </head>
-  <body>
-    <slot />
+  <body class="min-h-svh bg-background text-foreground">
+    <div
+      class="mx-auto flex min-h-svh w-full max-w-2xl flex-col px-6 py-10 sm:px-8 sm:py-12"
+    >
+      <header class="mb-12 flex flex-col gap-8">
+        <div class="space-y-2">
+          <a
+            class="inline-flex text-sm tracking-[0.24em] uppercase text-muted-foreground"
+            href="/"
+          >
+            Luis Castro
+          </a>
+          <p class="max-w-md text-sm leading-6 text-muted-foreground">
+            Notes, longer essays, daily fragments, and books worth keeping
+            around.
+          </p>
+        </div>
+
+        <nav aria-label="Primary" class="flex flex-wrap gap-2">
+          {
+            navigation.map(({ href, label }) => {
+              const isActive =
+                href === "/"
+                  ? pathname === "/" ||
+                    pathname === "/posts" ||
+                    pathname.startsWith("/page/")
+                  : pathname === href || pathname.startsWith(`${href}/`);
+
+              return (
+                <a
+                  class:list={[
+                    "rounded-full border px-4 py-2 text-sm transition-colors",
+                    isActive
+                      ? "border-foreground bg-foreground text-background"
+                      : "border-border bg-card text-muted-foreground hover:border-foreground hover:text-foreground",
+                  ]}
+                  href={href}
+                >
+                  {label}
+                </a>
+              );
+            })
+          }
+        </nav>
+      </header>
+
+      <main class="flex-1">
+        <slot />
+      </main>
+
+      <footer
+        class="mt-16 border-t border-border pt-6 text-sm text-muted-foreground"
+      >
+        Built with Astro.
+      </footer>
+    </div>
   </body>
 </html>

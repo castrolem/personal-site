@@ -1,0 +1,93 @@
+---
+import PostList from "@/components/PostList.astro"
+import type { PostEntry } from "@/lib/posts"
+
+interface Props {
+  posts: PostEntry[]
+  currentPage: number
+  totalPages: number
+  totalPosts: number
+  basePath?: string
+}
+
+const {
+  posts,
+  currentPage,
+  totalPages,
+  totalPosts,
+  basePath = "/",
+} = Astro.props as Props
+
+const buildPageHref = (page: number) => {
+  if (page <= 1) {
+    return basePath
+  }
+
+  return basePath === "/" ? `/page/${page}/` : `${basePath}/page/${page}/`
+}
+
+const pageLinks = Array.from({ length: totalPages }, (_, index) => index + 1)
+---
+
+<section class="space-y-8">
+  <div class="space-y-3">
+    <p class="text-sm uppercase tracking-[0.22em] text-muted-foreground">Archive</p>
+    <h1 class="text-4xl leading-none">Posts</h1>
+    <p class="text-base leading-7 text-muted-foreground">
+      Everything in one place, ordered by publish date.
+    </p>
+    <p class="text-sm text-muted-foreground">
+      {totalPosts} {totalPosts === 1 ? "post" : "posts"} total. 25 per page.
+    </p>
+  </div>
+
+  <PostList
+    posts={posts}
+    emptyTitle="No posts yet"
+    emptyMessage="Add markdown files under `src/content/posts` and they will show up here automatically."
+  />
+
+  {
+    totalPages > 1 && (
+      <nav aria-label="Pagination" class="flex flex-wrap items-center gap-2 pt-2">
+        <a
+          class:list={[
+            "rounded-full border px-4 py-2 text-sm transition-colors",
+            currentPage === 1
+              ? "pointer-events-none border-border bg-card text-muted-foreground/50"
+              : "border-border bg-card text-muted-foreground hover:border-foreground hover:text-foreground",
+          ]}
+          href={buildPageHref(currentPage - 1)}
+        >
+          Previous
+        </a>
+
+        {pageLinks.map((page) => (
+          <a
+            class:list={[
+              "rounded-full border px-4 py-2 text-sm transition-colors",
+              page === currentPage
+                ? "border-foreground bg-foreground text-background"
+                : "border-border bg-card text-muted-foreground hover:border-foreground hover:text-foreground",
+            ]}
+            href={buildPageHref(page)}
+          >
+            {page}
+          </a>
+        ))}
+
+        <a
+          class:list={[
+            "rounded-full border px-4 py-2 text-sm transition-colors",
+            currentPage === totalPages
+              ? "pointer-events-none border-border bg-card text-muted-foreground/50"
+              : "border-border bg-card text-muted-foreground hover:border-foreground hover:text-foreground",
+          ]}
+          href={buildPageHref(currentPage + 1)}
+        >
+          Next
+        </a>
+      </nav>
+    )
+  }
+</section>

@@ -1,0 +1,25 @@
+---
+import Layout from "@/layouts/main.astro"
+import PostList from "@/components/PostList.astro"
+import { getPostsByTag } from "@/lib/posts"
+
+const posts = await getPostsByTag("#book")
+---
+
+<Layout title="Library | Luis Castro" description="Posts tagged #book.">
+  <section class="space-y-8">
+    <div class="space-y-3">
+      <p class="text-sm uppercase tracking-[0.22em] text-muted-foreground">Reading shelf</p>
+      <h1 class="text-4xl leading-none">Library</h1>
+      <p class="text-base leading-7 text-muted-foreground">
+        Reading notes and book-related posts tagged <span class="text-foreground">#book</span>.
+      </p>
+    </div>
+
+    <PostList
+      posts={posts}
+      emptyTitle="No library notes yet"
+      emptyMessage="Posts tagged `#book` will show up here once you add them."
+    />
+  </section>
+</Layout>
