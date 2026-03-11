@@ -62,6 +62,7 @@ const renderedPosts = await Promise.all(
           <article class="space-y-6 py-2">
             <PostAuthor
               client:idle
+              transition:persist
               publishedAt={formatDate(post.data.publishedAt)}
               totalBooks={bookPosts.length}
               totalPosts={allPosts.length}
