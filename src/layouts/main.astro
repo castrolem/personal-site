@@ -45,7 +45,7 @@ const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
       <header class="sticky top-6 z-20 mb-12 flex justify-center">
         <nav
           aria-label="Primary"
-          class="flex w-fit max-w-full flex-wrap items-center justify-center gap-2 rounded-[2rem] border border-border/70 bg-card/80 p-1 backdrop-blur-md"
+          class="flex w-fit max-w-full flex-wrap items-center justify-center gap-2 rounded-full border border-border/20 p-1 backdrop-blur-lg"
         >
           {
             navigation.map(({ href, label, icon }) => {

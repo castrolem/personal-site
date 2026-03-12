@@ -89,7 +89,7 @@ function PostAuthor({ publishedAt, totalPosts, totalBooks }: Props) {
 
       <div className="min-w-0 space-y-1 pt-1">
         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          <a className="font-extrabold text-accent" href="/about">
+          <a className="font-extrabold" href="/about">
             Luis Castro
           </a>
           <p className="text-sm text-muted-foreground">{publishedAt}</p>

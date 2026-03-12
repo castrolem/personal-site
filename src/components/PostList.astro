@@ -77,15 +77,19 @@ const renderedPosts = await Promise.all(
                 )}
               </div>
 
-              <div class="mt-5">
-                <Button
-                  href={`/posts/${post.id}/`}
-                  size="sm"
-                  variant="secondary"
-                >
-                  Open post
-                </Button>
-              </div>
+              {
+                previewHtml && (
+                  <div class="mt-5">
+                    <Button
+                      href={`/posts/${post.id}/`}
+                      size="sm"
+                      variant="secondary"
+                    >
+                      Open post
+                    </Button>
+                  </div>
+                )
+              }
             </div>
           </article>
         </li>

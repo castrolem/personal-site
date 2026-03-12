@@ -5,83 +5,131 @@
 @custom-variant dark (@media (prefers-color-scheme: dark));
 
 :root {
-  --background: oklch(0.946 0.008 91.485);
-  --foreground: oklch(0.263 0.013 232.979);
-  --card: oklch(0.977 0.009 84.573);
-  --card-foreground: oklch(0.263 0.013 232.979);
-  --popover: oklch(0.985 0.007 88.642);
-  --popover-foreground: oklch(0.263 0.013 232.979);
-  --primary: oklch(0.263 0.013 232.979);
-  --primary-foreground: oklch(0.965 0.01 87.471);
-  --secondary: oklch(0.871 0.013 86.836);
-  --secondary-foreground: oklch(0.263 0.013 232.979);
-  --muted: oklch(0.911 0.013 82.401);
-  --muted-foreground: oklch(0.467 0.012 72.532);
-  --accent: oklch(0.595 0.048 137.917);
-  --accent-foreground: oklch(0.263 0.013 232.979);
-  --destructive: oklch(0.515 0.131 45.669);
-  --border: oklch(0.847 0.015 80.702);
-  --input: oklch(0.885 0.016 77.062);
-  --ring: oklch(0.624 0.135 46.384);
-  --chart-1: oklch(0.624 0.135 46.384);
-  --chart-2: oklch(0.595 0.048 137.917);
-  --chart-3: oklch(0.62 0.02 78.169);
-  --chart-4: oklch(0.515 0.131 45.669);
-  --chart-5: oklch(0.434 0.012 72.51);
+  --oc-white: oklch(1 0 89.876);
+  --oc-black: oklch(0 0 0);
+  --oc-orange: oklch(0.725 0.183 52.047);
+  --oc-red: oklch(0.629 0.249 29.485);
+  --oc-gray-050: oklch(0.979 0.004 214.328);
+  --oc-gray-100: oklch(0.949 0 89.876);
+  --oc-gray-150: oklch(0.944 0.003 197.102);
+  --oc-gray-300: oklch(0.858 0.009 205.887);
+  --oc-gray-400: oklch(0.738 0 89.876);
+  --oc-gray-500: oklch(0.569 0 89.876);
+  --oc-blue-700: oklch(0.441 0.05 214.575);
+  --oc-blue-600: oklch(0.475 0.014 248.13);
+  --oc-blue-500: oklch(0.495 0.078 219.29);
+  --oc-blue-400: oklch(0.611 0.098 218.891);
+  --oc-blue-300: oklch(0.672 0.153 241.035);
+
+  --background: var(--oc-white);
+  --foreground: var(--oc-black);
+  --card: color-mix(in oklab, var(--oc-white) 82%, var(--oc-gray-050) 18%);
+  --card-foreground: var(--oc-black);
+  --popover: color-mix(in oklab, var(--oc-white) 90%, var(--oc-gray-050) 10%);
+  --popover-foreground: var(--oc-black);
+  --primary: var(--oc-orange);
+  --primary-foreground: var(--oc-black);
+  --secondary: color-mix(in oklab, var(--oc-white) 45%, var(--oc-gray-100) 55%);
+  --secondary-foreground: var(--oc-black);
+  --muted: color-mix(in oklab, var(--oc-white) 28%, var(--oc-gray-150) 72%);
+  --muted-foreground: var(--oc-blue-600);
+  --accent: var(--oc-orange);
+  --accent-foreground: var(--oc-black);
+  --destructive: var(--oc-red);
+  --border: color-mix(in oklab, var(--oc-gray-100) 62%, var(--oc-gray-300) 38%);
+  --input: color-mix(in oklab, var(--oc-gray-100) 34%, var(--oc-gray-150) 66%);
+  --ring: var(--oc-blue-300);
+  --chart-1: var(--oc-orange);
+  --chart-2: var(--oc-blue-400);
+  --chart-3: var(--oc-blue-500);
+  --chart-4: var(--oc-blue-700);
+  --chart-5: var(--oc-blue-600);
   --radius: 0.625rem;
-  --sidebar: oklch(0.956 0.01 87.472);
-  --sidebar-foreground: oklch(0.263 0.013 232.979);
-  --sidebar-primary: oklch(0.263 0.013 232.979);
-  --sidebar-primary-foreground: oklch(0.965 0.01 87.471);
-  --sidebar-accent: oklch(0.595 0.048 137.917);
-  --sidebar-accent-foreground: oklch(0.263 0.013 232.979);
-  --sidebar-border: oklch(0.847 0.015 80.702);
-  --sidebar-ring: oklch(0.624 0.135 46.384);
-  --brand-orange: oklch(0.624 0.135 46.384);
-  --brand-orange-strong: oklch(0.515 0.131 45.669);
-  --brand-sage-soft: oklch(0.844 0.027 133.01);
-  --surface-tint-1: color-mix(in srgb, var(--brand-orange) 14%, transparent);
-  --surface-tint-2: color-mix(in srgb, var(--foreground) 12%, transparent);
+  --sidebar: color-mix(in oklab, var(--oc-white) 78%, var(--oc-gray-050) 22%);
+  --sidebar-foreground: var(--oc-black);
+  --sidebar-primary: var(--oc-orange);
+  --sidebar-primary-foreground: var(--oc-black);
+  --sidebar-accent: color-mix(
+    in oklab,
+    var(--oc-white) 20%,
+    var(--oc-gray-150) 80%
+  );
+  --sidebar-accent-foreground: var(--oc-black);
+  --sidebar-border: color-mix(
+    in oklab,
+    var(--oc-gray-100) 52%,
+    var(--oc-gray-300) 48%
+  );
+  --sidebar-ring: var(--oc-blue-300);
+  --brand-orange: var(--oc-orange);
+  --brand-orange-strong: color-mix(
+    in oklab,
+    var(--oc-orange) 84%,
+    var(--oc-black) 16%
+  );
+  --brand-blue: var(--oc-blue-400);
+  --surface-tint-1: color-mix(in oklab, var(--brand-orange) 18%, transparent);
+  --surface-tint-2: color-mix(in oklab, var(--brand-blue) 12%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: oklch(0.209 0.004 84.589);
-    --foreground: oklch(0.689 0.047 134.793);
-    --card: oklch(0.249 0.005 67.605);
-    --card-foreground: oklch(0.965 0.01 87.471);
-    --popover: oklch(0.262 0.007 67.511);
-    --popover-foreground: oklch(0.965 0.01 87.471);
-    --primary: oklch(0.94 0.017 79.35);
-    --primary-foreground: oklch(0.263 0.013 232.979);
-    --secondary: oklch(0.327 0.01 73.549);
-    --secondary-foreground: oklch(0.965 0.01 87.471);
-    --muted: oklch(0.279 0.008 75.24);
-    --muted-foreground: oklch(0.801 0.017 79.336);
-    --accent: oklch(0.486 0.073 137.121);
-    --accent-foreground: oklch(0.965 0.01 87.471);
-    --destructive: oklch(0.748 0.099 50.795);
-    --border: oklch(0.965 0.01 87.471 / 16%);
-    --input: oklch(0.965 0.01 87.471 / 12%);
-    --ring: oklch(0.748 0.099 50.795);
-    --chart-1: oklch(0.748 0.099 50.795);
-    --chart-2: oklch(0.689 0.047 134.793);
-    --chart-3: oklch(0.79 0.031 73.818);
-    --chart-4: oklch(0.664 0.143 46.542);
-    --chart-5: oklch(0.801 0.017 79.336);
-    --sidebar: oklch(0.233 0.006 56.079);
-    --sidebar-foreground: oklch(0.965 0.01 87.471);
-    --sidebar-primary: oklch(0.94 0.017 79.35);
-    --sidebar-primary-foreground: oklch(0.263 0.013 232.979);
-    --sidebar-accent: oklch(0.486 0.073 137.121);
-    --sidebar-accent-foreground: oklch(0.965 0.01 87.471);
-    --sidebar-border: oklch(0.965 0.01 87.471 / 16%);
-    --sidebar-ring: oklch(0.748 0.099 50.795);
-    --brand-orange: oklch(0.748 0.099 50.795);
-    --brand-orange-strong: oklch(0.664 0.143 46.542);
-    --brand-sage-soft: oklch(0.486 0.073 137.121);
-    --surface-tint-1: color-mix(in srgb, var(--brand-orange) 22%, transparent);
-    --surface-tint-2: color-mix(in srgb, var(--foreground) 18%, transparent);
+    --background: var(--oc-black);
+    --foreground: var(--oc-white);
+    --card: color-mix(in oklab, var(--oc-black) 72%, var(--oc-blue-700) 28%);
+    --card-foreground: var(--oc-white);
+    --popover: color-mix(in oklab, var(--oc-black) 62%, var(--oc-blue-500) 38%);
+    --popover-foreground: var(--oc-white);
+    --primary: var(--oc-orange);
+    --primary-foreground: var(--oc-black);
+    --secondary: color-mix(
+      in oklab,
+      var(--oc-black) 64%,
+      var(--oc-blue-600) 36%
+    );
+    --secondary-foreground: var(--oc-white);
+    --muted: color-mix(in oklab, var(--oc-black) 70%, var(--oc-blue-700) 30%);
+    --muted-foreground: color-mix(
+      in oklab,
+      var(--oc-white) 62%,
+      var(--oc-gray-300) 38%
+    );
+    --accent: var(--oc-orange);
+    --accent-foreground: var(--oc-black);
+    --destructive: var(--oc-red);
+    --border: color-mix(in oklab, var(--oc-black) 42%, var(--oc-blue-600) 58%);
+    --input: color-mix(in oklab, var(--oc-black) 50%, var(--oc-blue-600) 50%);
+    --ring: var(--oc-blue-300);
+    --chart-1: var(--oc-orange);
+    --chart-2: var(--oc-blue-400);
+    --chart-3: var(--oc-blue-500);
+    --chart-4: var(--oc-blue-700);
+    --chart-5: var(--oc-blue-600);
+    --sidebar: color-mix(in oklab, var(--oc-black) 82%, var(--oc-blue-700) 18%);
+    --sidebar-foreground: var(--oc-white);
+    --sidebar-primary: var(--oc-orange);
+    --sidebar-primary-foreground: var(--oc-black);
+    --sidebar-accent: color-mix(
+      in oklab,
+      var(--oc-black) 70%,
+      var(--oc-blue-700) 30%
+    );
+    --sidebar-accent-foreground: var(--oc-white);
+    --sidebar-border: color-mix(
+      in oklab,
+      var(--oc-black) 38%,
+      var(--oc-blue-600) 62%
+    );
+    --sidebar-ring: var(--oc-blue-300);
+    --brand-orange: var(--oc-orange);
+    --brand-orange-strong: color-mix(
+      in oklab,
+      var(--oc-orange) 72%,
+      var(--oc-white) 28%
+    );
+    --brand-blue: var(--oc-blue-500);
+    --surface-tint-1: color-mix(in oklab, var(--brand-orange) 24%, transparent);
+    --surface-tint-2: color-mix(in oklab, var(--brand-blue) 22%, transparent);
   }
 }
 
@@ -102,7 +150,7 @@
   --color-chart-1: var(--chart-1);
   --color-brand-orange-strong: var(--brand-orange-strong);
   --color-brand-orange: var(--brand-orange);
-  --color-brand-sage-soft: var(--brand-sage-soft);
+  --color-brand-blue: var(--brand-blue);
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);

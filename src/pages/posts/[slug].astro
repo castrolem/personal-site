@@ -1,61 +1,63 @@
 ---
-import { getCollection, render, type CollectionEntry } from "astro:content"
-import Layout from "@/layouts/main.astro"
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import Layout from "@/layouts/main.astro";
 
 export async function getStaticPaths() {
-  let posts: CollectionEntry<"posts">[] = []
+  let posts: CollectionEntry<"posts">[] = [];
 
   try {
-    posts = await getCollection("posts", ({ data }) => !data.draft)
+    posts = await getCollection("posts", ({ data }) => !data.draft);
   } catch (error) {
-    if (!(error instanceof Error) || !error.message.includes('collection "posts" does not exist or is empty')) {
-      throw error
+    if (
+      !(error instanceof Error) ||
+      !error.message.includes('collection "posts" does not exist or is empty')
+    ) {
+      throw error;
     }
   }
 
   return posts.map((post) => ({
     params: { slug: post.id },
     props: { post },
-  }))
+  }));
 }
 
-const { post } = Astro.props as { post: CollectionEntry<"posts"> }
-const { Content } = await render(post)
+const { post } = Astro.props as { post: CollectionEntry<"posts"> };
+const { Content } = await render(post);
 
 const formatDate = (value: Date) =>
   value.toLocaleDateString("en", {
     year: "numeric",
     month: "long",
     day: "numeric",
-  })
+  });
 ---
 
-<Layout title={`${post.data.title} | Luis Castro`} description={post.data.description}>
+<Layout
+  title={`${post.data.title} | Luis Castro`}
+  description={post.data.description}
+>
   <article class="space-y-8">
     <header class="space-y-4">
-      <a class="text-sm text-muted-foreground transition-colors hover:text-foreground" href="/">
-        Back to posts
-      </a>
+      <div class="gap-4 flex flex-row items-center justify-between w-full">
+        <a
+          class="text-sm text-muted-foreground transition-colors hover:text-foreground"
+          href="/"
+        >
+          Back to posts
+        </a>
 
-      <div class="space-y-3">
-        <p class="text-sm uppercase tracking-[0.22em] text-muted-foreground">
+        <p class="text-xs text-muted-foreground ml-auto">
           {formatDate(post.data.publishedAt)}
         </p>
-        <h1 class="text-4xl leading-none">{post.data.title}</h1>
       </div>
 
-      {post.data.tags.length > 0 && (
-        <div class="flex flex-wrap gap-2">
-          {post.data.tags.map((tag) => (
-            <span class="rounded-full bg-muted px-2.5 py-1 text-xs text-muted-foreground">
-              {tag}
-            </span>
-          ))}
-        </div>
-      )}
+      <h1 class="text-2xl font-semibold">{post.data.title}</h1>
     </header>
 
-    <div class="space-y-5 text-base leading-8 [&_a]:underline [&_img]:rounded-2xl [&_img]:border [&_img]:border-border [&_img]:shadow-sm [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5">
+    <div
+      class="space-y-5 text-base leading-8 [&_a]:underline [&_img]:rounded-2xl [&_img]:border [&_img]:border-border [&_img]:shadow-sm [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5"
+    >
       <Content />
     </div>
   </article>
