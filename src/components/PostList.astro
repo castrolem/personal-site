@@ -69,7 +69,7 @@ const renderedPosts = await Promise.all(
             />
 
             <div class="pl-16">
-              <div class="space-y-4 text-foreground [&_a]:text-primary [&_a]:no-underline hover:[&_a]:underline [&_img]:rounded-3xl [&_img]:border [&_img]:border-border [&_img]:shadow-sm [&_p]:text-foreground [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:list-decimal [&_ol]:pl-6">
+              <div class="space-y-4 [&_a]:text-accent [&_a]:no-underline [&_a:hover]:underline [&_img]:rounded-3xl [&_img]:border [&_img]:border-border [&_img]:shadow-sm [&_p]:text-foreground [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:list-decimal [&_ol]:pl-6">
                 {previewHtml ? (
                   <Fragment set:html={previewHtml} />
                 ) : (
